@@ -4,6 +4,7 @@
     "broker_unreachable": "MQTT broker unreachable. Repair the device to update broker settings.",
     "settings_apply_failed": "Could not apply settings. Check that the device is online.",
     "flow_alarm_eth_unavailable": "Ethernet status is not available on this device.",
+    "flow_alarm_wifi_unavailable": "Wi-Fi status is not available on this device.",
     "flow_ac_socket_unavailable": "AC Socket is not available on this device.",
     "flow_battery_settings_unavailable": "Battery settings are not available on this device.",
     "auto_standby_not_allowed": "Enable auto standby should be allowed before setting standby mode."

@@ -1,0 +1,55 @@
+{
+  "id": "alarm_wifi_true",
+  "title": {
+    "en": "Wi-Fi became disconnected",
+    "nl": "Wi-Fi niet meer verbonden",
+    "de": "WLAN-Verbindung getrennt",
+    "fr": "Wi-Fi déconnecté",
+    "it": "Wi-Fi disconnesso",
+    "sv": "Wi-Fi frånkopplad",
+    "no": "Wi-Fi frakoblet",
+    "es": "Wi-Fi desconectado",
+    "da": "Wi-Fi afbrudt",
+    "ru": "Wi-Fi отключён",
+    "pl": "Wi-Fi rozłączone",
+    "ko": "Wi-Fi 연결 끊김",
+    "ar": "انقطع اتصال Wi-Fi"
+  },
+  "titleFormatted": {
+    "en": "Wi-Fi became disconnected",
+    "nl": "Wi-Fi niet meer verbonden is",
+    "de": "WLAN wurde getrennt",
+    "fr": "Le Wi-Fi s'est déconnecté",
+    "it": "Il Wi-Fi si è disconnesso",
+    "sv": "Wi-Fi kopplades från",
+    "no": "Wi-Fi ble frakoblet",
+    "es": "Wi-Fi se desconectó",
+    "da": "Wi-Fi blev afbrudt",
+    "ru": "Wi-Fi отключился",
+    "pl": "Wi-Fi zostało rozłączone",
+    "ko": "Wi-Fi 연결이 끊어짐",
+    "ar": "انقطع اتصال Wi-Fi"
+  },
+  "hint": {
+    "en": "When the Wi-Fi connection on the SolarVault 3 is disconnected",
+    "nl": "Wanneer de Wi-Fi-verbinding op de SolarVault 3 wordt verbroken",
+    "de": "Wenn die WLAN-Verbindung an der SolarVault 3 getrennt wird",
+    "fr": "Lorsque la connexion Wi-Fi de la SolarVault 3 est déconnectée",
+    "it": "Quando la connessione Wi-Fi della SolarVault 3 è disconnessa",
+    "sv": "När Wi-Fi-anslutningen på SolarVault 3 kopplas från",
+    "no": "Når Wi-Fi-tilkoblingen på SolarVault 3 frakobles",
+    "es": "Cuando la conexión Wi-Fi de la SolarVault 3 se desconecta",
+    "da": "Når Wi-Fi-forbindelsen på SolarVault 3 afbrydes",
+    "ru": "Когда Wi-Fi-соединение SolarVault 3 разрывается",
+    "pl": "Gdy połączenie Wi-Fi w SolarVault 3 zostaje rozłączone",
+    "ko": "SolarVault 3의 Wi-Fi 연결이 끊어질 때",
+    "ar": "عند انقطاع اتصال Wi-Fi على SolarVault 3"
+  },
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=solarvault3-mqtt&class=battery"
+    }
+  ]
+}

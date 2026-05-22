@@ -1,0 +1,55 @@
+{
+  "id": "alarm_wifi_false",
+  "title": {
+    "en": "Wi-Fi became connected",
+    "nl": "Wi-Fi weer verbonden",
+    "de": "WLAN wieder verbunden",
+    "fr": "Wi-Fi reconnecté",
+    "it": "Wi-Fi riconnesso",
+    "sv": "Wi-Fi åter ansluten",
+    "no": "Wi-Fi tilkoblet igjen",
+    "es": "Wi-Fi conectado",
+    "da": "Wi-Fi forbundet igen",
+    "ru": "Wi-Fi подключён",
+    "pl": "Wi-Fi podłączone ponownie",
+    "ko": "Wi-Fi 연결됨",
+    "ar": "تم اتصال Wi-Fi"
+  },
+  "titleFormatted": {
+    "en": "Wi-Fi became connected",
+    "nl": "Wi-Fi weer verbonden is",
+    "de": "WLAN ist wieder verbunden",
+    "fr": "Le Wi-Fi s'est reconnecté",
+    "it": "Il Wi-Fi si è riconnesso",
+    "sv": "Wi-Fi kopplades an",
+    "no": "Wi-Fi ble tilkoblet",
+    "es": "Wi-Fi se conectó",
+    "da": "Wi-Fi blev forbundet",
+    "ru": "Wi-Fi подключился",
+    "pl": "Wi-Fi zostało ponownie podłączone",
+    "ko": "Wi-Fi 연결됨",
+    "ar": "اتصل Wi-Fi"
+  },
+  "hint": {
+    "en": "When the Wi-Fi connection on the SolarVault 3 is connected",
+    "nl": "Wanneer de Wi-Fi-verbinding op de SolarVault 3 tot stand komt",
+    "de": "Wenn die WLAN-Verbindung an der SolarVault 3 hergestellt wird",
+    "fr": "Lorsque la connexion Wi-Fi de la SolarVault 3 est connectée",
+    "it": "Quando la connessione Wi-Fi della SolarVault 3 è connessa",
+    "sv": "När Wi-Fi-anslutningen på SolarVault 3 ansluts",
+    "no": "Når Wi-Fi-tilkoblingen på SolarVault 3 kobles til",
+    "es": "Cuando la conexión Wi-Fi de la SolarVault 3 está conectada",
+    "da": "Når Wi-Fi-forbindelsen på SolarVault 3 forbindes",
+    "ru": "Когда Wi-Fi-соединение SolarVault 3 устанавливается",
+    "pl": "Gdy połączenie Wi-Fi w SolarVault 3 zostaje nawiązane",
+    "ko": "SolarVault 3의 Wi-Fi 연결이 연결될 때",
+    "ar": "عند اتصال Wi-Fi على SolarVault 3"
+  },
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=solarvault3-mqtt&class=battery"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "id": "alarm_wifi_status",
+  "title": {
+    "en": "Wi-Fi !{{is disconnected|is connected}}",
+    "nl": "Wi-Fi !{{niet verbonden is|verbonden is}}",
+    "de": "WLAN !{{ist getrennt|ist verbunden}}",
+    "fr": "Wi-Fi !{{est déconnecté|est connecté}}",
+    "it": "Wi-Fi !{{è disconnesso|è connesso}}",
+    "sv": "Wi-Fi !{{är frånkopplad|är ansluten}}",
+    "no": "Wi-Fi !{{er frakoblet|er tilkoblet}}",
+    "es": "Wi-Fi !{{está desconectado|está conectado}}",
+    "da": "Wi-Fi !{{er afbrudt|er forbundet}}",
+    "ru": "Wi-Fi !{{отключён|подключён}}",
+    "pl": "Wi-Fi !{{jest rozłączone|jest połączone}}",
+    "ko": "Wi-Fi !{{연결 끊김|연결됨}}",
+    "ar": "Wi-Fi !{{غير متصل|متصل}}"
+  },
+  "titleFormatted": {
+    "en": "Wi-Fi !{{is disconnected|is connected}}",
+    "nl": "Wi-Fi !{{niet verbonden is|verbonden is}}",
+    "de": "WLAN !{{ist getrennt|ist verbunden}}",
+    "fr": "Wi-Fi !{{est déconnecté|est connecté}}",
+    "it": "Wi-Fi !{{è disconnesso|è connesso}}",
+    "sv": "Wi-Fi !{{är frånkopplad|är ansluten}}",
+    "no": "Wi-Fi !{{er frakoblet|er tilkoblet}}",
+    "es": "Wi-Fi !{{está desconectado|está conectado}}",
+    "da": "Wi-Fi !{{er afbrudt|er forbundet}}",
+    "ru": "Wi-Fi !{{отключён|подключён}}",
+    "pl": "Wi-Fi !{{jest rozłączone|jest połączone}}",
+    "ko": "Wi-Fi !{{연결 끊김|연결됨}}",
+    "ar": "Wi-Fi !{{غير متصل|متصل}}"
+  },
+  "hint": {
+    "en": "Checks whether the Wi-Fi connection on the SolarVault 3 is disconnected or connected",
+    "nl": "Controleert of de Wi-Fi-verbinding op de SolarVault 3 verbroken of verbonden is",
+    "de": "Prüft, ob die WLAN-Verbindung an der SolarVault 3 getrennt oder verbunden ist",
+    "fr": "Vérifie si la connexion Wi-Fi de la SolarVault 3 est déconnectée ou connectée",
+    "it": "Controlla se la connessione Wi-Fi della SolarVault 3 è disconnessa o connessa",
+    "sv": "Kontrollerar om Wi-Fi-anslutningen på SolarVault 3 är frånkopplad eller ansluten",
+    "no": "Sjekker om Wi-Fi-tilkoblingen på SolarVault 3 er frakoblet eller tilkoblet",
+    "es": "Comprueba si la conexión Wi-Fi de la SolarVault 3 está desconectada o conectada",
+    "da": "Tjekker om Wi-Fi-forbindelsen på SolarVault 3 er afbrudt eller forbundet",
+    "ru": "Проверяет, отключено или подключено Wi-Fi-соединение SolarVault 3",
+    "pl": "Sprawdza, czy połączenie Wi-Fi w SolarVault 3 jest rozłączone lub podłączone",
+    "ko": "SolarVault 3의 Wi-Fi 연결이 끊어져 있는지 또는 연결되어 있는지 확인합니다",
+    "ar": "يتحقق مما إذا كان اتصال Wi-Fi على SolarVault 3 منقطعًا أو متصلاً"
+  },
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=solarvault3-mqtt&class=battery"
+    }
+  ]
+}

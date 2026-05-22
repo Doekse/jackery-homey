@@ -21,6 +21,7 @@ const BATTERY_CAPABILITIES = [
   'meter_power.pv_imported',
   'onoff.eps',
   'alarm_eth',
+  'alarm_wifi',
 ];
 
 /** PV device capabilities must be fixed at pair time; Homey does not add them later. */
@@ -58,6 +59,12 @@ module.exports = class JackerySolarVaultDriver extends JackeryMqttDriver {
     this.homey.flow.getConditionCard('alarm_eth_status').registerRunListener(async (args, state) => {
       this._requireCapability(args.device, 'alarm_eth', 'errors.flow_alarm_eth_unavailable');
       const disconnected = await args.device.getCapabilityValue('alarm_eth');
+      return state.inverted ? !disconnected : disconnected === true;
+    });
+
+    this.homey.flow.getConditionCard('alarm_wifi_status').registerRunListener(async (args, state) => {
+      this._requireCapability(args.device, 'alarm_wifi', 'errors.flow_alarm_wifi_unavailable');
+      const disconnected = await args.device.getCapabilityValue('alarm_wifi');
       return state.inverted ? !disconnected : disconnected === true;
     });
 

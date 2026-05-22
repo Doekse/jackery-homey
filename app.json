@@ -251,6 +251,116 @@
         ]
       },
       {
+        "id": "alarm_wifi_false",
+        "title": {
+          "en": "Wi-Fi became connected",
+          "nl": "Wi-Fi weer verbonden",
+          "de": "WLAN wieder verbunden",
+          "fr": "Wi-Fi reconnecté",
+          "it": "Wi-Fi riconnesso",
+          "sv": "Wi-Fi åter ansluten",
+          "no": "Wi-Fi tilkoblet igjen",
+          "es": "Wi-Fi conectado",
+          "da": "Wi-Fi forbundet igen",
+          "ru": "Wi-Fi подключён",
+          "pl": "Wi-Fi podłączone ponownie",
+          "ko": "Wi-Fi 연결됨",
+          "ar": "تم اتصال Wi-Fi"
+        },
+        "titleFormatted": {
+          "en": "Wi-Fi became connected",
+          "nl": "Wi-Fi weer verbonden is",
+          "de": "WLAN ist wieder verbunden",
+          "fr": "Le Wi-Fi s'est reconnecté",
+          "it": "Il Wi-Fi si è riconnesso",
+          "sv": "Wi-Fi kopplades an",
+          "no": "Wi-Fi ble tilkoblet",
+          "es": "Wi-Fi se conectó",
+          "da": "Wi-Fi blev forbundet",
+          "ru": "Wi-Fi подключился",
+          "pl": "Wi-Fi zostało ponownie podłączone",
+          "ko": "Wi-Fi 연결됨",
+          "ar": "اتصل Wi-Fi"
+        },
+        "hint": {
+          "en": "When the Wi-Fi connection on the SolarVault 3 is connected",
+          "nl": "Wanneer de Wi-Fi-verbinding op de SolarVault 3 tot stand komt",
+          "de": "Wenn die WLAN-Verbindung an der SolarVault 3 hergestellt wird",
+          "fr": "Lorsque la connexion Wi-Fi de la SolarVault 3 est connectée",
+          "it": "Quando la connessione Wi-Fi della SolarVault 3 è connessa",
+          "sv": "När Wi-Fi-anslutningen på SolarVault 3 ansluts",
+          "no": "Når Wi-Fi-tilkoblingen på SolarVault 3 kobles til",
+          "es": "Cuando la conexión Wi-Fi de la SolarVault 3 está conectada",
+          "da": "Når Wi-Fi-forbindelsen på SolarVault 3 forbindes",
+          "ru": "Когда Wi-Fi-соединение SolarVault 3 устанавливается",
+          "pl": "Gdy połączenie Wi-Fi w SolarVault 3 zostaje nawiązane",
+          "ko": "SolarVault 3의 Wi-Fi 연결이 연결될 때",
+          "ar": "عند اتصال Wi-Fi على SolarVault 3"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=solarvault3-mqtt&class=battery"
+          }
+        ]
+      },
+      {
+        "id": "alarm_wifi_true",
+        "title": {
+          "en": "Wi-Fi became disconnected",
+          "nl": "Wi-Fi niet meer verbonden",
+          "de": "WLAN-Verbindung getrennt",
+          "fr": "Wi-Fi déconnecté",
+          "it": "Wi-Fi disconnesso",
+          "sv": "Wi-Fi frånkopplad",
+          "no": "Wi-Fi frakoblet",
+          "es": "Wi-Fi desconectado",
+          "da": "Wi-Fi afbrudt",
+          "ru": "Wi-Fi отключён",
+          "pl": "Wi-Fi rozłączone",
+          "ko": "Wi-Fi 연결 끊김",
+          "ar": "انقطع اتصال Wi-Fi"
+        },
+        "titleFormatted": {
+          "en": "Wi-Fi became disconnected",
+          "nl": "Wi-Fi niet meer verbonden is",
+          "de": "WLAN wurde getrennt",
+          "fr": "Le Wi-Fi s'est déconnecté",
+          "it": "Il Wi-Fi si è disconnesso",
+          "sv": "Wi-Fi kopplades från",
+          "no": "Wi-Fi ble frakoblet",
+          "es": "Wi-Fi se desconectó",
+          "da": "Wi-Fi blev afbrudt",
+          "ru": "Wi-Fi отключился",
+          "pl": "Wi-Fi zostało rozłączone",
+          "ko": "Wi-Fi 연결이 끊어짐",
+          "ar": "انقطع اتصال Wi-Fi"
+        },
+        "hint": {
+          "en": "When the Wi-Fi connection on the SolarVault 3 is disconnected",
+          "nl": "Wanneer de Wi-Fi-verbinding op de SolarVault 3 wordt verbroken",
+          "de": "Wenn die WLAN-Verbindung an der SolarVault 3 getrennt wird",
+          "fr": "Lorsque la connexion Wi-Fi de la SolarVault 3 est déconnectée",
+          "it": "Quando la connessione Wi-Fi della SolarVault 3 è disconnessa",
+          "sv": "När Wi-Fi-anslutningen på SolarVault 3 kopplas från",
+          "no": "Når Wi-Fi-tilkoblingen på SolarVault 3 frakobles",
+          "es": "Cuando la conexión Wi-Fi de la SolarVault 3 se desconecta",
+          "da": "Når Wi-Fi-forbindelsen på SolarVault 3 afbrydes",
+          "ru": "Когда Wi-Fi-соединение SolarVault 3 разрывается",
+          "pl": "Gdy połączenie Wi-Fi w SolarVault 3 zostaje rozłączone",
+          "ko": "SolarVault 3의 Wi-Fi 연결이 끊어질 때",
+          "ar": "عند انقطاع اتصال Wi-Fi على SolarVault 3"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=solarvault3-mqtt&class=battery"
+          }
+        ]
+      },
+      {
         "id": "auto_standby_allowed_turned_off",
         "title": {
           "en": "Auto standby allowed turned off"
@@ -1805,6 +1915,61 @@
         ]
       },
       {
+        "id": "alarm_wifi_status",
+        "title": {
+          "en": "Wi-Fi !{{is disconnected|is connected}}",
+          "nl": "Wi-Fi !{{niet verbonden is|verbonden is}}",
+          "de": "WLAN !{{ist getrennt|ist verbunden}}",
+          "fr": "Wi-Fi !{{est déconnecté|est connecté}}",
+          "it": "Wi-Fi !{{è disconnesso|è connesso}}",
+          "sv": "Wi-Fi !{{är frånkopplad|är ansluten}}",
+          "no": "Wi-Fi !{{er frakoblet|er tilkoblet}}",
+          "es": "Wi-Fi !{{está desconectado|está conectado}}",
+          "da": "Wi-Fi !{{er afbrudt|er forbundet}}",
+          "ru": "Wi-Fi !{{отключён|подключён}}",
+          "pl": "Wi-Fi !{{jest rozłączone|jest połączone}}",
+          "ko": "Wi-Fi !{{연결 끊김|연결됨}}",
+          "ar": "Wi-Fi !{{غير متصل|متصل}}"
+        },
+        "titleFormatted": {
+          "en": "Wi-Fi !{{is disconnected|is connected}}",
+          "nl": "Wi-Fi !{{niet verbonden is|verbonden is}}",
+          "de": "WLAN !{{ist getrennt|ist verbunden}}",
+          "fr": "Wi-Fi !{{est déconnecté|est connecté}}",
+          "it": "Wi-Fi !{{è disconnesso|è connesso}}",
+          "sv": "Wi-Fi !{{är frånkopplad|är ansluten}}",
+          "no": "Wi-Fi !{{er frakoblet|er tilkoblet}}",
+          "es": "Wi-Fi !{{está desconectado|está conectado}}",
+          "da": "Wi-Fi !{{er afbrudt|er forbundet}}",
+          "ru": "Wi-Fi !{{отключён|подключён}}",
+          "pl": "Wi-Fi !{{jest rozłączone|jest połączone}}",
+          "ko": "Wi-Fi !{{연결 끊김|연결됨}}",
+          "ar": "Wi-Fi !{{غير متصل|متصل}}"
+        },
+        "hint": {
+          "en": "Checks whether the Wi-Fi connection on the SolarVault 3 is disconnected or connected",
+          "nl": "Controleert of de Wi-Fi-verbinding op de SolarVault 3 verbroken of verbonden is",
+          "de": "Prüft, ob die WLAN-Verbindung an der SolarVault 3 getrennt oder verbunden ist",
+          "fr": "Vérifie si la connexion Wi-Fi de la SolarVault 3 est déconnectée ou connectée",
+          "it": "Controlla se la connessione Wi-Fi della SolarVault 3 è disconnessa o connessa",
+          "sv": "Kontrollerar om Wi-Fi-anslutningen på SolarVault 3 är frånkopplad eller ansluten",
+          "no": "Sjekker om Wi-Fi-tilkoblingen på SolarVault 3 er frakoblet eller tilkoblet",
+          "es": "Comprueba si la conexión Wi-Fi de la SolarVault 3 está desconectada o conectada",
+          "da": "Tjekker om Wi-Fi-forbindelsen på SolarVault 3 er afbrudt eller forbundet",
+          "ru": "Проверяет, отключено или подключено Wi-Fi-соединение SolarVault 3",
+          "pl": "Sprawdza, czy połączenie Wi-Fi w SolarVault 3 jest rozłączone lub podłączone",
+          "ko": "SolarVault 3의 Wi-Fi 연결이 끊어져 있는지 또는 연결되어 있는지 확인합니다",
+          "ar": "يتحقق مما إذا كان اتصال Wi-Fi على SolarVault 3 منقطعًا أو متصلاً"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=solarvault3-mqtt&class=battery"
+          }
+        ]
+      },
+      {
         "id": "auto_standby_allowed_is",
         "title": {
           "en": "Auto standby !{{is|is not}} allowed"
@@ -2330,7 +2495,8 @@
         "meter_power.pv4",
         "meter_power.pv_exported",
         "onoff.eps",
-        "alarm_eth"
+        "alarm_eth",
+        "alarm_wifi"
       ],
       "energy": {
         "homeBattery": true,
@@ -2356,6 +2522,53 @@
             "pl": "Ethernet",
             "ko": "이더넷",
             "ar": "إيثرنت"
+          },
+          "titleTrue": {
+            "en": "Disconnected",
+            "nl": "Niet Verbonden",
+            "de": "Getrennt",
+            "fr": "Déconnecté",
+            "it": "Disconnesso",
+            "sv": "Frånkopplad",
+            "no": "Frakoblet",
+            "es": "Desconectado",
+            "da": "Afbrudt",
+            "ru": "Отключено",
+            "pl": "Rozłączono",
+            "ko": "연결 끊김",
+            "ar": "غير متصل"
+          },
+          "titleFalse": {
+            "en": "Connected",
+            "nl": "Verbonden",
+            "de": "Verbunden",
+            "fr": "Connecté",
+            "it": "Connesso",
+            "sv": "Ansluten",
+            "no": "Tilkoblet",
+            "es": "Conectado",
+            "da": "Forbundet",
+            "ru": "Подключено",
+            "pl": "Połączono",
+            "ko": "연결됨",
+            "ar": "متصل"
+          }
+        },
+        "alarm_wifi": {
+          "title": {
+            "en": "Wi-Fi",
+            "nl": "Wi-Fi",
+            "de": "WLAN",
+            "fr": "Wi-Fi",
+            "it": "Wi-Fi",
+            "sv": "Wi-Fi",
+            "no": "Wi-Fi",
+            "es": "Wi-Fi",
+            "da": "Wi-Fi",
+            "ru": "Wi-Fi",
+            "pl": "Wi-Fi",
+            "ko": "Wi-Fi",
+            "ar": "Wi-Fi"
           },
           "titleTrue": {
             "en": "Disconnected",
@@ -2808,21 +3021,6 @@
             "ko": "배터리 한도",
             "ar": "حدود البطارية"
           },
-          "hint": {
-            "en": "These settings control the SolarVault unit and are shown on both the battery and PV devices.",
-            "nl": "Deze instellingen regelen de SolarVault-eenheid en worden getoond op zowel de batterij- als PV-tegels.",
-            "da": "Disse indstillinger styrer SolarVault-enheden og vises på både batteri- og PV-fliserne.",
-            "de": "Diese Einstellungen steuern die SolarVault-Einheit und werden auf den Batterie- und PV-Kacheln angezeigt.",
-            "es": "Estos ajustes controlan la unidad SolarVault y se muestran en los mosaicos de batería y FV.",
-            "fr": "Ces paramètres contrôlent l'unité SolarVault et s'affichent sur les tuiles batterie et PV.",
-            "it": "Queste impostazioni controllano l'unità SolarVault e sono mostrate sulle tessere batteria e FV.",
-            "no": "Disse innstillingene styrer SolarVault-enheten og vises på både batteri- og PV-flisene.",
-            "sv": "Dessa inställningar styr SolarVault-enheten och visas på både batteri- och PV-rutorna.",
-            "pl": "Te ustawienia sterują jednostką SolarVault i są widoczne na kafelkach baterii i PV.",
-            "ru": "Эти настройки управляют блоком SolarVault и отображаются на плитках аккумулятора и PV.",
-            "ko": "이 설정은 SolarVault 장치를 제어하며 배터리 및 PV 타일 모두에 표시됩니다.",
-            "ar": "تتحكم هذه الإعدادات في وحدة SolarVault وتظهر على بلاط البطارية والطاقة الشمسية."
-          },
           "children": [
             {
               "id": "socChgLimit",
@@ -3023,16 +3221,16 @@
                 "ar": "السماح بالاستعداد التلقائي"
               },
               "hint": {
-                "en": "Whether the unit may automatically enter standby mode when idle. This setting must be enabled before the standby mode setting takes effect.\n\nWhen enabled and the battery is connected to the grid, the unit will automatically enter standby mode if there is no photovoltaic power generation and the output power remains below 25W for approximately 10 minutes. The unit will automatically resume normal operation once photovoltaic power generation starts again.",
+                "en": "Whether the SolarVault 3 may automatically enter standby mode when idle. This setting must be enabled before the standby mode setting takes effect.\n\nWhen enabled and the battery is connected to the grid, the SolarVault 3 will automatically enter standby mode if there is no photovoltaic power generation and the output power remains below 25W for approximately 10 minutes. The SolarVault 3 will automatically resume normal operation once photovoltaic power generation starts again.",
                 "nl": "Of het apparaat automatisch in standbymodus mag gaan wanneer de batterij inactief is. Deze instelling moet zijn ingeschakeld voordat de standbymodus-instelling effect heeft.\n\nWanneer ingeschakeld en de batterij op het net is aangesloten, gaat het apparaat automatisch in standbymodus als er geen fotovoltaïsche opwekking is en het uitgangsvermogen ongeveer 10 minuten onder 25 W blijft. Het apparaat hervat automatisch normaal gebruik zodra fotovoltaïsche opwekking weer begint.",
                 "da": "Om enheden automatisk må gå i standby, når den er inaktiv. Denne indstilling skal aktiveres, før standby-tilstandsindstillingen træder i kraft.\n\nNår aktiveret og batteriet er tilsluttet nettet, går enheden automatisk i standby, hvis der ikke er fotovoltaisk produktion, og udgangseffekten forbliver under 25 W i cirka 10 minutter. Enheden genoptager automatisk normal drift, når fotovoltaisk produktion starter igen.",
                 "de": "Ob das Gerät bei Inaktivität automatisch in den Standby-Modus wechseln darf. Diese Einstellung muss aktiviert sein, bevor die Standby-Modus-Einstellung wirksam wird.\n\nWenn aktiviert und die Batterie am Netz angeschlossen ist, wechselt das Gerät automatisch in den Standby-Modus, wenn keine photovoltaische Erzeugung vorliegt und die Ausgangsleistung etwa 10 Minuten unter 25 W bleibt. Das Gerät setzt den normalen Betrieb automatisch fort, sobald die photovoltaische Erzeugung wieder beginnt.",
-                "es": "Si la unidad puede entrar automáticamente en modo standby cuando está inactiva. Esta opción debe activarse antes de que la configuración del modo standby surta efecto.\n\nCuando está activada y la batería está conectada a la red, la unidad entrará automáticamente en standby si no hay generación fotovoltaica y la potencia de salida permanece por debajo de 25 W durante unos 10 minutos. La unidad reanudará automáticamente el funcionamiento normal cuando vuelva la generación fotovoltaica.",
-                "fr": "Si l'unité peut passer automatiquement en veille lorsqu'elle est inactive. Ce paramètre doit être activé avant que le paramètre de mode veille ne prenne effet.\n\nLorsqu'il est activé et que la batterie est connectée au réseau, l'unité passera automatiquement en veille s'il n'y a pas de production photovoltaïque et que la puissance de sortie reste inférieure à 25 W pendant environ 10 minutes. L'unité reprendra automatiquement le fonctionnement normal dès que la production photovoltaïque reprend.",
-                "it": "Se l'unità può entrare automaticamente in standby quando è inattiva. Questa impostazione deve essere abilitata prima che l'impostazione della modalità standby abbia effetto.\n\nQuando abilitata e la batteria è collegata alla rete, l'unità entrerà automaticamente in standby se non c'è produzione fotovoltaica e la potenza in uscita resta sotto 25 W per circa 10 minuti. L'unità riprenderà automaticamente il funzionamento normale quando la produzione fotovoltaica ricomincia.",
+                "es": "Si la SolarVault 3 puede entrar automáticamente en modo standby cuando está inactiva. Esta opción debe activarse antes de que la configuración del modo standby surta efecto.\n\nCuando está activada y la batería está conectada a la red, la SolarVault 3 entrará automáticamente en standby si no hay generación fotovoltaica y la potencia de salida permanece por debajo de 25 W durante unos 10 minutos. La SolarVault 3 reanudará automáticamente el funcionamiento normal cuando vuelva la generación fotovoltaica.",
+                "fr": "Si la SolarVault 3 peut passer automatiquement en veille lorsqu'elle est inactive. Ce paramètre doit être activé avant que le paramètre de mode veille ne prenne effet.\n\nLorsqu'il est activé et que la batterie est connectée au réseau, la SolarVault 3 passera automatiquement en veille s'il n'y a pas de production photovoltaïque et que la puissance de sortie reste inférieure à 25 W pendant environ 10 minutes. La SolarVault 3 reprendra automatiquement le fonctionnement normal dès que la production photovoltaïque reprend.",
+                "it": "Se la SolarVault 3 può entrare automaticamente in standby quando è inattiva. Questa impostazione deve essere abilitata prima che l'impostazione della modalità standby abbia effetto.\n\nQuando abilitata e la batteria è collegata alla rete, la SolarVault 3 entrerà automaticamente in standby se non c'è produzione fotovoltaica e la potenza in uscita resta sotto 25 W per circa 10 minuti. La SolarVault 3 riprenderà automaticamente il funzionamento normale quando la produzione fotovoltaica ricomincia.",
                 "no": "Om enheten automatisk kan gå i standby når den er inaktiv. Denne innstillingen må aktiveres før standby-modusinnstillingen trer i kraft.\n\nNår aktivert og batteriet er koblet til nettet, går enheten automatisk i standby hvis det ikke er fotovoltaisk produksjon og utgangseffekten forblir under 25 W i omtrent 10 minutter. Enheten gjenopptar automatisk normal drift når fotovoltaisk produksjon starter igjen.",
                 "sv": "Om enheten automatiskt får gå i standby när den är inaktiv. Denna inställning måste aktiveras innan standbylägesinställningen träder i kraft.\n\nNär den är aktiverad och batteriet är anslutet till nätet går enheten automatiskt i standby om det inte finns någon fotovoltaisk produktion och uteffekten förblir under 25 W i cirka 10 minuter. Enheten återupptar automatiskt normal drift när fotovoltaisk produktion startar igen.",
-                "pl": "Czy jednostka może automatycznie przejść w tryb czuwania, gdy jest bezczynna. To ustawienie musi być włączone, zanim ustawienie trybu czuwania zacznie obowiązywać.\n\nPo włączeniu i podłączeniu baterii do sieci jednostka automatycznie przejdzie w tryb czuwania, jeśli nie ma produkcji fotowoltaicznej, a moc wyjściowa pozostaje poniżej 25 W przez około 10 minut. Jednostka automatycznie wznowi normalną pracę, gdy produkcja fotowoltaiczna znów się rozpocznie.",
+                "pl": "Czy SolarVault 3 może automatycznie przejść w tryb czuwania, gdy jest bezczynna. To ustawienie musi być włączone, zanim ustawienie trybu czuwania zacznie obowiązywać.\n\nPo włączeniu i podłączeniu baterii do sieci SolarVault 3 automatycznie przejdzie w tryb czuwania, jeśli nie ma produkcji fotowoltaicznej, a moc wyjściowa pozostaje poniżej 25 W przez około 10 minut. SolarVault 3 automatycznie wznowi normalną pracę, gdy produkcja fotowoltaiczna znów się rozpocznie.",
                 "ru": "Может ли устройство автоматически переходить в режим ожидания при простое. Эту настройку нужно включить, прежде чем заработает настройка режима ожидания.\n\nПри включении и подключении аккумулятора к сети устройство автоматически перейдёт в режим ожидания, если нет выработки солнечной энергии и выходная мощность остаётся ниже 25 Вт примерно 10 минут. Устройство автоматически возобновит нормальную работу, когда выработка возобновится.",
                 "ko": "유휴 상태일 때 장치가 자동으로 대기 모드로 전환할 수 있는지 여부입니다. 대기 모드 설정이 적용되려면 먼저 이 설정을 켜야 합니다.\n\n활성화되고 배터리가 계통에 연결되면, 태양광 발전이 없고 출력 전력이 약 10분 동안 25W 미만으로 유지되면 장치가 자동으로 대기 모드로 전환됩니다. 태양광 발전이 다시 시작되면 장치는 자동으로 정상 작동을 재개합니다.",
                 "ar": "ما إذا كان الجهاز يمكنه الدخول تلقائيًا في وضع الاستعداد عند الخمول. يجب تفعيل هذا الإعداد قبل أن يصبح إعداد وضع الاستعداد ساريًا.\n\nعند التفعيل واتصال البطارية بالشبكة، يدخل الجهاز تلقائيًا في وضع الاستعداد إذا لم يكن هناك توليد كهروضوئي وبقيت قدرة الخرج أقل من 25 واط لمدة 10 دقائق تقريبًا. يستأنف الجهاز التشغيل العادي تلقائيًا عندما يبدأ التوليد الكهروضوئي مرة أخرى."
@@ -3167,108 +3365,248 @@
               }
             },
             {
-              "id": "deviceIp",
+              "id": "deviceEthIp",
               "type": "label",
               "label": {
-                "en": "IP address",
-                "nl": "IP-adres",
-                "da": "IP-adresse",
-                "de": "IP-Adresse",
-                "es": "Dirección IP",
-                "fr": "Adresse IP",
-                "it": "Indirizzo IP",
-                "no": "IP-adresse",
-                "sv": "IP-adress",
-                "pl": "Adres IP",
-                "ru": "IP-адрес",
-                "ko": "IP 주소",
-                "ar": "عنوان IP"
+                "en": "Ethernet IP address",
+                "nl": "Ethernet IP-adres",
+                "da": "Ethernet IP-adresse",
+                "de": "Ethernet-IP-Adresse",
+                "es": "Dirección IP Ethernet",
+                "fr": "Adresse IP Ethernet",
+                "it": "Indirizzo IP Ethernet",
+                "no": "Ethernet IP-adresse",
+                "sv": "Ethernet IP-adress",
+                "pl": "Adres IP Ethernet",
+                "ru": "IP-адрес Ethernet",
+                "ko": "이더넷 IP 주소",
+                "ar": "عنوان IP Ethernet"
               },
               "value": "-",
               "hint": {
-                "en": "LAN IP address of the SolarVault on your local network, as reported by the device.",
-                "nl": "LAN IP-adres van de SolarVault in je lokale netwerk, zoals gerapporteerd door het apparaat.",
-                "da": "LAN IP-adresse for SolarVault på dit lokale netværk, som rapporteret af enheden.",
-                "de": "LAN-IP-Adresse der SolarVault in Ihrem lokalen Netzwerk, wie vom Gerät gemeldet.",
-                "es": "Dirección IP LAN del SolarVault en tu red local, según informa el dispositivo.",
-                "fr": "Adresse IP LAN du SolarVault sur votre réseau local, telle que signalée par l'appareil.",
-                "it": "Indirizzo IP LAN del SolarVault sulla rete locale, come riportato dal dispositivo.",
-                "no": "LAN IP-adresse for SolarVault på det lokale nettverket, som rapportert av enheten.",
-                "sv": "LAN IP-adress för SolarVault i ditt lokala nätverk, enligt enheten.",
-                "pl": "Adres IP LAN SolarVault w sieci lokalnej, zgłoszony przez urządzenie.",
-                "ru": "IP-адрес SolarVault в локальной сети, сообщаемый устройством.",
-                "ko": "기기가 보고한 로컬 네트워크의 SolarVault LAN IP 주소입니다.",
-                "ar": "عنوان IP للشبكة المحلية لـ SolarVault كما يبلّغه الجهاز."
+                "en": "LAN IP address on the Ethernet interface.",
+                "nl": "LAN IP-adres op de Ethernet-interface.",
+                "da": "LAN IP-adresse på Ethernet-grænsefladen.",
+                "de": "LAN-IP-Adresse der Ethernet-Schnittstelle.",
+                "es": "Dirección IP LAN en la interfaz Ethernet.",
+                "fr": "Adresse IP LAN sur l'interface Ethernet.",
+                "it": "Indirizzo IP LAN sull'interfaccia Ethernet.",
+                "no": "LAN IP-adresse på Ethernet-grensesnittet.",
+                "sv": "LAN IP-adress på Ethernet-gränssnittet.",
+                "pl": "Adres IP LAN na interfejsie Ethernet.",
+                "ru": "IP-адрес LAN на интерфейсе Ethernet.",
+                "ko": "이더넷 인터페이스의 LAN IP 주소.",
+                "ar": "عنوان IP للشبكة المحلية على واجهة Ethernet."
               }
             },
             {
-              "id": "deviceMac",
+              "id": "deviceEthMac",
               "type": "label",
               "label": {
-                "en": "MAC address",
-                "nl": "MAC-adres",
-                "da": "MAC-adresse",
-                "de": "MAC-Adresse",
-                "es": "Dirección MAC",
-                "fr": "Adresse MAC",
-                "it": "Indirizzo MAC",
-                "no": "MAC-adresse",
-                "sv": "MAC-adress",
-                "pl": "Adres MAC",
-                "ru": "MAC-адрес",
-                "ko": "MAC 주소",
-                "ar": "عنوان MAC"
+                "en": "Ethernet MAC address",
+                "nl": "Ethernet MAC-adres",
+                "da": "Ethernet MAC-adresse",
+                "de": "Ethernet-MAC-Adresse",
+                "es": "Dirección MAC Ethernet",
+                "fr": "Adresse MAC Ethernet",
+                "it": "Indirizzo MAC Ethernet",
+                "no": "Ethernet MAC-adresse",
+                "sv": "Ethernet MAC-adress",
+                "pl": "Adres MAC Ethernet",
+                "ru": "MAC-адрес Ethernet",
+                "ko": "이더넷 MAC 주소",
+                "ar": "عنوان MAC Ethernet"
               },
               "value": "-",
               "hint": {
-                "en": "Hardware address of the unit's network interface (e.g. Ethernet).",
-                "nl": "Hardwareadres van de netwerkinterface van het apparaat (bijv. Ethernet).",
-                "da": "Hardwareadresse for enhedens netværksgrænseflade (f.eks. Ethernet).",
-                "de": "Hardwareadresse der Netzwerkschnittstelle des Geräts (z. B. Ethernet).",
-                "es": "Dirección de hardware de la interfaz de red (p. ej. Ethernet).",
-                "fr": "Adresse matérielle de l'interface réseau de l'unité (p. ex. Ethernet).",
-                "it": "Indirizzo hardware dell'interfaccia di rete (es. Ethernet).",
-                "no": "Maskinvareadresse for enhetens nettverksgrensesnitt (f.eks. Ethernet).",
-                "sv": "Hårdvaruadress för enhetens nätverksgränssnitt (t.ex. Ethernet).",
-                "pl": "Adres sprzętowy interfejsu sieciowego jednostki (np. Ethernet).",
-                "ru": "Аппаратный адрес сетевого интерфейса устройства (например, Ethernet).",
-                "ko": "장치 네트워크 인터페이스의 하드웨어 주소(예: 이더넷)입니다.",
-                "ar": "عنوان العتادة لواجهة الشبكة (مثل Ethernet)."
+                "en": "Hardware address of the Ethernet interface.",
+                "nl": "Hardwareadres van de Ethernet-interface.",
+                "da": "Hardwareadresse for Ethernet-grænsefladen.",
+                "de": "Hardwareadresse der Ethernet-Schnittstelle.",
+                "es": "Dirección de hardware de la interfaz Ethernet.",
+                "fr": "Adresse matérielle de l'interface Ethernet.",
+                "it": "Indirizzo hardware dell'interfaccia Ethernet.",
+                "no": "Maskinvareadresse for Ethernet-grensesnittet.",
+                "sv": "Hårdvaruadress för Ethernet-gränssnittet.",
+                "pl": "Adres sprzętowy interfejsu Ethernet.",
+                "ru": "Аппаратный адрес интерфейса Ethernet.",
+                "ko": "이더넷 인터페이스의 하드웨어 주소.",
+                "ar": "عنوان العتادة لواجهة Ethernet."
+              }
+            },
+            {
+              "id": "deviceWifiSsid",
+              "type": "label",
+              "label": {
+                "en": "Wi-Fi network",
+                "nl": "Wi-Fi-netwerk",
+                "da": "Wi-Fi-netværk",
+                "de": "WLAN-Netzwerk",
+                "es": "Red Wi-Fi",
+                "fr": "Réseau Wi-Fi",
+                "it": "Rete Wi-Fi",
+                "no": "Wi-Fi-nettverk",
+                "sv": "Wi-Fi-nätverk",
+                "pl": "Sieć Wi-Fi",
+                "ru": "Сеть Wi-Fi",
+                "ko": "Wi-Fi 네트워크",
+                "ar": "شبكة Wi-Fi"
+              },
+              "value": "-",
+              "hint": {
+                "en": "SSID of the Wi-Fi network the SolarVault 3 is using.",
+                "nl": "SSID van het Wi-Fi-netwerk dat de SolarVault 3 gebruikt.",
+                "da": "SSID for det Wi-Fi-netværk SolarVault 3 bruger.",
+                "de": "SSID des WLAN-Netzwerks, das die SolarVault 3 nutzt.",
+                "es": "SSID de la red Wi-Fi que usa la SolarVault 3.",
+                "fr": "SSID du réseau Wi-Fi utilisé par la SolarVault 3.",
+                "it": "SSID della rete Wi-Fi usata dalla SolarVault 3.",
+                "no": "SSID for Wi-Fi-nettverket SolarVault 3 bruker.",
+                "sv": "SSID för Wi-Fi-nätverket som SolarVault 3 använder.",
+                "pl": "SSID sieci Wi-Fi używanej przez SolarVault 3.",
+                "ru": "SSID сети Wi-Fi, которую использует SolarVault 3.",
+                "ko": "SolarVault 3가 사용 중인 Wi-Fi 네트워크 SSID.",
+                "ar": "SSID لشبكة Wi-Fi التي تستخدمها SolarVault 3."
+              }
+            },
+            {
+              "id": "deviceWifiSignal",
+              "type": "label",
+              "label": {
+                "en": "Wi-Fi signal",
+                "nl": "Wi-Fi-signaal",
+                "da": "Wi-Fi-signal",
+                "de": "WLAN-Signal",
+                "es": "Señal Wi-Fi",
+                "fr": "Signal Wi-Fi",
+                "it": "Segnale Wi-Fi",
+                "no": "Wi-Fi-signal",
+                "sv": "Wi-Fi-signal",
+                "pl": "Sygnał Wi-Fi",
+                "ru": "Сигнал Wi-Fi",
+                "ko": "Wi-Fi 신호",
+                "ar": "إشارة Wi-Fi"
+              },
+              "value": "-",
+              "hint": {
+                "en": "Wi-Fi signal strength in dBm.",
+                "nl": "Wi-Fi-signaalsterkte in dBm.",
+                "da": "Wi-Fi-signalstyrke i dBm.",
+                "de": "WLAN-Signalstärke in dBm.",
+                "es": "Intensidad de señal Wi-Fi en dBm.",
+                "fr": "Force du signal Wi-Fi en dBm.",
+                "it": "Potenza del segnale Wi-Fi in dBm.",
+                "no": "Wi-Fi-signalstyrke i dBm.",
+                "sv": "Wi-Fi-signalstyrka i dBm.",
+                "pl": "Siła sygnału Wi-Fi w dBm.",
+                "ru": "Уровень сигнала Wi-Fi в dBm.",
+                "ko": "Wi-Fi 신호 강도(dBm).",
+                "ar": "قوة إشارة Wi-Fi بالـ dBm."
+              }
+            },
+            {
+              "id": "deviceWifiIp",
+              "type": "label",
+              "label": {
+                "en": "Wi-Fi IP address",
+                "nl": "Wi-Fi IP-adres",
+                "da": "Wi-Fi IP-adresse",
+                "de": "WLAN-IP-Adresse",
+                "es": "Dirección IP Wi-Fi",
+                "fr": "Adresse IP Wi-Fi",
+                "it": "Indirizzo IP Wi-Fi",
+                "no": "Wi-Fi IP-adresse",
+                "sv": "Wi-Fi IP-adress",
+                "pl": "Adres IP Wi-Fi",
+                "ru": "IP-адрес Wi-Fi",
+                "ko": "Wi-Fi IP 주소",
+                "ar": "عنوان IP Wi-Fi"
+              },
+              "value": "-",
+              "hint": {
+                "en": "LAN IP address on the Wi-Fi interface.",
+                "nl": "LAN IP-adres op de Wi-Fi-interface.",
+                "da": "LAN IP-adresse på Wi-Fi-grænsefladen.",
+                "de": "LAN-IP-Adresse der WLAN-Schnittstelle.",
+                "es": "Dirección IP LAN en la interfaz Wi-Fi.",
+                "fr": "Adresse IP LAN sur l'interface Wi-Fi.",
+                "it": "Indirizzo IP LAN sull'interfaccia Wi-Fi.",
+                "no": "LAN IP-adresse på Wi-Fi-grensesnittet.",
+                "sv": "LAN IP-adress på Wi-Fi-gränssnittet.",
+                "pl": "Adres IP LAN na interfejsie Wi-Fi.",
+                "ru": "IP-адрес LAN на интерфейсе Wi-Fi.",
+                "ko": "Wi-Fi 인터페이스의 LAN IP 주소.",
+                "ar": "عنوان IP للشبكة المحلية على واجهة Wi-Fi."
+              }
+            },
+            {
+              "id": "deviceWifiMac",
+              "type": "label",
+              "label": {
+                "en": "Wi-Fi MAC address",
+                "nl": "Wi-Fi MAC-adres",
+                "da": "Wi-Fi MAC-adresse",
+                "de": "WLAN-MAC-Adresse",
+                "es": "Dirección MAC Wi-Fi",
+                "fr": "Adresse MAC Wi-Fi",
+                "it": "Indirizzo MAC Wi-Fi",
+                "no": "Wi-Fi MAC-adresse",
+                "sv": "Wi-Fi MAC-adress",
+                "pl": "Adres MAC Wi-Fi",
+                "ru": "MAC-адрес Wi-Fi",
+                "ko": "Wi-Fi MAC 주소",
+                "ar": "عنوان MAC Wi-Fi"
+              },
+              "value": "-",
+              "hint": {
+                "en": "Hardware address of the Wi-Fi interface.",
+                "nl": "Hardwareadres van de Wi-Fi-interface.",
+                "da": "Hardwareadresse for Wi-Fi-grænsefladen.",
+                "de": "Hardwareadresse der WLAN-Schnittstelle.",
+                "es": "Dirección de hardware de la interfaz Wi-Fi.",
+                "fr": "Adresse matérielle de l'interface Wi-Fi.",
+                "it": "Indirizzo hardware dell'interfaccia Wi-Fi.",
+                "no": "Maskinvareadresse for Wi-Fi-grensesnittet.",
+                "sv": "Hårdvaruadress för Wi-Fi-gränssnittet.",
+                "pl": "Adres sprzętowy interfejsu Wi-Fi.",
+                "ru": "Аппаратный адрес интерфейса Wi-Fi.",
+                "ko": "Wi-Fi 인터페이스의 하드웨어 주소.",
+                "ar": "عنوان العتادة لواجهة Wi-Fi."
               }
             },
             {
               "id": "deviceBatteryCount",
               "type": "label",
               "label": {
-                "en": "Connected batteries",
-                "nl": "Aangesloten batterijen",
-                "da": "Tilsluttede batterier",
-                "de": "Angeschlossene Batterien",
-                "es": "Baterías conectadas",
-                "fr": "Batteries connectées",
-                "it": "Batterie collegate",
-                "no": "Tilkoblede batterier",
-                "sv": "Anslutna batterier",
-                "pl": "Podłączone baterie",
-                "ru": "Подключённые аккумуляторы",
-                "ko": "연결된 배터리",
-                "ar": "البطاريات المتصلة"
+                "en": "Connected battery units",
+                "nl": "Aangesloten batterijmodules",
+                "da": "Tilsluttede batterienheder",
+                "de": "Angeschlossene Batterieeinheiten",
+                "es": "Unidades de batería conectadas",
+                "fr": "Unités de batterie connectées",
+                "it": "Unità batteria collegate",
+                "no": "Tilkoblede batterienheter",
+                "sv": "Anslutna batterienheter",
+                "pl": "Podłączone jednostki baterii",
+                "ru": "Подключённые аккумуляторные блоки",
+                "ko": "연결된 배터리 유닛",
+                "ar": "وحدات البطارية المتصلة"
               },
               "value": "-",
               "hint": {
-                "en": "How many battery expansion modules are currently connected to this unit.",
-                "nl": "Hoeveel batterij-uitbreidingsmodules momenteel op deze eenheid zijn aangesloten.",
-                "da": "Hvor mange batteriudvidelsesmoduler der aktuelt er tilsluttet denne enhed.",
-                "de": "Wie viele Batterie-Erweiterungsmodule derzeit an dieser Einheit angeschlossen sind.",
-                "es": "Cuántos módulos de expansión de batería están conectados actualmente a esta unidad.",
-                "fr": "Nombre de modules d'extension batterie actuellement connectés à cette unité.",
-                "it": "Quanti moduli di espansione batteria sono attualmente collegati a questa unità.",
-                "no": "Hvor mange batteriutvidelsesmoduler som for øyeblikket er koblet til denne enheten.",
-                "sv": "Hur många batteriexpansionsmoduler som för närvarande är anslutna till denna enhet.",
-                "pl": "Ile modułów rozszerzenia baterii jest obecnie podłączonych do tej jednostki.",
-                "ru": "Сколько модулей расширения аккумулятора сейчас подключено к этому устройству.",
-                "ko": "현재 이 장치에 연결된 배터리 확장 모듈 수입니다.",
-                "ar": "عدد وحدات توسعة البطارية المتصلة حاليًا بهذه الوحدة."
+                "en": "How many battery expansion modules are currently connected to this SolarVault 3.",
+                "nl": "Hoeveel batterij-uitbreidingsmodules momenteel op deze SolarVault 3 zijn aangesloten.",
+                "da": "Hvor mange batteriudvidelsesmoduler der aktuelt er tilsluttet denne SolarVault 3.",
+                "de": "Wie viele Batterie-Erweiterungsmodule derzeit an dieser SolarVault 3 angeschlossen sind.",
+                "es": "Cuántos módulos de expansión de batería están conectados actualmente a esta SolarVault 3.",
+                "fr": "Nombre de modules d'extension batterie actuellement connectés à cette SolarVault 3.",
+                "it": "Quanti moduli di espansione batteria sono attualmente collegati a questa SolarVault 3.",
+                "no": "Hvor mange batteriutvidelsesmoduler som for øyeblikket er koblet til denne SolarVault 3.",
+                "sv": "Hur många batteriexpansionsmoduler som för närvarande är anslutna till denna SolarVault 3.",
+                "pl": "Ile modułów rozszerzenia baterii jest obecnie podłączonych do tej SolarVault 3.",
+                "ru": "Сколько модулей расширения аккумулятора сейчас подключено к этой SolarVault 3.",
+                "ko": "현재 이 SolarVault 3에 연결된 배터리 확장 모듈 수.",
+                "ar": "عدد وحدات توسعة البطارية المتصلة حاليًا بهذه SolarVault 3."
               }
             }
           ]
@@ -3286,6 +3624,16 @@
       "setable": false,
       "uiComponent": "sensor",
       "icon": "/assets/capabilities/alarm_eth.svg"
+    },
+    "alarm_wifi": {
+      "type": "boolean",
+      "title": {
+        "en": "Wi-Fi"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "icon": "/assets/capabilities/alarm_wifi.svg"
     }
   }
 }
