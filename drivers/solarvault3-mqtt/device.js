@@ -9,7 +9,7 @@ module.exports = class JackerySolarVaultDevice extends JackeryMqttDevice {
 
   async onInit() {
     await super.onInit();
-    this.log('SolarVault Device has been initialized');
+    this.log('SolarVault 3 MQTT Device has been initialized');
   }
 
 };

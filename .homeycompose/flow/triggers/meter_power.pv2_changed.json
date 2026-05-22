@@ -70,7 +70,7 @@
     {
       "type": "device",
       "name": "device",
-      "filter": "driver_id=solarvault&class=solarpanel&capabilities=meter_power.pv2"
+      "filter": "driver_id=solarvault3-mqtt&class=solarpanel&capabilities=meter_power.pv2"
     }
   ]
 }

@@ -13,7 +13,7 @@
     {
       "type": "device",
       "name": "device",
-      "filter": "driver_id=solarvault&class=battery"
+      "filter": "driver_id=solarvault3-mqtt&class=battery"
     },
     {
       "type": "number",

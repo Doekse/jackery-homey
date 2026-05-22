@@ -70,7 +70,7 @@
     {
       "type": "device",
       "name": "device",
-      "filter": "driver_id=solarvault&class=battery&capabilities=meter_power.grid_imported"
+      "filter": "driver_id=solarvault3-mqtt&class=battery&capabilities=meter_power.grid_imported"
     }
   ]
 }

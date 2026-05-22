@@ -44,7 +44,7 @@ const INVERTER_CAPABILITIES = [
 module.exports = class JackerySolarVaultDriver extends JackeryMqttDriver {
 
   async onInit() {
-    this.log('SolarVault Driver has been initialized');
+    this.log('SolarVault 3 MQTT Driver has been initialized');
     this._registerFlowConditionCards();
     this._registerFlowActionCards();
   }

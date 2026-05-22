@@ -81,7 +81,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=solarvault&class=battery&capabilities=onoff.eps"
+            "filter": "driver_id=solarvault3-mqtt&class=battery&capabilities=onoff.eps"
           }
         ]
       },
@@ -136,7 +136,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=solarvault&class=battery&capabilities=onoff.eps"
+            "filter": "driver_id=solarvault3-mqtt&class=battery&capabilities=onoff.eps"
           }
         ]
       },
@@ -191,7 +191,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=solarvault&class=battery"
+            "filter": "driver_id=solarvault3-mqtt&class=battery"
           }
         ]
       },
@@ -246,7 +246,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=solarvault&class=battery"
+            "filter": "driver_id=solarvault3-mqtt&class=battery"
           }
         ]
       },
@@ -265,7 +265,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=solarvault&class=battery"
+            "filter": "driver_id=solarvault3-mqtt&class=battery"
           }
         ]
       },
@@ -284,7 +284,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=solarvault&class=battery"
+            "filter": "driver_id=solarvault3-mqtt&class=battery"
           }
         ]
       },
@@ -312,7 +312,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=solarvault&class=battery"
+            "filter": "driver_id=solarvault3-mqtt&class=battery"
           }
         ]
       },
@@ -340,7 +340,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=solarvault&class=battery"
+            "filter": "driver_id=solarvault3-mqtt&class=battery"
           }
         ]
       },
@@ -368,7 +368,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=solarvault&class=battery"
+            "filter": "driver_id=solarvault3-mqtt&class=battery"
           }
         ]
       },
@@ -396,7 +396,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=solarvault&class=battery"
+            "filter": "driver_id=solarvault3-mqtt&class=battery"
           }
         ]
       },
@@ -472,7 +472,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=solarvault&class=battery&capabilities=measure_power.eps"
+            "filter": "driver_id=solarvault3-mqtt&class=battery&capabilities=measure_power.eps"
           }
         ]
       },
@@ -548,7 +548,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=solarvault&class=solarpanel&capabilities=measure_power.pv1"
+            "filter": "driver_id=solarvault3-mqtt&class=solarpanel&capabilities=measure_power.pv1"
           }
         ]
       },
@@ -624,7 +624,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=solarvault&class=solarpanel&capabilities=measure_power.pv2"
+            "filter": "driver_id=solarvault3-mqtt&class=solarpanel&capabilities=measure_power.pv2"
           }
         ]
       },
@@ -700,7 +700,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=solarvault&class=solarpanel&capabilities=measure_power.pv3"
+            "filter": "driver_id=solarvault3-mqtt&class=solarpanel&capabilities=measure_power.pv3"
           }
         ]
       },
@@ -776,7 +776,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=solarvault&class=solarpanel&capabilities=measure_power.pv4"
+            "filter": "driver_id=solarvault3-mqtt&class=solarpanel&capabilities=measure_power.pv4"
           }
         ]
       },
@@ -852,7 +852,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=solarvault&class=battery&capabilities=meter_power.ac_exported"
+            "filter": "driver_id=solarvault3-mqtt&class=battery&capabilities=meter_power.ac_exported"
           }
         ]
       },
@@ -928,7 +928,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=solarvault&class=battery&capabilities=meter_power.ac_imported"
+            "filter": "driver_id=solarvault3-mqtt&class=battery&capabilities=meter_power.ac_imported"
           }
         ]
       },
@@ -1004,7 +1004,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=solarvault&class=battery&capabilities=meter_power.charged"
+            "filter": "driver_id=solarvault3-mqtt&class=battery&capabilities=meter_power.charged"
           }
         ]
       },
@@ -1080,7 +1080,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=solarvault&class=battery&capabilities=meter_power.discharged"
+            "filter": "driver_id=solarvault3-mqtt&class=battery&capabilities=meter_power.discharged"
           }
         ]
       },
@@ -1156,7 +1156,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=solarvault&class=battery&capabilities=meter_power.grid_exported"
+            "filter": "driver_id=solarvault3-mqtt&class=battery&capabilities=meter_power.grid_exported"
           }
         ]
       },
@@ -1232,7 +1232,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=solarvault&class=battery&capabilities=meter_power.grid_imported"
+            "filter": "driver_id=solarvault3-mqtt&class=battery&capabilities=meter_power.grid_imported"
           }
         ]
       },
@@ -1308,7 +1308,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=solarvault&class=battery&capabilities=meter_power.pv_exported"
+            "filter": "driver_id=solarvault3-mqtt&class=battery&capabilities=meter_power.pv_exported"
           }
         ]
       },
@@ -1384,7 +1384,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=solarvault&class=battery&capabilities=meter_power.pv_imported"
+            "filter": "driver_id=solarvault3-mqtt&class=battery&capabilities=meter_power.pv_imported"
           }
         ]
       },
@@ -1460,7 +1460,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=solarvault&class=solarpanel&capabilities=meter_power.pv1"
+            "filter": "driver_id=solarvault3-mqtt&class=solarpanel&capabilities=meter_power.pv1"
           }
         ]
       },
@@ -1536,7 +1536,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=solarvault&class=solarpanel&capabilities=meter_power.pv2"
+            "filter": "driver_id=solarvault3-mqtt&class=solarpanel&capabilities=meter_power.pv2"
           }
         ]
       },
@@ -1612,7 +1612,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=solarvault&class=solarpanel&capabilities=meter_power.pv3"
+            "filter": "driver_id=solarvault3-mqtt&class=solarpanel&capabilities=meter_power.pv3"
           }
         ]
       },
@@ -1688,7 +1688,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=solarvault&class=solarpanel&capabilities=meter_power.pv4"
+            "filter": "driver_id=solarvault3-mqtt&class=solarpanel&capabilities=meter_power.pv4"
           }
         ]
       }
@@ -1745,7 +1745,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=solarvault&class=battery&capabilities=onoff.eps"
+            "filter": "driver_id=solarvault3-mqtt&class=battery&capabilities=onoff.eps"
           }
         ]
       },
@@ -1800,7 +1800,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=solarvault&class=battery"
+            "filter": "driver_id=solarvault3-mqtt&class=battery"
           }
         ]
       },
@@ -1819,7 +1819,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=solarvault&class=battery"
+            "filter": "driver_id=solarvault3-mqtt&class=battery"
           }
         ]
       },
@@ -1838,7 +1838,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=solarvault&class=battery"
+            "filter": "driver_id=solarvault3-mqtt&class=battery"
           },
           {
             "type": "dropdown",
@@ -1875,7 +1875,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=solarvault&class=battery"
+            "filter": "driver_id=solarvault3-mqtt&class=battery"
           },
           {
             "type": "number",
@@ -1904,7 +1904,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=solarvault&class=battery"
+            "filter": "driver_id=solarvault3-mqtt&class=battery"
           },
           {
             "type": "number",
@@ -1933,7 +1933,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=solarvault&class=battery"
+            "filter": "driver_id=solarvault3-mqtt&class=battery"
           },
           {
             "type": "number",
@@ -2000,7 +2000,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=solarvault&class=battery&capabilities=onoff.eps"
+            "filter": "driver_id=solarvault3-mqtt&class=battery&capabilities=onoff.eps"
           }
         ]
       },
@@ -2055,7 +2055,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=solarvault&class=battery&capabilities=onoff.eps"
+            "filter": "driver_id=solarvault3-mqtt&class=battery&capabilities=onoff.eps"
           }
         ]
       },
@@ -2110,7 +2110,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=solarvault&class=battery&capabilities=onoff.eps"
+            "filter": "driver_id=solarvault3-mqtt&class=battery&capabilities=onoff.eps"
           }
         ]
       },
@@ -2129,7 +2129,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=solarvault&class=battery"
+            "filter": "driver_id=solarvault3-mqtt&class=battery"
           }
         ]
       },
@@ -2148,7 +2148,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=solarvault&class=battery"
+            "filter": "driver_id=solarvault3-mqtt&class=battery"
           }
         ]
       },
@@ -2167,7 +2167,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=solarvault&class=battery"
+            "filter": "driver_id=solarvault3-mqtt&class=battery"
           },
           {
             "type": "dropdown",
@@ -2204,7 +2204,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=solarvault&class=battery"
+            "filter": "driver_id=solarvault3-mqtt&class=battery"
           },
           {
             "type": "number",
@@ -2233,7 +2233,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=solarvault&class=battery"
+            "filter": "driver_id=solarvault3-mqtt&class=battery"
           },
           {
             "type": "number",
@@ -2262,7 +2262,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=solarvault&class=battery"
+            "filter": "driver_id=solarvault3-mqtt&class=battery"
           },
           {
             "type": "number",
@@ -2297,9 +2297,9 @@
       },
       "class": "battery",
       "images": {
-        "small": "/drivers/solarvault/assets/images/small.png",
-        "large": "/drivers/solarvault/assets/images/large.png",
-        "xlarge": "/drivers/solarvault/assets/images/xlarge.png"
+        "small": "/drivers/solarvault3-mqtt/assets/images/small.png",
+        "large": "/drivers/solarvault3-mqtt/assets/images/large.png",
+        "xlarge": "/drivers/solarvault3-mqtt/assets/images/xlarge.png"
       },
       "platforms": [
         "local"
@@ -2789,7 +2789,7 @@
           "id": "credentials"
         }
       ],
-      "id": "solarvault",
+      "id": "solarvault3-mqtt",
       "settings": [
         {
           "type": "group",
