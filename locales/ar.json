@@ -26,7 +26,7 @@
       "title": "بيانات الاعتماد",
       "subtitle": "يحتاج جهازك إلى بيانات اعتماد للاتصال بـ Homey.",
       "serial": "الرقم التسلسلي",
-      "serial_placeholder": "SN",
+      "serial_placeholder": "S/N",
       "serial_required": "يرجى إدخال الرقم التسلسلي للجهاز."
     },
     "token": {

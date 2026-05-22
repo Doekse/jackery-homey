@@ -26,7 +26,7 @@
       "title": "Credenziali",
       "subtitle": "Il dispositivo necessita di credenziali per connettersi a Homey.",
       "serial": "Numero di serie",
-      "serial_placeholder": "SN",
+      "serial_placeholder": "S/N",
       "serial_required": "Inserisci il numero di serie del dispositivo."
     },
     "token": {

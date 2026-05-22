@@ -26,7 +26,7 @@
       "title": "Påloggingsdetaljer",
       "subtitle": "Enheten trenger påloggingsdetaljer for å koble til Homey.",
       "serial": "Serienummer",
-      "serial_placeholder": "SN",
+      "serial_placeholder": "S/N",
       "serial_required": "Skriv inn enhetens serienummer."
     },
     "token": {

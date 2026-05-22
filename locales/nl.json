@@ -26,7 +26,7 @@
       "title": "Inloggegevens",
       "subtitle": "Je apparaat heeft inloggegevens nodig om met Homey te verbinden.",
       "serial": "Serienummer",
-      "serial_placeholder": "SN",
+      "serial_placeholder": "S/N",
       "serial_required": "Voer het serienummer van het apparaat in."
     },
     "token": {

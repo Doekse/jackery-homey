@@ -26,7 +26,7 @@
       "title": "Legitimationsoplysninger",
       "subtitle": "Din enhed har brug for legitimationsoplysninger for at forbinde til Homey.",
       "serial": "Serienummer",
-      "serial_placeholder": "SN",
+      "serial_placeholder": "S/N",
       "serial_required": "Indtast enhedens serienummer."
     },
     "token": {

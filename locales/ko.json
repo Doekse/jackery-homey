@@ -26,7 +26,7 @@
       "title": "인증 정보",
       "subtitle": "기기가 Homey에 연결하려면 인증 정보가 필요합니다.",
       "serial": "일련번호",
-      "serial_placeholder": "SN",
+      "serial_placeholder": "S/N",
       "serial_required": "기기 일련번호를 입력하세요."
     },
     "token": {

@@ -27,9 +27,12 @@
         document.getElementById('animation-container').dataset.state = 'info';
       }, 200);
 
+      // Learn-more URL: replace with a real Jackery MQTT knowledge base article once one exists.
+      var learnMoreUrl = 'https://faq.jackery.com/';
+
       document.getElementById('learn-more-link').addEventListener('click', function (e) {
         e.preventDefault();
-        Homey.popup('https://www.jackery.com/pages/support');
+        Homey.popup(learnMoreUrl);
       });
     })();
   </script>

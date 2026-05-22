@@ -26,7 +26,7 @@
       "title": "Identifiants",
       "subtitle": "Votre appareil a besoin d'identifiants pour se connecter à Homey.",
       "serial": "Numéro de série",
-      "serial_placeholder": "SN",
+      "serial_placeholder": "S/N",
       "serial_required": "Veuillez saisir le numéro de série de l'appareil."
     },
     "token": {

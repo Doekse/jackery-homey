@@ -29,7 +29,7 @@
       "title": "Credentials",
       "subtitle": "Your device needs credentials to connect with Homey.",
       "serial": "Serial number",
-      "serial_placeholder": "SN",
+      "serial_placeholder": "S/N",
       "serial_required": "Please enter the device serial number."
     },
     "token": {

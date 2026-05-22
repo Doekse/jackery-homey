@@ -26,7 +26,7 @@
       "title": "Inloggningsuppgifter",
       "subtitle": "Din enhet behöver inloggningsuppgifter för att ansluta till Homey.",
       "serial": "Serienummer",
-      "serial_placeholder": "SN",
+      "serial_placeholder": "S/N",
       "serial_required": "Ange enhetens serienummer."
     },
     "token": {
