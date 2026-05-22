@@ -1,0 +1,49 @@
+{
+  "errors": {
+    "offline": "Dit apparaat is momenteel offline",
+    "broker_unreachable": "MQTT-broker niet bereikbaar. Repareer het apparaat om de brokerinstellingen bij te werken.",
+    "settings_apply_failed": "Kon instellingen niet toepassen. Controleer of het apparaat online is.",
+    "auto_standby_not_allowed": "Schakel automatische standby toestaan in voordat je de standbymodus instelt."
+  },
+  "pair": {
+    "intro": {
+      "title": "MQTT",
+      "subtitle": "Lokale verbinding via MQTT",
+      "body": "Dit apparaat verbindt via MQTT.\n\nStel eerst een MQTT-broker in en verbind daarna je Jackery SolarVault 3 ermee in de mobiele Jackery-app.\n\nAls dat klaar is, ga hier verder.",
+      "learn_more": "Meer informatie"
+    },
+    "connection": {
+      "title": "Brokergegevens",
+      "subtitle": "Vul de gegevens in van de MQTT-broker waarmee je Jackery SolarVault 3 is verbonden.",
+      "host": "Host",
+      "port": "Poort",
+      "username": "Gebruikersnaam (optioneel)",
+      "password": "Wachtwoord (optioneel)",
+      "useTls": "Versleuteling gebruiken (TLS)",
+      "host_required": "Voer de broker-host in."
+    },
+    "credentials": {
+      "title": "Inloggegevens",
+      "subtitle": "Je apparaat heeft inloggegevens nodig om met Homey te verbinden.",
+      "serial": "Serienummer",
+      "serial_placeholder": "SN",
+      "serial_required": "Voer het serienummer van het apparaat in."
+    },
+    "token": {
+      "label": "Token",
+      "placeholder": "●●●●●●●●",
+      "required": "Voer je apparaattoken in."
+    },
+    "list_devices": {
+      "no_config": "Brokerconfiguratie ontbreekt. Ga terug en voltooi de brokerstap.",
+      "no_credentials": "Apparaattoken ontbreekt. Ga terug en voltooi de inlogstap.",
+      "connection_failed": "Verbinding met broker mislukt:",
+      "no_devices": "Geen Jackery-apparaten gevonden. Controleer broker, token en serienummer."
+    }
+  },
+  "repair": {
+    "done": "Opslaan en repareren",
+    "subtitle": "Brokerverbinding en apparaattoken bijwerken",
+    "device_not_found": "Kon dit apparaat niet vinden op de broker. Controleer brokerinstellingen en of de batterij online is."
+  }
+}

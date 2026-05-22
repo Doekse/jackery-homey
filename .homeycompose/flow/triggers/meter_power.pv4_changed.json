@@ -1,0 +1,76 @@
+{
+  "id": "meter_power.pv4_changed",
+  "title": {
+    "en": "Energy generated (PV4) changed",
+    "nl": "Opgewekte energie (PV4) veranderd",
+    "de": "Erzeugte Energie (PV4) geändert",
+    "fr": "Énergie générée (PV4) changée",
+    "it": "Energia generata (PV4) cambiata",
+    "sv": "Genererad energi (PV4) ändrad",
+    "no": "Generert energi (PV4) endret",
+    "es": "Energía generada (PV4) cambiada",
+    "da": "Genereret energi (PV4) ændret",
+    "ru": "Изменилась сгенерированная энергия (PV4)",
+    "pl": "Wygenerowana energia (PV4) zmieniona",
+    "ko": "발전 에너지 (PV4) 변경",
+    "ar": "تغيّرت الطاقة المُولَّدة (PV4)"
+  },
+  "titleFormatted": {
+    "en": "The energy generated (PV4) has changed",
+    "nl": "De opgewekte energie (PV4) is veranderd",
+    "de": "Die erzeugte Energie (PV4) hat sich geändert",
+    "fr": "L'énergie générée (PV4) a changé",
+    "it": "L'energia generata (PV4) è cambiata",
+    "sv": "Den genererade energin (PV4) har ändrats",
+    "no": "Den genererte energien (PV4) har endret seg",
+    "es": "La energía generada (PV4) ha cambiado",
+    "da": "Den genererede energi (PV4) er ændret",
+    "ru": "Сгенерированная энергия (PV4) изменилась",
+    "pl": "Wygenerowana energia (PV4) się zmieniła",
+    "ko": "발전 에너지 (PV4)가 변경됨",
+    "ar": "تغيّرت الطاقة المُولَّدة (PV4)"
+  },
+  "hint": {
+    "en": "When the energy generated (PV4) on the SolarVault 3 changes",
+    "nl": "Wanneer de opgewekte energie (PV4) op de SolarVault 3 verandert",
+    "de": "Wenn sich die erzeugte Energie (PV4) an der SolarVault 3 ändert",
+    "fr": "Lorsque l'énergie générée (PV4) change sur la SolarVault 3",
+    "it": "Quando l'energia generata (PV4) cambia sulla SolarVault 3",
+    "sv": "När den genererade energin (PV4) ändras på SolarVault 3",
+    "no": "Når den genererte energien (PV4) endres på SolarVault 3",
+    "es": "Cuando la energía generada (PV4) cambia en la SolarVault 3",
+    "da": "Når den genererede energi (PV4) ændres på SolarVault 3",
+    "ru": "Когда сгенерированная энергия (PV4) на SolarVault 3 меняется",
+    "pl": "Gdy wygenerowana energia (PV4) zmienia się w SolarVault 3",
+    "ko": "SolarVault 3에서 발전 에너지 (PV4)가 변경될 때",
+    "ar": "عند تغيّر الطاقة المُولَّدة (PV4) على SolarVault 3"
+  },
+  "tokens": [
+    {
+      "name": "meter_power.pv4",
+      "type": "number",
+      "title": {
+        "en": "Energy generated (PV4)",
+        "nl": "Opgewekte Energie (PV4)",
+        "de": "Erzeugte Energie (PV4)",
+        "fr": "Énergie Générée (PV4)",
+        "it": "Energia Generata (PV4)",
+        "sv": "Genererad Energi (PV4)",
+        "no": "Generert Energi (PV4)",
+        "es": "Energía Generada (PV4)",
+        "da": "Genereret Energi (PV4)",
+        "ru": "Сгенерированная Энергия (PV4)",
+        "pl": "Wygenerowana Energia (PV4)",
+        "ko": "발전 에너지 (PV4)",
+        "ar": "الطاقة المُولَّدة (PV4)"
+      }
+    }
+  ],
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=solarvault&class=solarpanel&capabilities=meter_power.pv4"
+    }
+  ]
+}

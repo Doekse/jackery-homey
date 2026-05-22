@@ -1,0 +1,49 @@
+{
+  "errors": {
+    "offline": "Den här enheten är för närvarande offline",
+    "broker_unreachable": "MQTT-mäklare kan inte nås. Reparera enheten för att uppdatera mäklarinställningarna.",
+    "settings_apply_failed": "Kunde inte tillämpa inställningar på batteriet. Kontrollera att enheten är online.",
+    "auto_standby_not_allowed": "Aktivera « Tillåt automatisk standby » innan du ställer in standbyläget."
+  },
+  "pair": {
+    "intro": {
+      "title": "MQTT",
+      "subtitle": "Lokal anslutning via MQTT",
+      "body": "Den här enheten ansluter via MQTT.\n\nKonfigurera först en MQTT-mäklare och anslut sedan din Jackery SolarVault 3 till den i Jackery-appen.\n\nNär det är klart, fortsätt här.",
+      "learn_more": "Läs mer"
+    },
+    "connection": {
+      "title": "Mäklaruppgifter",
+      "subtitle": "Ange uppgifterna för MQTT-mäklaren som din Jackery SolarVault 3 är ansluten till.",
+      "host": "Värd",
+      "port": "Port",
+      "username": "Användarnamn (valfritt)",
+      "password": "Lösenord (valfritt)",
+      "useTls": "Använd kryptering (TLS)",
+      "host_required": "Ange mäklarens värd."
+    },
+    "credentials": {
+      "title": "Inloggningsuppgifter",
+      "subtitle": "Din enhet behöver inloggningsuppgifter för att ansluta till Homey.",
+      "serial": "Serienummer",
+      "serial_placeholder": "SN",
+      "serial_required": "Ange enhetens serienummer."
+    },
+    "token": {
+      "label": "Token",
+      "placeholder": "●●●●●●●●",
+      "required": "Ange din enhetstoken."
+    },
+    "list_devices": {
+      "no_config": "Mäklarkonfiguration saknas. Gå tillbaka och slutför mäklarsteget.",
+      "no_credentials": "Enhetstoken saknas. Gå tillbaka och slutför inloggningssteget.",
+      "connection_failed": "Anslutning till mäklare misslyckades:",
+      "no_devices": "Inga Jackery-enheter hittades. Kontrollera mäklare, token och serienummer."
+    }
+  },
+  "repair": {
+    "done": "Spara och reparera",
+    "subtitle": "Uppdatera mäklaranslutning och enhetstoken",
+    "device_not_found": "Kunde inte hitta den här enheten på mäklaren. Kontrollera mäklarinställningar och att batteriet är online."
+  }
+}

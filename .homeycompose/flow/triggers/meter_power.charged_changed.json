@@ -1,0 +1,76 @@
+{
+  "id": "meter_power.charged_changed",
+  "title": {
+    "en": "Total energy charged changed",
+    "nl": "Totaal opgeladen energie veranderd",
+    "de": "Gesamt geladene Energie geändert",
+    "fr": "Énergie totale chargée changée",
+    "it": "Energia totale caricata cambiata",
+    "sv": "Total laddad energi ändrad",
+    "no": "Total ladet energi endret",
+    "es": "Energía total cargada cambiada",
+    "da": "Samlet opladet energi ændret",
+    "ru": "Изменилась общая заряженная энергия",
+    "pl": "Łączna naładowana energia zmieniona",
+    "ko": "총 충전 에너지 변경",
+    "ar": "تغيّرت إجمالي الطاقة المشحونة"
+  },
+  "titleFormatted": {
+    "en": "The total energy charged has changed",
+    "nl": "De totaal opgeladen energie is veranderd",
+    "de": "Die gesamt geladene Energie hat sich geändert",
+    "fr": "L'énergie totale chargée a changé",
+    "it": "L'energia totale caricata è cambiata",
+    "sv": "Den totala laddade energin har ändrats",
+    "no": "Den totale ladde energien har endret seg",
+    "es": "La energía total cargada ha cambiado",
+    "da": "Den samlede opladede energi er ændret",
+    "ru": "Общая заряженная энергия изменилась",
+    "pl": "Łączna naładowana energia się zmieniła",
+    "ko": "총 충전 에너지가 변경됨",
+    "ar": "تغيّرت إجمالي الطاقة المشحونة"
+  },
+  "hint": {
+    "en": "When the total energy charged on the SolarVault 3 changes",
+    "nl": "Wanneer de totaal opgeladen energie op de SolarVault 3 verandert",
+    "de": "Wenn sich die gesamt geladene Energie an der SolarVault 3 ändert",
+    "fr": "Lorsque l'énergie totale chargée change sur la SolarVault 3",
+    "it": "Quando l'energia totale caricata cambia sulla SolarVault 3",
+    "sv": "När den totala laddade energin ändras på SolarVault 3",
+    "no": "Når den totale ladde energien endres på SolarVault 3",
+    "es": "Cuando la energía total cargada cambia en la SolarVault 3",
+    "da": "Når den samlede opladede energi ændres på SolarVault 3",
+    "ru": "Когда общая заряженная энергия на SolarVault 3 меняется",
+    "pl": "Gdy łączna naładowana energia zmienia się w SolarVault 3",
+    "ko": "SolarVault 3에서 총 충전 에너지가 변경될 때",
+    "ar": "عند تغيّر إجمالي الطاقة المشحونة على SolarVault 3"
+  },
+  "tokens": [
+    {
+      "name": "meter_power.charged",
+      "type": "number",
+      "title": {
+        "en": "Total energy charged",
+        "nl": "Totaal Opgeladen Energie",
+        "de": "Gesamt Geladene Energie",
+        "fr": "Énergie Totale Chargée",
+        "it": "Energia Totale Caricata",
+        "sv": "Total Laddad Energi",
+        "no": "Total Ladet Energi",
+        "es": "Energía Total Cargada",
+        "da": "Samlet Opladet Energi",
+        "ru": "Общая Заряженная Энергия",
+        "pl": "Łączna Naładowana Energia",
+        "ko": "총 충전 에너지",
+        "ar": "إجمالي الطاقة المشحونة"
+      }
+    }
+  ],
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=solarvault&class=battery&capabilities=meter_power.charged"
+    }
+  ]
+}

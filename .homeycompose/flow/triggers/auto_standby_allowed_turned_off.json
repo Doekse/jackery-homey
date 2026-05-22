@@ -1,0 +1,19 @@
+{
+  "id": "auto_standby_allowed_turned_off",
+  "title": {
+    "en": "Auto standby allowed turned off"
+  },
+  "titleFormatted": {
+    "en": "Auto standby allowed turned off"
+  },
+  "hint": {
+    "en": "When automatic standby is disabled on the SolarVault 3 battery"
+  },
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=solarvault&class=battery"
+    }
+  ]
+}

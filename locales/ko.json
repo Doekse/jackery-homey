@@ -1,0 +1,49 @@
+{
+  "errors": {
+    "offline": "이 기기는 현재 오프라인입니다",
+    "broker_unreachable": "MQTT 브로커에 연결할 수 없습니다. 기기를 수리하여 브로커 설정을 업데이트하세요.",
+    "settings_apply_failed": "배터리에 설정을 적용할 수 없습니다. 기기가 온라인인지 확인하세요.",
+    "auto_standby_not_allowed": "대기 모드를 설정하기 전에 ‘자동 대기 허용’을 켜세요."
+  },
+  "pair": {
+    "intro": {
+      "title": "MQTT",
+      "subtitle": "MQTT를 통한 로컬 연결",
+      "body": "이 기기는 MQTT로 연결됩니다.\n\n먼저 MQTT 브로커를 설정한 다음 Jackery 모바일 앱에서 Jackery SolarVault 3를 연결하세요.\n\n완료되면 여기서 계속하세요.",
+      "learn_more": "자세히 알아보기"
+    },
+    "connection": {
+      "title": "브로커 정보",
+      "subtitle": "Jackery SolarVault 3가 연결된 MQTT 브로커 정보를 입력하세요.",
+      "host": "호스트",
+      "port": "포트",
+      "username": "사용자 이름(선택)",
+      "password": "비밀번호(선택)",
+      "useTls": "암호화 사용(TLS)",
+      "host_required": "브로커 호스트를 입력하세요."
+    },
+    "credentials": {
+      "title": "인증 정보",
+      "subtitle": "기기가 Homey에 연결하려면 인증 정보가 필요합니다.",
+      "serial": "일련번호",
+      "serial_placeholder": "SN",
+      "serial_required": "기기 일련번호를 입력하세요."
+    },
+    "token": {
+      "label": "토큰",
+      "placeholder": "●●●●●●●●",
+      "required": "기기 토큰을 입력하세요."
+    },
+    "list_devices": {
+      "no_config": "브로커 구성이 없습니다. 이전으로 돌아가 브로커 단계를 완료하세요.",
+      "no_credentials": "기기 토큰이 없습니다. 이전으로 돌아가 인증 단계를 완료하세요.",
+      "connection_failed": "브로커 연결 실패:",
+      "no_devices": "Jackery 기기를 찾을 수 없습니다. 브로커, 토큰 및 일련번호를 확인하세요."
+    }
+  },
+  "repair": {
+    "done": "저장 및 수리",
+    "subtitle": "브로커 연결 및 기기 토큰 업데이트",
+    "device_not_found": "브로커에서 이 기기를 찾을 수 없습니다. 브로커 설정과 배터리가 온라인인지 확인하세요."
+  }
+}

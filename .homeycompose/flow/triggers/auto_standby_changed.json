@@ -1,0 +1,28 @@
+{
+  "id": "auto_standby_changed",
+  "title": {
+    "en": "Auto standby mode changed"
+  },
+  "titleFormatted": {
+    "en": "The auto standby mode has changed"
+  },
+  "hint": {
+    "en": "When the auto standby mode on the SolarVault 3 changes"
+  },
+  "tokens": [
+    {
+      "name": "autoStandby",
+      "type": "number",
+      "title": {
+        "en": "Auto standby mode"
+      }
+    }
+  ],
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=solarvault&class=battery"
+    }
+  ]
+}

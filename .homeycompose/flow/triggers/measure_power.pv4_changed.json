@@ -1,0 +1,76 @@
+{
+  "id": "measure_power.pv4_changed",
+  "title": {
+    "en": "Power (PV4) changed",
+    "nl": "Vermogen (PV4) veranderd",
+    "de": "Leistung (PV4) geändert",
+    "fr": "Puissance (PV4) changée",
+    "it": "Potenza (PV4) cambiata",
+    "sv": "Effekt (PV4) ändrad",
+    "no": "Effekt (PV4) endret",
+    "es": "Potencia (PV4) cambiada",
+    "da": "Effekt (PV4) ændret",
+    "ru": "Изменилась мощность (PV4)",
+    "pl": "Moc (PV4) zmieniona",
+    "ko": "전력 (PV4) 변경",
+    "ar": "تغيّرت القدرة (PV4)"
+  },
+  "titleFormatted": {
+    "en": "The power (PV4) has changed",
+    "nl": "Het vermogen (PV4) is veranderd",
+    "de": "Die Leistung (PV4) hat sich geändert",
+    "fr": "La puissance (PV4) a changé",
+    "it": "La potenza (PV4) è cambiata",
+    "sv": "Effekten (PV4) har ändrats",
+    "no": "Effekten (PV4) har endret seg",
+    "es": "La potencia (PV4) ha cambiado",
+    "da": "Effekten (PV4) er ændret",
+    "ru": "Мощность (PV4) изменилась",
+    "pl": "Moc (PV4) się zmieniła",
+    "ko": "전력 (PV4)이 변경됨",
+    "ar": "تغيّرت القدرة (PV4)"
+  },
+  "hint": {
+    "en": "When the power (PV4) on the SolarVault 3 changes",
+    "nl": "Wanneer het vermogen (PV4) op de SolarVault 3 verandert",
+    "de": "Wenn sich die Leistung (PV4) an der SolarVault 3 ändert",
+    "fr": "Lorsque la puissance (PV4) change sur la SolarVault 3",
+    "it": "Quando la potenza (PV4) cambia sulla SolarVault 3",
+    "sv": "När effekten (PV4) ändras på SolarVault 3",
+    "no": "Når effekten (PV4) endres på SolarVault 3",
+    "es": "Cuando la potencia (PV4) cambia en la SolarVault 3",
+    "da": "Når effekten (PV4) ændres på SolarVault 3",
+    "ru": "Когда мощность (PV4) на SolarVault 3 меняется",
+    "pl": "Gdy moc (PV4) zmienia się w SolarVault 3",
+    "ko": "SolarVault 3에서 전력 (PV4)이 변경될 때",
+    "ar": "عند تغيّر القدرة (PV4) على SolarVault 3"
+  },
+  "tokens": [
+    {
+      "name": "measure_power.pv4",
+      "type": "number",
+      "title": {
+        "en": "Power (PV4)",
+        "nl": "Vermogen (PV4)",
+        "de": "Leistung (PV4)",
+        "fr": "Puissance (PV4)",
+        "it": "Potenza (PV4)",
+        "sv": "Effekt (PV4)",
+        "no": "Effekt (PV4)",
+        "es": "Potencia (PV4)",
+        "da": "Effekt (PV4)",
+        "ru": "Мощность (PV4)",
+        "pl": "Moc (PV4)",
+        "ko": "전력 (PV4)",
+        "ar": "الطاقة (PV4)"
+      }
+    }
+  ],
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=solarvault&class=solarpanel&capabilities=measure_power.pv4"
+    }
+  ]
+}

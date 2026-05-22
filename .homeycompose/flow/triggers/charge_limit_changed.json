@@ -1,0 +1,28 @@
+{
+  "id": "charge_limit_changed",
+  "title": {
+    "en": "Charge limit changed"
+  },
+  "titleFormatted": {
+    "en": "The charge limit has changed"
+  },
+  "hint": {
+    "en": "When the charge limit on the SolarVault 3 changes"
+  },
+  "tokens": [
+    {
+      "name": "socChgLimit",
+      "type": "number",
+      "title": {
+        "en": "Charge limit"
+      }
+    }
+  ],
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=solarvault&class=battery"
+    }
+  ]
+}

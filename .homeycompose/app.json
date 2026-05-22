@@ -1,0 +1,30 @@
+{
+  "id": "com.jackery",
+  "version": "0.0.1",
+  "compatibility": ">=12.4.0",
+  "brandColor": "#FD5000",
+  "sdk": 3,
+  "runtime": "nodejs",
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "Jackery"
+  },
+  "description": {
+    "en": "Sustainable Power for Your Life"
+  },
+  "category": [
+    "energy"
+  ],
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "John Doe",
+    "email": "john.doe@example.com"
+  }
+}

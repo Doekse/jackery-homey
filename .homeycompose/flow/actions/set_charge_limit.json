@@ -1,0 +1,29 @@
+{
+  "id": "set_charge_limit",
+  "title": {
+    "en": "Set charge limit"
+  },
+  "titleFormatted": {
+    "en": "Set charge limit to [[value]]%"
+  },
+  "hint": {
+    "en": "Sets how full the SolarVault 3 battery may charge"
+  },
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=solarvault&class=battery"
+    },
+    {
+      "type": "number",
+      "name": "value",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "units": {
+        "en": "%"
+      }
+    }
+  ]
+}

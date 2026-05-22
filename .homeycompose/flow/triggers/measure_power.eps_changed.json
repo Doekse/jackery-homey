@@ -1,0 +1,76 @@
+{
+  "id": "measure_power.eps_changed",
+  "title": {
+    "en": "Power (AC socket) changed",
+    "nl": "Vermogen (AC-stopcontact) veranderd",
+    "de": "Leistung (AC-Steckdose) geändert",
+    "fr": "Puissance (prise AC) changée",
+    "it": "Potenza (presa AC) cambiata",
+    "sv": "Effekt (AC-uttag) ändrad",
+    "no": "Effekt (AC-uttak) endret",
+    "es": "Potencia (enchufe AC) cambiada",
+    "da": "Effekt (AC-stik) ændret",
+    "ru": "Изменилась мощность (розетка AC)",
+    "pl": "Moc (gniazdo AC) zmieniona",
+    "ko": "전력 (AC 콘센트) 변경",
+    "ar": "تغيّرت القدرة (مقبس AC)"
+  },
+  "titleFormatted": {
+    "en": "The power (AC socket) has changed",
+    "nl": "Het vermogen (AC-stopcontact) is veranderd",
+    "de": "Die Leistung (AC-Steckdose) hat sich geändert",
+    "fr": "La puissance (prise AC) a changé",
+    "it": "La potenza (presa AC) è cambiata",
+    "sv": "Effekten (AC-uttag) har ändrats",
+    "no": "Effekten (AC-uttak) har endret seg",
+    "es": "La potencia (enchufe AC) ha cambiado",
+    "da": "Effekten (AC-stik) er ændret",
+    "ru": "Мощность (розетка AC) изменилась",
+    "pl": "Moc (gniazdo AC) się zmieniła",
+    "ko": "전력 (AC 콘센트)이 변경됨",
+    "ar": "تغيّرت القدرة (مقبس AC)"
+  },
+  "hint": {
+    "en": "When the power (AC socket) on the SolarVault 3 changes",
+    "nl": "Wanneer het vermogen (AC-stopcontact) op de SolarVault 3 verandert",
+    "de": "Wenn sich die Leistung (AC-Steckdose) an der SolarVault 3 ändert",
+    "fr": "Lorsque la puissance (prise AC) change sur la SolarVault 3",
+    "it": "Quando la potenza (presa AC) cambia sulla SolarVault 3",
+    "sv": "När effekten (AC-uttag) ändras på SolarVault 3",
+    "no": "Når effekten (AC-uttak) endres på SolarVault 3",
+    "es": "Cuando la potencia (enchufe AC) cambia en la SolarVault 3",
+    "da": "Når effekten (AC-stik) ændres på SolarVault 3",
+    "ru": "Когда мощность (розетка AC) на SolarVault 3 меняется",
+    "pl": "Gdy moc (gniazdo AC) zmienia się w SolarVault 3",
+    "ko": "SolarVault 3에서 전력 (AC 콘센트)이 변경될 때",
+    "ar": "عند تغيّر القدرة (مقبس AC) على SolarVault 3"
+  },
+  "tokens": [
+    {
+      "name": "measure_power.eps",
+      "type": "number",
+      "title": {
+        "en": "Power (AC socket)",
+        "nl": "Vermogen (AC-Stopcontact)",
+        "de": "Leistung (AC-Steckdose)",
+        "fr": "Puissance (Prise AC)",
+        "it": "Potenza (Presa AC)",
+        "sv": "Effekt (AC-Uttag)",
+        "no": "Effekt (AC-Uttak)",
+        "es": "Potencia (Enchufe AC)",
+        "da": "Effekt (AC-Stik)",
+        "ru": "Мощность (Розетка AC)",
+        "pl": "Moc (Gniazdo AC)",
+        "ko": "전력 (AC 콘센트)",
+        "ar": "الطاقة (مقبس AC)"
+      }
+    }
+  ],
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=solarvault&class=battery&capabilities=measure_power.eps"
+    }
+  ]
+}

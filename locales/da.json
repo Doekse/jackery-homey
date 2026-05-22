@@ -1,0 +1,49 @@
+{
+  "errors": {
+    "offline": "Denne enhed er i øjeblikket offline",
+    "broker_unreachable": "MQTT-mægler kan ikke nås. Reparer enheden for at opdatere mæglerindstillinger.",
+    "settings_apply_failed": "Kunne ikke anvende indstillinger på batteriet. Tjek at enheden er online.",
+    "auto_standby_not_allowed": "Aktivér « Tillad automatisk standby » før du indstiller standby-tilstand."
+  },
+  "pair": {
+    "intro": {
+      "title": "MQTT",
+      "subtitle": "Lokal forbindelse via MQTT",
+      "body": "Denne enhed forbinder via MQTT.\n\nOpsæt først en MQTT-mægler, og forbind derefter din Jackery SolarVault 3 til den i Jackery-appen.\n\nNår det er gjort, fortsæt her.",
+      "learn_more": "Læs mere"
+    },
+    "connection": {
+      "title": "Mægleroplysninger",
+      "subtitle": "Angiv oplysningerne for den MQTT-mægler, som din Jackery SolarVault 3 er forbundet til.",
+      "host": "Vært",
+      "port": "Port",
+      "username": "Brugernavn (valgfrit)",
+      "password": "Adgangskode (valgfrit)",
+      "useTls": "Brug kryptering (TLS)",
+      "host_required": "Indtast mæglerens vært."
+    },
+    "credentials": {
+      "title": "Legitimationsoplysninger",
+      "subtitle": "Din enhed har brug for legitimationsoplysninger for at forbinde til Homey.",
+      "serial": "Serienummer",
+      "serial_placeholder": "SN",
+      "serial_required": "Indtast enhedens serienummer."
+    },
+    "token": {
+      "label": "Token",
+      "placeholder": "●●●●●●●●",
+      "required": "Indtast din enhedstoken."
+    },
+    "list_devices": {
+      "no_config": "Mæglerkonfiguration mangler. Gå tilbage og fuldfør mæglertrinnet.",
+      "no_credentials": "Enhedstoken mangler. Gå tilbage og fuldfør legitimationsoplysninger-trinnet.",
+      "connection_failed": "Forbindelse til mægler mislykkedes:",
+      "no_devices": "Ingen Jackery-enheder fundet. Tjek mægler, token og serienummer."
+    }
+  },
+  "repair": {
+    "done": "Gem og reparer",
+    "subtitle": "Opdater mæglerforbindelse og enhedstoken",
+    "device_not_found": "Kunne ikke finde denne enhed på mægleren. Tjek mæglerindstillinger og at batteriet er online."
+  }
+}

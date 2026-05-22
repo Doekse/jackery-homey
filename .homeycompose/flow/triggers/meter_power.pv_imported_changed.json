@@ -1,0 +1,76 @@
+{
+  "id": "meter_power.pv_imported_changed",
+  "title": {
+    "en": "PV import to battery changed",
+    "nl": "PV-import naar batterij veranderd",
+    "de": "PV-Import in Batterie geändert",
+    "fr": "Import PV vers batterie changé",
+    "it": "Import PV in batteria cambiato",
+    "sv": "PV-import till batteri ändrad",
+    "no": "PV-import til batteri endret",
+    "es": "Importación PV a batería cambiada",
+    "da": "PV-import til batteri ændret",
+    "ru": "Изменился PV-импорт в батарею",
+    "pl": "Import PV do baterii zmieniony",
+    "ko": "PV 배터리 유입 변경",
+    "ar": "تغيّر استيراد PV إلى البطارية"
+  },
+  "titleFormatted": {
+    "en": "The PV import to battery has changed",
+    "nl": "De PV-import naar de batterij is veranderd",
+    "de": "Der PV-Import in die Batterie hat sich geändert",
+    "fr": "L'import PV vers la batterie a changé",
+    "it": "L'importazione PV in batteria è cambiata",
+    "sv": "PV-importen till batteriet har ändrats",
+    "no": "PV-importen til batteriet har endret seg",
+    "es": "La importación PV a la batería ha cambiado",
+    "da": "PV-importen til batteriet er ændret",
+    "ru": "PV-импорт в батарею изменился",
+    "pl": "Import PV do baterii się zmienił",
+    "ko": "PV 배터리 유입이 변경됨",
+    "ar": "تغيّر استيراد PV إلى البطارية"
+  },
+  "hint": {
+    "en": "When the PV import to battery on the SolarVault 3 changes",
+    "nl": "Wanneer de PV-import naar de batterij op de SolarVault 3 verandert",
+    "de": "Wenn sich der PV-Import in die Batterie an der SolarVault 3 ändert",
+    "fr": "Lorsque l'import PV vers la batterie change sur la SolarVault 3",
+    "it": "Quando l'importazione PV in batteria cambia sulla SolarVault 3",
+    "sv": "När PV-importen till batteriet ändras på SolarVault 3",
+    "no": "Når PV-importen til batteriet endres på SolarVault 3",
+    "es": "Cuando la importación PV a la batería cambia en la SolarVault 3",
+    "da": "Når PV-importen til batteriet ændres på SolarVault 3",
+    "ru": "Когда PV-импорт в батарею на SolarVault 3 меняется",
+    "pl": "Gdy import PV do baterii zmienia się w SolarVault 3",
+    "ko": "SolarVault 3에서 PV 배터리 유입이 변경될 때",
+    "ar": "عند تغيّر استيراد PV إلى البطارية على SolarVault 3"
+  },
+  "tokens": [
+    {
+      "name": "meter_power.pv_imported",
+      "type": "number",
+      "title": {
+        "en": "PV imported to battery",
+        "nl": "PV Geïmporteerd naar Batterij",
+        "de": "PV Importiert in Batterie",
+        "fr": "PV Importé vers la Batterie",
+        "it": "PV Importato in Batteria",
+        "sv": "PV Importerat till Batteri",
+        "no": "PV Importert til Batteri",
+        "es": "PV Importado a la Batería",
+        "da": "PV Importeret til Batteri",
+        "ru": "PV Импорт в Батарею",
+        "pl": "PV Import do Baterii",
+        "ko": "PV 배터리 유입",
+        "ar": "PV استيراد البطارية"
+      }
+    }
+  ],
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=solarvault&class=battery&capabilities=meter_power.pv_imported"
+    }
+  ]
+}

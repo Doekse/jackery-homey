@@ -1,0 +1,511 @@
+{
+  "name": {
+    "en": "SolarVault 3",
+    "nl": "SolarVault 3",
+    "de": "SolarVault 3",
+    "fr": "SolarVault 3",
+    "it": "SolarVault 3",
+    "sv": "SolarVault 3",
+    "no": "SolarVault 3",
+    "es": "SolarVault 3",
+    "da": "SolarVault 3",
+    "ru": "SolarVault 3",
+    "pl": "SolarVault 3",
+    "ko": "SolarVault 3",
+    "ar": "SolarVault 3"
+  },
+  "class": "battery",
+  "images": {
+    "small": "{{driverAssetsPath}}/images/small.png",
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "xlarge": "{{driverAssetsPath}}/images/xlarge.png"
+  },
+  "platforms": [
+    "local"
+  ],
+  "connectivity": [
+    "lan"
+  ],
+  "capabilities": [
+    "measure_battery",
+    "measure_power",
+    "measure_power.eps",
+    "measure_power.pv1",
+    "measure_power.pv2",
+    "measure_power.pv3",
+    "measure_power.pv4",
+    "measure_temperature",
+    "meter_power",
+    "meter_power.charged",
+    "meter_power.discharged",
+    "meter_power.ac_imported",
+    "meter_power.ac_exported",
+    "meter_power.grid_imported",
+    "meter_power.grid_exported",
+    "meter_power.pv_imported",
+    "meter_power.pv1",
+    "meter_power.pv2",
+    "meter_power.pv3",
+    "meter_power.pv4",
+    "meter_power.pv_exported",
+    "onoff.eps",
+    "alarm_eth"
+  ],
+  "energy": {
+    "homeBattery": true,
+    "batteries": [
+      "OTHER"
+    ],
+    "meterPowerImportedCapability": "meter_power.charged",
+    "meterPowerExportedCapability": "meter_power.discharged"
+  },
+  "capabilitiesOptions": {
+    "alarm_eth": {
+      "title": {
+        "en": "Ethernet",
+        "nl": "Ethernet",
+        "de": "Ethernet",
+        "fr": "Ethernet",
+        "it": "Ethernet",
+        "sv": "Ethernet",
+        "no": "Ethernet",
+        "es": "Ethernet",
+        "da": "Ethernet",
+        "ru": "Ethernet",
+        "pl": "Ethernet",
+        "ko": "이더넷",
+        "ar": "إيثرنت"
+      },
+      "titleTrue": {
+        "en": "Disconnected",
+        "nl": "Niet Verbonden",
+        "de": "Getrennt",
+        "fr": "Déconnecté",
+        "it": "Disconnesso",
+        "sv": "Frånkopplad",
+        "no": "Frakoblet",
+        "es": "Desconectado",
+        "da": "Afbrudt",
+        "ru": "Отключено",
+        "pl": "Rozłączono",
+        "ko": "연결 끊김",
+        "ar": "غير متصل"
+      },
+      "titleFalse": {
+        "en": "Connected",
+        "nl": "Verbonden",
+        "de": "Verbunden",
+        "fr": "Connecté",
+        "it": "Connesso",
+        "sv": "Ansluten",
+        "no": "Tilkoblet",
+        "es": "Conectado",
+        "da": "Forbundet",
+        "ru": "Подключено",
+        "pl": "Połączono",
+        "ko": "연결됨",
+        "ar": "متصل"
+      }
+    },
+    "onoff.eps": {
+      "title": {
+        "en": "AC Socket",
+        "nl": "AC-Stopcontact",
+        "de": "AC-Steckdose",
+        "fr": "Prise AC",
+        "it": "Presa AC",
+        "sv": "AC-Uttag",
+        "no": "AC-Uttak",
+        "es": "Enchufe AC",
+        "da": "AC-Stik",
+        "ru": "Розетка AC",
+        "pl": "Gniazdo AC",
+        "ko": "AC 콘센트",
+        "ar": "مقبس AC"
+      },
+      "uiQuickAction": false
+    },
+    "measure_power.eps": {
+      "title": {
+        "en": "Power (AC Socket)",
+        "nl": "Vermogen (AC-Stopcontact)",
+        "de": "Leistung (AC-Steckdose)",
+        "fr": "Puissance (Prise AC)",
+        "it": "Potenza (Presa AC)",
+        "sv": "Effekt (AC-Uttag)",
+        "no": "Effekt (AC-Uttak)",
+        "es": "Potencia (Enchufe AC)",
+        "da": "Effekt (AC-Stik)",
+        "ru": "Мощность (Розетка AC)",
+        "pl": "Moc (Gniazdo AC)",
+        "ko": "전력 (AC 콘센트)",
+        "ar": "الطاقة (مقبس AC)"
+      }
+    },
+    "measure_power.pv1": {
+      "title": {
+        "en": "Power (PV1)",
+        "nl": "Vermogen (PV1)",
+        "de": "Leistung (PV1)",
+        "fr": "Puissance (PV1)",
+        "it": "Potenza (PV1)",
+        "sv": "Effekt (PV1)",
+        "no": "Effekt (PV1)",
+        "es": "Potencia (PV1)",
+        "da": "Effekt (PV1)",
+        "ru": "Мощность (PV1)",
+        "pl": "Moc (PV1)",
+        "ko": "전력 (PV1)",
+        "ar": "الطاقة (PV1)"
+      }
+    },
+    "measure_power.pv2": {
+      "title": {
+        "en": "Power (PV2)",
+        "nl": "Vermogen (PV2)",
+        "de": "Leistung (PV2)",
+        "fr": "Puissance (PV2)",
+        "it": "Potenza (PV2)",
+        "sv": "Effekt (PV2)",
+        "no": "Effekt (PV2)",
+        "es": "Potencia (PV2)",
+        "da": "Effekt (PV2)",
+        "ru": "Мощность (PV2)",
+        "pl": "Moc (PV2)",
+        "ko": "전력 (PV2)",
+        "ar": "الطاقة (PV2)"
+      }
+    },
+    "measure_power.pv3": {
+      "title": {
+        "en": "Power (PV3)",
+        "nl": "Vermogen (PV3)",
+        "de": "Leistung (PV3)",
+        "fr": "Puissance (PV3)",
+        "it": "Potenza (PV3)",
+        "sv": "Effekt (PV3)",
+        "no": "Effekt (PV3)",
+        "es": "Potencia (PV3)",
+        "da": "Effekt (PV3)",
+        "ru": "Мощность (PV3)",
+        "pl": "Moc (PV3)",
+        "ko": "전력 (PV3)",
+        "ar": "الطاقة (PV3)"
+      }
+    },
+    "measure_power.pv4": {
+      "title": {
+        "en": "Power (PV4)",
+        "nl": "Vermogen (PV4)",
+        "de": "Leistung (PV4)",
+        "fr": "Puissance (PV4)",
+        "it": "Potenza (PV4)",
+        "sv": "Effekt (PV4)",
+        "no": "Effekt (PV4)",
+        "es": "Potencia (PV4)",
+        "da": "Effekt (PV4)",
+        "ru": "Мощность (PV4)",
+        "pl": "Moc (PV4)",
+        "ko": "전력 (PV4)",
+        "ar": "الطاقة (PV4)"
+      }
+    },
+    "measure_temperature": {
+      "title": {
+        "en": "Temperature (Battery)",
+        "nl": "Temperatuur (Batterij)",
+        "de": "Temperatur (Batterie)",
+        "fr": "Température (Batterie)",
+        "it": "Temperatura (Batteria)",
+        "sv": "Temperatur (Batteri)",
+        "no": "Temperatur (Batteri)",
+        "es": "Temperatura (Batería)",
+        "da": "Temperatur (Batteri)",
+        "ru": "Температура (Аккумулятор)",
+        "pl": "Temperatura (Baterii)",
+        "ko": "온도 (배터리)",
+        "ar": "درجة الحرارة (البطارية)"
+      }
+    },
+    "meter_power": {
+      "decimals": 3,
+      "title": {
+        "en": "Total Energy Generated",
+        "nl": "Totaal Opgewekte Energie",
+        "de": "Gesamt Erzeugte Energie",
+        "fr": "Énergie Totale Générée",
+        "it": "Energia Totale Generata",
+        "sv": "Total Genererad Energi",
+        "no": "Total Generert Energi",
+        "es": "Energía Total Generada",
+        "da": "Samlet Genereret Energi",
+        "ru": "Общая Сгенерированная Энергия",
+        "pl": "Łączna Wygenerowana Energia",
+        "ko": "총 발전 에너지",
+        "ar": "إجمالي الطاقة المُولَّدة"
+      }
+    },
+    "meter_power.charged": {
+      "decimals": 3,
+      "title": {
+        "en": "Total Energy Charged",
+        "nl": "Totaal Opgeladen Energie",
+        "de": "Gesamt Geladene Energie",
+        "fr": "Énergie Totale Chargée",
+        "it": "Energia Totale Caricata",
+        "sv": "Total Laddad Energi",
+        "no": "Total Ladet Energi",
+        "es": "Energía Total Cargada",
+        "da": "Samlet Opladet Energi",
+        "ru": "Общая Заряженная Энергия",
+        "pl": "Łączna Naładowana Energia",
+        "ko": "총 충전 에너지",
+        "ar": "إجمالي الطاقة المشحونة"
+      }
+    },
+    "meter_power.discharged": {
+      "decimals": 3,
+      "title": {
+        "en": "Total Energy Discharged",
+        "nl": "Totaal Ontladen Energie",
+        "de": "Gesamt Entladene Energie",
+        "fr": "Énergie Totale Déchargée",
+        "it": "Energia Totale Scaricata",
+        "sv": "Total Urladdad Energi",
+        "no": "Total Utladet Energi",
+        "es": "Energía Total Descargada",
+        "da": "Samlet Afladet Energi",
+        "ru": "Общая Разряженная Энергия",
+        "pl": "Łączna Rozładowana Energia",
+        "ko": "총 방전 에너지",
+        "ar": "إجمالي الطاقة المفرغة"
+      }
+    },
+    "meter_power.ac_imported": {
+      "decimals": 3,
+      "title": {
+        "en": "AC Imported to Battery",
+        "nl": "AC Geïmporteerd naar Batterij",
+        "de": "AC Importiert in Batterie",
+        "fr": "AC Importé vers la Batterie",
+        "it": "AC Importata in Batteria",
+        "sv": "AC Importerat till Batteri",
+        "no": "AC Importert til Batteri",
+        "es": "AC Importado a la Batería",
+        "da": "AC Importeret til Batteri",
+        "ru": "AC Импортирован в Аккумулятор",
+        "pl": "AC Zaimportowany do Baterii",
+        "ko": "배터리로 유입된 AC",
+        "ar": "AC مستورد إلى البطارية"
+      }
+    },
+    "meter_power.ac_exported": {
+      "decimals": 3,
+      "title": {
+        "en": "AC Exported from Battery",
+        "nl": "AC Geëxporteerd van Batterij",
+        "de": "AC Exportiert aus Batterie",
+        "fr": "AC Exporté depuis la Batterie",
+        "it": "AC Esportata dalla Batteria",
+        "sv": "AC Exporterat från Batteri",
+        "no": "AC Eksportert fra Batteri",
+        "es": "AC Exportado desde la Batería",
+        "da": "AC Eksporteret fra Batteri",
+        "ru": "AC Экспортирован из Аккумулятора",
+        "pl": "AC Wyeksportowany z Baterii",
+        "ko": "배터리에서 유출된 AC",
+        "ar": "AC مُصدَّر من البطارية"
+      }
+    },
+    "meter_power.grid_imported": {
+      "decimals": 3,
+      "title": {
+        "en": "Grid Imported to Battery",
+        "nl": "Net Geïmporteerd naar Batterij",
+        "de": "Netz Importiert in Batterie",
+        "fr": "Réseau Importé vers la Batterie",
+        "it": "Rete Importata in Batteria",
+        "sv": "Nät Importerat till Batteri",
+        "no": "Nett Importert til Batteri",
+        "es": "Red Importada a la Batería",
+        "da": "Net Importeret til Batteri",
+        "ru": "Сеть Импортирована в Аккумулятор",
+        "pl": "Sieć Zaimportowana do Baterii",
+        "ko": "배터리로 유입된 전력망",
+        "ar": "شبكة مستوردة إلى البطارية"
+      }
+    },
+    "meter_power.grid_exported": {
+      "decimals": 3,
+      "title": {
+        "en": "Grid Exported from Battery",
+        "nl": "Net Geëxporteerd van Batterij",
+        "de": "Netz Exportiert aus Batterie",
+        "fr": "Réseau Exporté depuis la Batterie",
+        "it": "Rete Esportata dalla Batteria",
+        "sv": "Nät Exporterat från Batteri",
+        "no": "Nett Eksportert fra Batteri",
+        "es": "Red Exportada desde la Batería",
+        "da": "Net Eksporteret fra Batteri",
+        "ru": "Сеть Экспортирована из Аккумулятора",
+        "pl": "Sieć Wyeksportowana z Baterii",
+        "ko": "배터리에서 유출된 전력망",
+        "ar": "شبكة مُصدَّرة من البطارية"
+      }
+    },
+    "meter_power.pv_imported": {
+      "decimals": 3,
+      "title": {
+        "en": "PV Imported to Battery",
+        "nl": "PV Geïmporteerd naar Batterij",
+        "de": "PV Importiert in Batterie",
+        "fr": "PV Importé vers la Batterie",
+        "it": "PV Importato in Batteria",
+        "sv": "PV Importerat till Batteri",
+        "no": "PV Importert til Batteri",
+        "es": "PV Importado a la Batería",
+        "da": "PV Importeret til Batteri",
+        "ru": "PV Импорт в Батарею",
+        "pl": "PV Import do Baterii",
+        "ko": "PV 배터리 유입",
+        "ar": "PV استيراد البطارية"
+      }
+    },
+    "meter_power.pv1": {
+      "decimals": 3,
+      "title": {
+        "en": "Energy Generated (PV1)",
+        "nl": "Opgewekte Energie (PV1)",
+        "de": "Erzeugte Energie (PV1)",
+        "fr": "Énergie Générée (PV1)",
+        "it": "Energia Generata (PV1)",
+        "sv": "Genererad Energi (PV1)",
+        "no": "Generert Energi (PV1)",
+        "es": "Energía Generada (PV1)",
+        "da": "Genereret Energi (PV1)",
+        "ru": "Сгенерированная Энергия (PV1)",
+        "pl": "Wygenerowana Energia (PV1)",
+        "ko": "발전 에너지 (PV1)",
+        "ar": "الطاقة المُولَّدة (PV1)"
+      }
+    },
+    "meter_power.pv2": {
+      "decimals": 3,
+      "title": {
+        "en": "Energy Generated (PV2)",
+        "nl": "Opgewekte Energie (PV2)",
+        "de": "Erzeugte Energie (PV2)",
+        "fr": "Énergie Générée (PV2)",
+        "it": "Energia Generata (PV2)",
+        "sv": "Genererad Energi (PV2)",
+        "no": "Generert Energi (PV2)",
+        "es": "Energía Generada (PV2)",
+        "da": "Genereret Energi (PV2)",
+        "ru": "Сгенерированная Энергия (PV2)",
+        "pl": "Wygenerowana Energia (PV2)",
+        "ko": "발전 에너지 (PV2)",
+        "ar": "الطاقة المُولَّدة (PV2)"
+      }
+    },
+    "meter_power.pv3": {
+      "decimals": 3,
+      "title": {
+        "en": "Energy Generated (PV3)",
+        "nl": "Opgewekte Energie (PV3)",
+        "de": "Erzeugte Energie (PV3)",
+        "fr": "Énergie Générée (PV3)",
+        "it": "Energia Generata (PV3)",
+        "sv": "Genererad Energi (PV3)",
+        "no": "Generert Energi (PV3)",
+        "es": "Energía Generada (PV3)",
+        "da": "Genereret Energi (PV3)",
+        "ru": "Сгенерированная Энергия (PV3)",
+        "pl": "Wygenerowana Energia (PV3)",
+        "ko": "발전 에너지 (PV3)",
+        "ar": "الطاقة المُولَّدة (PV3)"
+      }
+    },
+    "meter_power.pv4": {
+      "decimals": 3,
+      "title": {
+        "en": "Energy Generated (PV4)",
+        "nl": "Opgewekte Energie (PV4)",
+        "de": "Erzeugte Energie (PV4)",
+        "fr": "Énergie Générée (PV4)",
+        "it": "Energia Generata (PV4)",
+        "sv": "Genererad Energi (PV4)",
+        "no": "Generert Energi (PV4)",
+        "es": "Energía Generada (PV4)",
+        "da": "Genereret Energi (PV4)",
+        "ru": "Сгенерированная Энергия (PV4)",
+        "pl": "Wygenerowana Energia (PV4)",
+        "ko": "발전 에너지 (PV4)",
+        "ar": "الطاقة المُولَّدة (PV4)"
+      }
+    },
+    "meter_power.pv_exported": {
+      "decimals": 3,
+      "title": {
+        "en": "PV Exported to Grid",
+        "nl": "PV Geëxporteerd naar Net",
+        "de": "PV Exportiert ins Netz",
+        "fr": "PV Exporté vers le Réseau",
+        "it": "PV Esportato in Rete",
+        "sv": "PV Exporterat till Nät",
+        "no": "PV Eksportert til Nett",
+        "es": "PV Exportado a la Red",
+        "da": "PV Eksporteret til Net",
+        "ru": "PV Экспорт в Сеть",
+        "pl": "PV Export do Sieci",
+        "ko": "PV 전력망 유출",
+        "ar": "PV تصدير الشبكة"
+      }
+    }
+  },
+  "pair": [
+    {
+      "id": "intro",
+      "navigation": {
+        "next": "loading"
+      }
+    },
+    {
+      "id": "loading",
+      "template": "loading"
+    },
+    {
+      "id": "connection",
+      "navigation": {
+        "next": "credentials"
+      }
+    },
+    {
+      "id": "credentials",
+      "navigation": {
+        "next": "list_devices"
+      }
+    },
+    {
+      "id": "list_devices",
+      "template": "list_devices",
+      "navigation": {
+        "next": "add_devices"
+      }
+    },
+    {
+      "id": "add_devices",
+      "template": "add_devices"
+    }
+  ],
+  "repair": [
+    {
+      "id": "connection",
+      "navigation": {
+        "next": "credentials"
+      }
+    },
+    {
+      "id": "credentials"
+    }
+  ]
+}

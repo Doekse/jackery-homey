@@ -1,0 +1,49 @@
+{
+  "errors": {
+    "offline": "Denne enheten er for øyeblikket frakoblet",
+    "broker_unreachable": "MQTT-megler utilgjengelig. Reparer enheten for å oppdatere meglerinnstillinger.",
+    "settings_apply_failed": "Kunne ikke bruke innstillinger på batteriet. Sjekk at enheten er på nett.",
+    "auto_standby_not_allowed": "Aktiver « Tillat automatisk standby » før du setter standby-modus."
+  },
+  "pair": {
+    "intro": {
+      "title": "MQTT",
+      "subtitle": "Lokal tilkobling via MQTT",
+      "body": "Denne enheten kobler til via MQTT.\n\nSett opp en MQTT-megler først, og koble deretter Jackery SolarVault 3 til den i Jackery-appen.\n\nNår det er gjort, fortsett her.",
+      "learn_more": "Les mer"
+    },
+    "connection": {
+      "title": "Meglerdetaljer",
+      "subtitle": "Oppgi detaljene for MQTT-megleren Jackery SolarVault 3 er koblet til.",
+      "host": "Vert",
+      "port": "Port",
+      "username": "Brukernavn (valgfritt)",
+      "password": "Passord (valgfritt)",
+      "useTls": "Bruk kryptering (TLS)",
+      "host_required": "Skriv inn meglerens vert."
+    },
+    "credentials": {
+      "title": "Påloggingsdetaljer",
+      "subtitle": "Enheten trenger påloggingsdetaljer for å koble til Homey.",
+      "serial": "Serienummer",
+      "serial_placeholder": "SN",
+      "serial_required": "Skriv inn enhetens serienummer."
+    },
+    "token": {
+      "label": "Token",
+      "placeholder": "●●●●●●●●",
+      "required": "Skriv inn enhetstokenet ditt."
+    },
+    "list_devices": {
+      "no_config": "Meglerkonfigurasjon mangler. Gå tilbake og fullfør meglertrinnet.",
+      "no_credentials": "Enhetstoken mangler. Gå tilbake og fullfør påloggingstrinnet.",
+      "connection_failed": "Tilkobling til megler mislyktes:",
+      "no_devices": "Ingen Jackery-enheter funnet. Sjekk megler, token og serienummer."
+    }
+  },
+  "repair": {
+    "done": "Lagre og reparer",
+    "subtitle": "Oppdater meglerforbindelse og enhetstoken",
+    "device_not_found": "Fant ikke denne enheten på megleren. Sjekk meglerinnstillinger og at batteriet er på nett."
+  }
+}

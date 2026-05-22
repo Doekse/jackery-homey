@@ -1,0 +1,55 @@
+{
+  "id": "ac_socket_is_on",
+  "title": {
+    "en": "AC Socket !{{is turned on|is turned off}}",
+    "nl": "AC-Stopcontact !{{is ingeschakeld|is uitgeschakeld}}",
+    "de": "AC-Steckdose !{{ist eingeschaltet|ist ausgeschaltet}}",
+    "fr": "Prise AC !{{est activée|est désactivée}}",
+    "it": "Presa AC !{{è accesa|è spenta}}",
+    "sv": "AC-Uttag !{{är påslaget|är avstängt}}",
+    "no": "AC-Uttak !{{er på|er av}}",
+    "es": "Enchufe AC !{{está encendido|está apagado}}",
+    "da": "AC-Stik !{{er tændt|er slukket}}",
+    "ru": "Розетка AC !{{включена|выключена}}",
+    "pl": "Gniazdo AC !{{jest włączone|jest wyłączone}}",
+    "ko": "AC 콘센트 !{{켜짐|꺼짐}}",
+    "ar": "مقبس AC !{{يعمل|متوقف}}"
+  },
+  "titleFormatted": {
+    "en": "AC Socket !{{is turned on|is turned off}}",
+    "nl": "AC-Stopcontact !{{is ingeschakeld|is uitgeschakeld}}",
+    "de": "AC-Steckdose !{{ist eingeschaltet|ist ausgeschaltet}}",
+    "fr": "Prise AC !{{est activée|est désactivée}}",
+    "it": "Presa AC !{{è accesa|è spenta}}",
+    "sv": "AC-Uttag !{{är påslaget|är avstängt}}",
+    "no": "AC-Uttak !{{er på|er av}}",
+    "es": "Enchufe AC !{{está encendido|está apagado}}",
+    "da": "AC-Stik !{{er tændt|er slukket}}",
+    "ru": "Розетка AC !{{включена|выключена}}",
+    "pl": "Gniazdo AC !{{jest włączone|jest wyłączone}}",
+    "ko": "AC 콘센트 !{{켜짐|꺼짐}}",
+    "ar": "مقبس AC !{{يعمل|متوقف}}"
+  },
+  "hint": {
+    "en": "Checks whether the AC Socket on the SolarVault 3 is turned on or off",
+    "nl": "Controleert of het AC-Stopcontact op de SolarVault 3 aan of uit staat",
+    "de": "Prüft, ob die AC-Steckdose an der SolarVault 3 ein- oder ausgeschaltet ist",
+    "fr": "Vérifie si la prise AC de la SolarVault 3 est activée ou désactivée",
+    "it": "Controlla se la presa AC della SolarVault 3 è accesa o spenta",
+    "sv": "Kontrollerar om AC-uttaget på SolarVault 3 är på eller av",
+    "no": "Sjekker om AC-uttaket på SolarVault 3 er på eller av",
+    "es": "Comprueba si el enchufe AC de la SolarVault 3 está encendido o apagado",
+    "da": "Tjekker om AC-stikket på SolarVault 3 er tændt eller slukket",
+    "ru": "Проверяет, включена или выключена розетка AC на SolarVault 3",
+    "pl": "Sprawdza, czy gniazdo AC w SolarVault 3 jest włączone lub wyłączone",
+    "ko": "SolarVault 3의 AC 콘센트가 켜져 있는지 또는 꺼져 있는지 확인합니다",
+    "ar": "يتحقق مما إذا كان مقبس AC على SolarVault 3 قيد التشغيل أو متوقفًا"
+  },
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=solarvault&class=battery&capabilities=onoff.eps"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "max_ongrid_output_changed",
+  "title": {
+    "en": "Max on-grid output changed"
+  },
+  "titleFormatted": {
+    "en": "The max on-grid output has changed"
+  },
+  "hint": {
+    "en": "When the max on-grid output on the SolarVault 3 changes"
+  },
+  "tokens": [
+    {
+      "name": "maxOutPw",
+      "type": "number",
+      "title": {
+        "en": "Max on-grid output"
+      }
+    }
+  ],
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=solarvault&class=battery"
+    }
+  ]
+}

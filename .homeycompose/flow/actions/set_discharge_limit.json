@@ -1,0 +1,29 @@
+{
+  "id": "set_discharge_limit",
+  "title": {
+    "en": "Set discharge limit"
+  },
+  "titleFormatted": {
+    "en": "Set discharge limit to [[value]]%"
+  },
+  "hint": {
+    "en": "Sets the lowest charge level the SolarVault 3 battery may discharge to"
+  },
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=solarvault&class=battery"
+    },
+    {
+      "type": "number",
+      "name": "value",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "units": {
+        "en": "%"
+      }
+    }
+  ]
+}

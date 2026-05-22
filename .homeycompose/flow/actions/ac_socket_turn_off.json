@@ -1,0 +1,55 @@
+{
+  "id": "ac_socket_turn_off",
+  "title": {
+    "en": "Turn AC Socket off",
+    "nl": "AC-Stopcontact uitschakelen",
+    "de": "AC-Steckdose ausschalten",
+    "fr": "Désactiver la prise AC",
+    "it": "Spegni presa AC",
+    "sv": "Stäng av AC-uttag",
+    "no": "Slå av AC-uttak",
+    "es": "Apagar enchufe AC",
+    "da": "Sluk AC-stik",
+    "ru": "Выключить розетку AC",
+    "pl": "Wyłącz gniazdo AC",
+    "ko": "AC 콘센트 끄기",
+    "ar": "إيقاف مقبس AC"
+  },
+  "titleFormatted": {
+    "en": "Turn AC Socket off",
+    "nl": "Schakel AC-Stopcontact uit",
+    "de": "AC-Steckdose ausschalten",
+    "fr": "Désactiver la prise AC",
+    "it": "Spegni la presa AC",
+    "sv": "Stäng av AC-uttaget",
+    "no": "Slå av AC-uttaket",
+    "es": "Apagar el enchufe AC",
+    "da": "Sluk AC-stikket",
+    "ru": "выключить розетку AC",
+    "pl": "Wyłącz gniazdo AC",
+    "ko": "AC 콘센트 끄기",
+    "ar": "إيقاف مقبس AC"
+  },
+  "hint": {
+    "en": "Turns the AC Socket on the SolarVault 3 off",
+    "nl": "Schakelt het AC-Stopcontact op de SolarVault 3 uit",
+    "de": "Schaltet die AC-Steckdose an der SolarVault 3 aus",
+    "fr": "Désactive la prise AC de la SolarVault 3",
+    "it": "Spegne la presa AC della SolarVault 3",
+    "sv": "Stänger av AC-uttaget på SolarVault 3",
+    "no": "Slår av AC-uttaket på SolarVault 3",
+    "es": "Apaga el enchufe AC de la SolarVault 3",
+    "da": "Slukker AC-stikket på SolarVault 3",
+    "ru": "Выключает розетку AC на SolarVault 3",
+    "pl": "Wyłącza gniazdo AC w SolarVault 3",
+    "ko": "SolarVault 3의 AC 콘센트를 끕니다",
+    "ar": "يوقف مقبس AC على SolarVault 3"
+  },
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=solarvault&class=battery&capabilities=onoff.eps"
+    }
+  ]
+}

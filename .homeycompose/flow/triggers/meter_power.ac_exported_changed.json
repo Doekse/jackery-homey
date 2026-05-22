@@ -1,0 +1,76 @@
+{
+  "id": "meter_power.ac_exported_changed",
+  "title": {
+    "en": "AC export from battery changed",
+    "nl": "AC-export van batterij veranderd",
+    "de": "AC-Export aus Batterie geändert",
+    "fr": "Export AC depuis batterie changé",
+    "it": "Export AC da batteria cambiato",
+    "sv": "AC-export från batteri ändrad",
+    "no": "AC-eksport fra batteri endret",
+    "es": "Exportación AC desde batería cambiada",
+    "da": "AC-eksport fra batteri ændret",
+    "ru": "Изменился AC-экспорт из батареи",
+    "pl": "Eksport AC z baterii zmieniony",
+    "ko": "AC 배터리 유출 변경",
+    "ar": "تغيّر تصدير AC من البطارية"
+  },
+  "titleFormatted": {
+    "en": "The AC export from battery has changed",
+    "nl": "De AC-export van de batterij is veranderd",
+    "de": "Der AC-Export aus der Batterie hat sich geändert",
+    "fr": "L'export AC depuis la batterie a changé",
+    "it": "L'esportazione AC dalla batteria è cambiata",
+    "sv": "AC-exporten från batteriet har ändrats",
+    "no": "AC-eksporten fra batteriet har endret seg",
+    "es": "La exportación AC desde la batería ha cambiado",
+    "da": "AC-eksporten fra batteriet er ændret",
+    "ru": "AC-экспорт из батареи изменился",
+    "pl": "Eksport AC z baterii się zmienił",
+    "ko": "AC 배터리 유출이 변경됨",
+    "ar": "تغيّر تصدير AC من البطارية"
+  },
+  "hint": {
+    "en": "When the AC export from battery on the SolarVault 3 changes",
+    "nl": "Wanneer de AC-export van de batterij op de SolarVault 3 verandert",
+    "de": "Wenn sich der AC-Export aus der Batterie an der SolarVault 3 ändert",
+    "fr": "Lorsque l'export AC depuis la batterie change sur la SolarVault 3",
+    "it": "Quando l'esportazione AC dalla batteria cambia sulla SolarVault 3",
+    "sv": "När AC-exporten från batteriet ändras på SolarVault 3",
+    "no": "Når AC-eksporten fra batteriet endres på SolarVault 3",
+    "es": "Cuando la exportación AC desde la batería cambia en la SolarVault 3",
+    "da": "Når AC-eksporten fra batteriet ændres på SolarVault 3",
+    "ru": "Когда AC-экспорт из батареи на SolarVault 3 меняется",
+    "pl": "Gdy eksport AC z baterii zmienia się w SolarVault 3",
+    "ko": "SolarVault 3에서 AC 배터리 유출이 변경될 때",
+    "ar": "عند تغيّر تصدير AC من البطارية على SolarVault 3"
+  },
+  "tokens": [
+    {
+      "name": "meter_power.ac_exported",
+      "type": "number",
+      "title": {
+        "en": "AC exported from battery",
+        "nl": "AC Geëxporteerd van Batterij",
+        "de": "AC Exportiert aus Batterie",
+        "fr": "AC Exporté depuis la Batterie",
+        "it": "AC Esportata dalla Batteria",
+        "sv": "AC Exporterat från Batteri",
+        "no": "AC Eksportert fra Batteri",
+        "es": "AC Exportado desde la Batería",
+        "da": "AC Eksporteret fra Batteri",
+        "ru": "AC Экспортирован из Аккумулятора",
+        "pl": "AC Wyeksportowany z Baterii",
+        "ko": "배터리에서 유출된 AC",
+        "ar": "AC مُصدَّر من البطارية"
+      }
+    }
+  ],
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=solarvault&class=battery&capabilities=meter_power.ac_exported"
+    }
+  ]
+}

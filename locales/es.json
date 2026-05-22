@@ -1,0 +1,49 @@
+{
+  "errors": {
+    "offline": "Este dispositivo está actualmente sin conexión",
+    "broker_unreachable": "Broker MQTT no accesible. Repara el dispositivo para actualizar la configuración del broker.",
+    "settings_apply_failed": "No se pudieron aplicar los ajustes a la batería. Comprueba que el dispositivo esté en línea.",
+    "auto_standby_not_allowed": "Activa « Permitir standby automático » antes de configurar el modo standby."
+  },
+  "pair": {
+    "intro": {
+      "title": "MQTT",
+      "subtitle": "Conexión local mediante MQTT",
+      "body": "Este dispositivo se conecta mediante MQTT.\n\nPrimero configura un broker MQTT y luego conecta tu Jackery SolarVault 3 en la app móvil de Jackery.\n\nCuando termines, continúa aquí.",
+      "learn_more": "Más información"
+    },
+    "connection": {
+      "title": "Datos del broker",
+      "subtitle": "Introduce los datos del broker MQTT al que está conectado tu Jackery SolarVault 3.",
+      "host": "Host",
+      "port": "Puerto",
+      "username": "Usuario (opcional)",
+      "password": "Contraseña (opcional)",
+      "useTls": "Usar cifrado (TLS)",
+      "host_required": "Introduce el host del broker."
+    },
+    "credentials": {
+      "title": "Credenciales",
+      "subtitle": "Tu dispositivo necesita credenciales para conectarse con Homey.",
+      "serial": "Número de serie",
+      "serial_placeholder": "SN",
+      "serial_required": "Introduce el número de serie del dispositivo."
+    },
+    "token": {
+      "label": "Token",
+      "placeholder": "●●●●●●●●",
+      "required": "Introduce el token de tu dispositivo."
+    },
+    "list_devices": {
+      "no_config": "Falta la configuración del broker. Vuelve atrás y completa el paso del broker.",
+      "no_credentials": "Falta el token del dispositivo. Vuelve atrás y completa el paso de credenciales.",
+      "connection_failed": "Error de conexión con el broker:",
+      "no_devices": "No se encontraron dispositivos Jackery. Comprueba el broker, el token y el número de serie."
+    }
+  },
+  "repair": {
+    "done": "Guardar y reparar",
+    "subtitle": "Actualizar conexión del broker y token del dispositivo",
+    "device_not_found": "No se pudo encontrar este dispositivo en el broker. Comprueba la configuración del broker y que la batería esté en línea."
+  }
+}

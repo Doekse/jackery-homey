@@ -1,0 +1,19 @@
+{
+  "id": "enable_auto_standby_allowed",
+  "title": {
+    "en": "Allow auto standby"
+  },
+  "titleFormatted": {
+    "en": "Allow auto standby"
+  },
+  "hint": {
+    "en": "Permits the SolarVault 3 to use automatic standby when idle"
+  },
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=solarvault&class=battery"
+    }
+  ]
+}

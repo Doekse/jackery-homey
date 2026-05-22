@@ -1,0 +1,55 @@
+{
+  "id": "ac_socket_toggle",
+  "title": {
+    "en": "Toggle AC Socket",
+    "nl": "AC-Stopcontact schakelen",
+    "de": "AC-Steckdose umschalten",
+    "fr": "Basculer la prise AC",
+    "it": "Inverti presa AC",
+    "sv": "Växla AC-uttag",
+    "no": "Veksle AC-uttak",
+    "es": "Alternar enchufe AC",
+    "da": "Skift AC-stik",
+    "ru": "Переключить розетку AC",
+    "pl": "Przełącz gniazdo AC",
+    "ko": "AC 콘센트 토글",
+    "ar": "تبديل مقبس AC"
+  },
+  "titleFormatted": {
+    "en": "Toggle AC Socket",
+    "nl": "Schakel AC-Stopcontact om",
+    "de": "AC-Steckdose umschalten",
+    "fr": "Basculer la prise AC",
+    "it": "Inverti la presa AC",
+    "sv": "Växla AC-uttaget",
+    "no": "Veksle AC-uttaket",
+    "es": "Alternar el enchufe AC",
+    "da": "Skift AC-stikket",
+    "ru": "переключить розетку AC",
+    "pl": "Przełącz gniazdo AC",
+    "ko": "AC 콘센트 토글",
+    "ar": "تبديل مقبس AC"
+  },
+  "hint": {
+    "en": "Toggles the AC Socket on the SolarVault 3 on or off",
+    "nl": "Schakelt het AC-Stopcontact op de SolarVault 3 om",
+    "de": "Schaltet die AC-Steckdose an der SolarVault 3 um",
+    "fr": "Active ou désactive la prise AC de la SolarVault 3",
+    "it": "Accende o spegne la presa AC della SolarVault 3",
+    "sv": "Växlar AC-uttaget på SolarVault 3 mellan på och av",
+    "no": "Veksler AC-uttaket på SolarVault 3 mellom på og av",
+    "es": "Enciende o apaga el enchufe AC de la SolarVault 3",
+    "da": "Skifter AC-stikket på SolarVault 3 mellem tændt og slukket",
+    "ru": "Переключает розетку AC на SolarVault 3",
+    "pl": "Przełącza gniazdo AC w SolarVault 3 między włączone a wyłączone",
+    "ko": "SolarVault 3의 AC 콘센트를 켜거나 끕니다",
+    "ar": "يبدّل مقبس AC على SolarVault 3 بين التشغيل والإيقاف"
+  },
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=solarvault&class=battery&capabilities=onoff.eps"
+    }
+  ]
+}

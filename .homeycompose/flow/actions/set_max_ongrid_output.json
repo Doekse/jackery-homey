@@ -1,0 +1,29 @@
+{
+  "id": "set_max_ongrid_output",
+  "title": {
+    "en": "Set max on-grid output"
+  },
+  "titleFormatted": {
+    "en": "Set max on-grid output to [[value]] W"
+  },
+  "hint": {
+    "en": "Sets the upper limit for power the SolarVault 3 may feed into the grid"
+  },
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=solarvault&class=battery"
+    },
+    {
+      "type": "number",
+      "name": "value",
+      "min": 0,
+      "max": 10000,
+      "step": 10,
+      "units": {
+        "en": "W"
+      }
+    }
+  ]
+}

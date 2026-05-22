@@ -1,0 +1,52 @@
+{
+  "errors": {
+    "offline": "This device is currently offline",
+    "broker_unreachable": "MQTT broker unreachable. Repair the device to update broker settings.",
+    "settings_apply_failed": "Could not apply settings. Check that the device is online.",
+    "flow_alarm_eth_unavailable": "Ethernet status is not available on this device.",
+    "flow_ac_socket_unavailable": "AC Socket is not available on this device.",
+    "flow_battery_settings_unavailable": "Battery settings are not available on this device.",
+    "auto_standby_not_allowed": "Enable auto standby should be allowed before setting standby mode."
+  },
+  "pair": {
+    "intro": {
+      "title": "MQTT",
+      "subtitle": "Local connection via MQTT",
+      "body": "This device connects via MQTT.\n\nFirst set up an MQTT broker, then connect your Jackery SolarVault 3 to it in the mobile Jackery app.\n\nWhen that's done, continue here.",
+      "learn_more": "Learn more"
+    },
+    "connection": {
+      "title": "Broker details",
+      "subtitle": "Please provide the details of the MQTT broker your Jackery SolarVault 3 is connected to.",
+      "host": "Host",
+      "port": "Port",
+      "username": "Username (optional)",
+      "password": "Password (optional)",
+      "useTls": "Use encryption (TLS)",
+      "host_required": "Please enter the broker host."
+    },
+    "credentials": {
+      "title": "Credentials",
+      "subtitle": "Your device needs credentials to connect with Homey.",
+      "serial": "Serial number",
+      "serial_placeholder": "SN",
+      "serial_required": "Please enter the device serial number."
+    },
+    "token": {
+      "label": "Token",
+      "placeholder": "●●●●●●●●",
+      "required": "Please enter your device token."
+    },
+    "list_devices": {
+      "no_config": "Broker configuration missing. Please go back and complete the broker step.",
+      "no_credentials": "Device token missing. Please go back and complete the credentials step.",
+      "connection_failed": "Connection to broker failed:",
+      "no_devices": "No Jackery devices found. Check broker, token, and serial number."
+    }
+  },
+  "repair": {
+    "done": "Save and repair",
+    "subtitle": "Update broker connection and device token",
+    "device_not_found": "Could not find this device on the broker. Check broker settings and that the battery is online."
+  }
+}

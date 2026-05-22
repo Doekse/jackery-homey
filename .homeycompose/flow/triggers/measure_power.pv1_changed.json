@@ -1,0 +1,76 @@
+{
+  "id": "measure_power.pv1_changed",
+  "title": {
+    "en": "Power (PV1) changed",
+    "nl": "Vermogen (PV1) veranderd",
+    "de": "Leistung (PV1) geändert",
+    "fr": "Puissance (PV1) changée",
+    "it": "Potenza (PV1) cambiata",
+    "sv": "Effekt (PV1) ändrad",
+    "no": "Effekt (PV1) endret",
+    "es": "Potencia (PV1) cambiada",
+    "da": "Effekt (PV1) ændret",
+    "ru": "Изменилась мощность (PV1)",
+    "pl": "Moc (PV1) zmieniona",
+    "ko": "전력 (PV1) 변경",
+    "ar": "تغيّرت القدرة (PV1)"
+  },
+  "titleFormatted": {
+    "en": "The power (PV1) has changed",
+    "nl": "Het vermogen (PV1) is veranderd",
+    "de": "Die Leistung (PV1) hat sich geändert",
+    "fr": "La puissance (PV1) a changé",
+    "it": "La potenza (PV1) è cambiata",
+    "sv": "Effekten (PV1) har ändrats",
+    "no": "Effekten (PV1) har endret seg",
+    "es": "La potencia (PV1) ha cambiado",
+    "da": "Effekten (PV1) er ændret",
+    "ru": "Мощность (PV1) изменилась",
+    "pl": "Moc (PV1) się zmieniła",
+    "ko": "전력 (PV1)이 변경됨",
+    "ar": "تغيّرت القدرة (PV1)"
+  },
+  "hint": {
+    "en": "When the power (PV1) on the SolarVault 3 changes",
+    "nl": "Wanneer het vermogen (PV1) op de SolarVault 3 verandert",
+    "de": "Wenn sich die Leistung (PV1) an der SolarVault 3 ändert",
+    "fr": "Lorsque la puissance (PV1) change sur la SolarVault 3",
+    "it": "Quando la potenza (PV1) cambia sulla SolarVault 3",
+    "sv": "När effekten (PV1) ändras på SolarVault 3",
+    "no": "Når effekten (PV1) endres på SolarVault 3",
+    "es": "Cuando la potencia (PV1) cambia en la SolarVault 3",
+    "da": "Når effekten (PV1) ændres på SolarVault 3",
+    "ru": "Когда мощность (PV1) на SolarVault 3 меняется",
+    "pl": "Gdy moc (PV1) zmienia się w SolarVault 3",
+    "ko": "SolarVault 3에서 전력 (PV1)이 변경될 때",
+    "ar": "عند تغيّر القدرة (PV1) على SolarVault 3"
+  },
+  "tokens": [
+    {
+      "name": "measure_power.pv1",
+      "type": "number",
+      "title": {
+        "en": "Power (PV1)",
+        "nl": "Vermogen (PV1)",
+        "de": "Leistung (PV1)",
+        "fr": "Puissance (PV1)",
+        "it": "Potenza (PV1)",
+        "sv": "Effekt (PV1)",
+        "no": "Effekt (PV1)",
+        "es": "Potencia (PV1)",
+        "da": "Effekt (PV1)",
+        "ru": "Мощность (PV1)",
+        "pl": "Moc (PV1)",
+        "ko": "전력 (PV1)",
+        "ar": "الطاقة (PV1)"
+      }
+    }
+  ],
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=solarvault&class=solarpanel&capabilities=measure_power.pv1"
+    }
+  ]
+}

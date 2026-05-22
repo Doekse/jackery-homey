@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jackery Battery (MQTT)</title>
+</head>
+<body>
+  <header id="hy-header">
+    <h1 class="homey-title homey-text-align-center">
+      <span id="hy-header-title" data-i18n="pair.connection.title">Broker details</span>
+      <span id="hy-header-badge" class="homey-title-badge"></span>
+    </h1>
+    <h2 id="hy-header-subtitle" class="homey-subtitle homey-text-align-center" data-i18n="pair.connection.subtitle">Please provide the details of the MQTT broker your Jackery SolarVault 3 is connected to</h2>
+  </header>
+  <form id="connection-form" class="homey-form">
+    <fieldset class="homey-form-fieldset">
+      <div class="homey-form-group">
+        <label class="homey-form-label" for="conn-host" data-i18n="pair.connection.host"></label>
+        <input class="homey-form-input" type="text" id="conn-host" required placeholder="broker.example.com">
+      </div>
+      <div class="homey-form-group">
+        <label class="homey-form-label" for="conn-port" data-i18n="pair.connection.port"></label>
+        <input class="homey-form-input" type="number" id="conn-port" min="1" max="65535" value="1883">
+      </div>
+      <div class="homey-form-group">
+        <label class="homey-form-label" for="conn-username" data-i18n="pair.connection.username"></label>
+        <input class="homey-form-input" type="text" id="conn-username" placeholder="username">
+      </div>
+      <div class="homey-form-group">
+        <label class="homey-form-label" for="conn-password" data-i18n="pair.connection.password"></label>
+        <input class="homey-form-input" type="password" id="conn-password" placeholder="●●●●●●●●">
+      </div>
+      <div class="homey-form-group">
+        <fieldset class="homey-form-checkbox-set">
+          <legend class="homey-form-checkbox-set-title"></legend>
+          <label class="homey-form-checkbox" for="conn-useTls">
+            <input class="homey-form-checkbox-input" type="checkbox" id="conn-useTls" name="conn-useTls">
+            <span class="homey-form-checkbox-checkmark"></span>
+            <span class="homey-form-checkbox-text" data-i18n="pair.connection.useTls"></span>
+          </label>
+        </fieldset>
+      </div>
+    </fieldset>
+  </form>
+  <script type="application/javascript">
+    (function () {
+      Homey.setTitle('');
+      Homey.setSubtitle('');
+
+      var form = document.getElementById('connection-form');
+      var hostInput = document.getElementById('conn-host');
+
+      function getFormConfig() {
+        return {
+          host: hostInput.value.trim(),
+          port: parseInt(document.getElementById('conn-port').value, 10) || 1883,
+          username: document.getElementById('conn-username').value.trim(),
+          password: document.getElementById('conn-password').value,
+          useTls: document.getElementById('conn-useTls').checked
+        };
+      }
+
+      function persist() {
+        return Homey.emit('save_repair_broker_config', getFormConfig());
+      }
+
+      var saveDebounce;
+      function scheduleSave() {
+        clearTimeout(saveDebounce);
+        saveDebounce = setTimeout(function () {
+          persist().catch(function () {});
+        }, 300);
+      }
+
+      Homey.emit('get_connection_form_defaults').then(function (defaults) {
+        if (defaults) {
+          hostInput.value = defaults.host || '';
+          document.getElementById('conn-port').value = String(defaults.port || 1883);
+          document.getElementById('conn-username').value = defaults.username || '';
+          document.getElementById('conn-password').value = defaults.password || '';
+          document.getElementById('conn-useTls').checked = !!defaults.useTls;
+        }
+        persist().catch(function () {});
+      }).catch(function () {});
+
+      ['input', 'change'].forEach(function (ev) {
+        form.addEventListener(ev, scheduleSave);
+      });
+
+      Homey.on('next', function (callback) {
+        if (!hostInput.value.trim()) {
+          Homey.alert(Homey.__('pair.connection.host_required'), 'warning');
+          callback(false);
+          return;
+        }
+        clearTimeout(saveDebounce);
+        persist()
+          .then(function () { callback(true); })
+          .catch(function (err) {
+            Homey.alert(err.message || String(err), 'error');
+            callback(false);
+          });
+      });
+    })();
+  </script>
+</body>
+</html>

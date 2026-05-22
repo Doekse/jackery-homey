@@ -1,0 +1,55 @@
+{
+  "id": "alarm_eth_true",
+  "title": {
+    "en": "Ethernet became disconnected",
+    "nl": "Ethernet niet meer verbonden",
+    "de": "Ethernet-Verbindung getrennt",
+    "fr": "Ethernet déconnecté",
+    "it": "Ethernet disconnesso",
+    "sv": "Ethernet frånkopplad",
+    "no": "Ethernet frakoblet",
+    "es": "Ethernet desconectado",
+    "da": "Ethernet afbrudt",
+    "ru": "Ethernet отключён",
+    "pl": "Ethernet rozłączony",
+    "ko": "이더넷 연결 끊김",
+    "ar": "انقطع اتصال Ethernet"
+  },
+  "titleFormatted": {
+    "en": "Ethernet became disconnected",
+    "nl": "Ethernet niet meer verbonden is",
+    "de": "Ethernet wurde getrennt",
+    "fr": "Ethernet s'est déconnecté",
+    "it": "Ethernet si è disconnesso",
+    "sv": "Ethernet kopplades från",
+    "no": "Ethernet ble frakoblet",
+    "es": "Ethernet se desconectó",
+    "da": "Ethernet blev afbrudt",
+    "ru": "Ethernet отключился",
+    "pl": "Ethernet został rozłączony",
+    "ko": "이더넷 연결이 끊어짐",
+    "ar": "انقطع اتصال Ethernet"
+  },
+  "hint": {
+    "en": "When the Ethernet connection on the SolarVault 3 is disconnected",
+    "nl": "Wanneer de Ethernet-verbinding op de SolarVault 3 wordt verbroken",
+    "de": "Wenn die Ethernet-Verbindung an der SolarVault 3 getrennt wird",
+    "fr": "Lorsque la connexion Ethernet de la SolarVault 3 est déconnectée",
+    "it": "Quando la connessione Ethernet della SolarVault 3 è disconnessa",
+    "sv": "När Ethernet-anslutningen på SolarVault 3 kopplas från",
+    "no": "Når Ethernet-tilkoblingen på SolarVault 3 frakobles",
+    "es": "Cuando la conexión Ethernet de la SolarVault 3 se desconecta",
+    "da": "Når Ethernet-forbindelsen på SolarVault 3 afbrydes",
+    "ru": "Когда Ethernet-соединение SolarVault 3 разрывается",
+    "pl": "Gdy połączenie Ethernet w SolarVault 3 zostaje rozłączone",
+    "ko": "SolarVault 3의 이더넷 연결이 끊어질 때",
+    "ar": "عند انقطاع اتصال Ethernet على SolarVault 3"
+  },
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=solarvault&class=battery"
+    }
+  ]
+}

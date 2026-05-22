@@ -1,0 +1,55 @@
+{
+  "id": "ac_socket_turned_on",
+  "title": {
+    "en": "AC Socket turned on",
+    "nl": "AC-Stopcontact ingeschakeld",
+    "de": "AC-Steckdose eingeschaltet",
+    "fr": "Prise AC activée",
+    "it": "Presa AC accesa",
+    "sv": "AC-Uttag påslaget",
+    "no": "AC-Uttak slått på",
+    "es": "Enchufe AC encendido",
+    "da": "AC-Stik tændt",
+    "ru": "Розетка AC включена",
+    "pl": "Gniazdo AC włączone",
+    "ko": "AC 콘센트 켜짐",
+    "ar": "تم تشغيل مقبس AC"
+  },
+  "titleFormatted": {
+    "en": "AC Socket turned on",
+    "nl": "AC-Stopcontact is ingeschakeld",
+    "de": "AC-Steckdose wurde eingeschaltet",
+    "fr": "La prise AC est activée",
+    "it": "La presa AC è accesa",
+    "sv": "AC-Uttaget är påslaget",
+    "no": "AC-Uttaket er slått på",
+    "es": "El enchufe AC está encendido",
+    "da": "AC-Stikket er tændt",
+    "ru": "Розетка AC включена",
+    "pl": "Gniazdo AC jest włączone",
+    "ko": "AC 콘센트가 켜짐",
+    "ar": "مقبس AC قيد التشغيل"
+  },
+  "hint": {
+    "en": "When the AC Socket on the SolarVault 3 is turned on",
+    "nl": "Wanneer het AC-Stopcontact op de SolarVault 3 wordt ingeschakeld",
+    "de": "Wenn die AC-Steckdose an der SolarVault 3 eingeschaltet wird",
+    "fr": "Lorsque la prise AC de la SolarVault 3 est activée",
+    "it": "Quando la presa AC della SolarVault 3 viene accesa",
+    "sv": "När AC-uttaget på SolarVault 3 slås på",
+    "no": "Når AC-uttaket på SolarVault 3 slås på",
+    "es": "Cuando el enchufe AC de la SolarVault 3 se enciende",
+    "da": "Når AC-stikket på SolarVault 3 tændes",
+    "ru": "Когда розетка AC на SolarVault 3 включается",
+    "pl": "Gdy gniazdo AC w SolarVault 3 zostaje włączone",
+    "ko": "SolarVault 3의 AC 콘센트가 켜질 때",
+    "ar": "عند تشغيل مقبس AC على SolarVault 3"
+  },
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=solarvault&class=battery&capabilities=onoff.eps"
+    }
+  ]
+}

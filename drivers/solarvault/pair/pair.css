@@ -1,0 +1,49 @@
+#animation-container {
+  position: relative;
+}
+
+#animation-container > .content-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+
+  visibility: hidden;
+  opacity: 0;
+  transition-delay: 0.25s;
+  transition: opacity 0.5s;
+}
+
+#animation-container[data-state='info'] > #info-wrap {
+  visibility: visible;
+  opacity: 1;
+}
+
+#info-message-description {
+  font-size: var(--homey-font-size-default);
+  margin-bottom: 16px;
+  white-space: pre-line;
+}
+
+#animation-container a {
+  color: var(--homey-color-highlight);
+  font-size: var(--homey-font-size-default);
+  text-decoration: none;
+}
+
+#animation-container a:visited {
+  color: var(--homey-color-highlight);
+}
+
+#learn-more-chevron {
+  font-size: 1.5em;
+  display: inline-block;
+  transform: translateY(2px);
+}

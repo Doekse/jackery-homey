@@ -1,0 +1,76 @@
+{
+  "id": "meter_power.pv_exported_changed",
+  "title": {
+    "en": "PV export to grid changed",
+    "nl": "PV-export naar net veranderd",
+    "de": "PV-Export ins Netz geändert",
+    "fr": "Export PV vers réseau changé",
+    "it": "Export PV in rete cambiato",
+    "sv": "PV-export till nät ändrad",
+    "no": "PV-eksport til nett endret",
+    "es": "Exportación PV a red cambiada",
+    "da": "PV-eksport til net ændret",
+    "ru": "Изменился PV-экспорт в сеть",
+    "pl": "Eksport PV do sieci zmieniony",
+    "ko": "PV 전력망 유출 변경",
+    "ar": "تغيّر تصدير PV إلى الشبكة"
+  },
+  "titleFormatted": {
+    "en": "The PV export to grid has changed",
+    "nl": "De PV-export naar het net is veranderd",
+    "de": "Der PV-Export ins Netz hat sich geändert",
+    "fr": "L'export PV vers le réseau a changé",
+    "it": "L'esportazione PV in rete è cambiata",
+    "sv": "PV-exporten till nätet har ändrats",
+    "no": "PV-eksporten til nettet har endret seg",
+    "es": "La exportación PV a la red ha cambiado",
+    "da": "PV-eksporten til nettet er ændret",
+    "ru": "PV-экспорт в сеть изменился",
+    "pl": "Eksport PV do sieci się zmienił",
+    "ko": "PV 전력망 유출이 변경됨",
+    "ar": "تغيّر تصدير PV إلى الشبكة"
+  },
+  "hint": {
+    "en": "When the PV export to grid on the SolarVault 3 changes",
+    "nl": "Wanneer de PV-export naar het net op de SolarVault 3 verandert",
+    "de": "Wenn sich der PV-Export ins Netz an der SolarVault 3 ändert",
+    "fr": "Lorsque l'export PV vers le réseau change sur la SolarVault 3",
+    "it": "Quando l'esportazione PV in rete cambia sulla SolarVault 3",
+    "sv": "När PV-exporten till nätet ändras på SolarVault 3",
+    "no": "Når PV-eksporten til nettet endres på SolarVault 3",
+    "es": "Cuando la exportación PV a la red cambia en la SolarVault 3",
+    "da": "Når PV-eksporten til nettet ændres på SolarVault 3",
+    "ru": "Когда PV-экспорт в сеть на SolarVault 3 меняется",
+    "pl": "Gdy eksport PV do sieci zmienia się w SolarVault 3",
+    "ko": "SolarVault 3에서 PV 전력망 유출이 변경될 때",
+    "ar": "عند تغيّر تصدير PV إلى الشبكة على SolarVault 3"
+  },
+  "tokens": [
+    {
+      "name": "meter_power.pv_exported",
+      "type": "number",
+      "title": {
+        "en": "PV exported to grid",
+        "nl": "PV Geëxporteerd naar Net",
+        "de": "PV Exportiert ins Netz",
+        "fr": "PV Exporté vers le Réseau",
+        "it": "PV Esportato in Rete",
+        "sv": "PV Exporterat till Nät",
+        "no": "PV Eksportert til Nett",
+        "es": "PV Exportado a la Red",
+        "da": "PV Eksporteret til Net",
+        "ru": "PV Экспорт в Сеть",
+        "pl": "PV Export do Sieci",
+        "ko": "PV 전력망 유출",
+        "ar": "PV تصدير الشبكة"
+      }
+    }
+  ],
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=solarvault&class=battery&capabilities=meter_power.pv_exported"
+    }
+  ]
+}

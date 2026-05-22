@@ -1,0 +1,55 @@
+{
+  "id": "alarm_eth_status",
+  "title": {
+    "en": "Ethernet !{{is disconnected|is connected}}",
+    "nl": "Ethernet !{{niet verbonden is|verbonden is}}",
+    "de": "Ethernet !{{ist getrennt|ist verbunden}}",
+    "fr": "Ethernet !{{est déconnecté|est connecté}}",
+    "it": "Ethernet !{{è disconnesso|è connesso}}",
+    "sv": "Ethernet !{{är frånkopplad|är ansluten}}",
+    "no": "Ethernet !{{er frakoblet|er tilkoblet}}",
+    "es": "Ethernet !{{está desconectado|está conectado}}",
+    "da": "Ethernet !{{er afbrudt|er forbundet}}",
+    "ru": "Ethernet !{{отключён|подключён}}",
+    "pl": "Ethernet !{{jest rozłączony|jest podłączony}}",
+    "ko": "이더넷 !{{연결 끊김|연결됨}}",
+    "ar": "Ethernet !{{غير متصل|متصل}}"
+  },
+  "titleFormatted": {
+    "en": "Ethernet !{{is disconnected|is connected}}",
+    "nl": "Ethernet !{{niet verbonden is|verbonden is}}",
+    "de": "Ethernet !{{ist getrennt|ist verbunden}}",
+    "fr": "Ethernet !{{est déconnecté|est connecté}}",
+    "it": "Ethernet !{{è disconnesso|è connesso}}",
+    "sv": "Ethernet !{{är frånkopplad|är ansluten}}",
+    "no": "Ethernet !{{er frakoblet|er tilkoblet}}",
+    "es": "Ethernet !{{está desconectado|está conectado}}",
+    "da": "Ethernet !{{er afbrudt|er forbundet}}",
+    "ru": "Ethernet !{{отключён|подключён}}",
+    "pl": "Ethernet !{{jest rozłączony|jest podłączony}}",
+    "ko": "이더넷 !{{연결 끊김|연결됨}}",
+    "ar": "Ethernet !{{غير متصل|متصل}}"
+  },
+  "hint": {
+    "en": "Checks whether the Ethernet connection on the SolarVault 3 is disconnected or connected",
+    "nl": "Controleert of de Ethernet-verbinding op de SolarVault 3 verbroken of verbonden is",
+    "de": "Prüft, ob die Ethernet-Verbindung an der SolarVault 3 getrennt oder verbunden ist",
+    "fr": "Vérifie si la connexion Ethernet de la SolarVault 3 est déconnectée ou connectée",
+    "it": "Controlla se la connessione Ethernet della SolarVault 3 è disconnessa o connessa",
+    "sv": "Kontrollerar om Ethernet-anslutningen på SolarVault 3 är frånkopplad eller ansluten",
+    "no": "Sjekker om Ethernet-tilkoblingen på SolarVault 3 er frakoblet eller tilkoblet",
+    "es": "Comprueba si la conexión Ethernet de la SolarVault 3 está desconectada o conectada",
+    "da": "Tjekker om Ethernet-forbindelsen på SolarVault 3 er afbrudt eller forbundet",
+    "ru": "Проверяет, отключено или подключено Ethernet-соединение SolarVault 3",
+    "pl": "Sprawdza, czy połączenie Ethernet w SolarVault 3 jest rozłączone lub podłączone",
+    "ko": "SolarVault 3의 이더넷 연결이 끊어져 있는지 또는 연결되어 있는지 확인합니다",
+    "ar": "يتحقق مما إذا كان اتصال Ethernet على SolarVault 3 منقطعًا أو متصلاً"
+  },
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=solarvault&class=battery"
+    }
+  ]
+}

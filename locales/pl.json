@@ -1,0 +1,49 @@
+{
+  "errors": {
+    "offline": "To urządzenie jest obecnie offline",
+    "broker_unreachable": "Broker MQTT niedostępny. Napraw urządzenie, aby zaktualizować ustawienia brokera.",
+    "settings_apply_failed": "Nie udało się zastosować ustawień do baterii. Sprawdź, czy urządzenie jest online.",
+    "auto_standby_not_allowed": "Włącz „Zezwól na automatyczny tryb czuwania”, zanim ustawisz tryb czuwania."
+  },
+  "pair": {
+    "intro": {
+      "title": "MQTT",
+      "subtitle": "Połączenie lokalne przez MQTT",
+      "body": "To urządzenie łączy się przez MQTT.\n\nNajpierw skonfiguruj brokera MQTT, a następnie podłącz Jackery SolarVault 3 w aplikacji mobilnej Jackery.\n\nGdy to zrobisz, kontynuuj tutaj.",
+      "learn_more": "Dowiedz się więcej"
+    },
+    "connection": {
+      "title": "Dane brokera",
+      "subtitle": "Podaj dane brokera MQTT, z którym połączony jest Twój Jackery SolarVault 3.",
+      "host": "Host",
+      "port": "Port",
+      "username": "Nazwa użytkownika (opcjonalnie)",
+      "password": "Hasło (opcjonalnie)",
+      "useTls": "Użyj szyfrowania (TLS)",
+      "host_required": "Wprowadź host brokera."
+    },
+    "credentials": {
+      "title": "Dane logowania",
+      "subtitle": "Urządzenie potrzebuje danych logowania, aby połączyć się z Homey.",
+      "serial": "Numer seryjny",
+      "serial_placeholder": "SN",
+      "serial_required": "Wprowadź numer seryjny urządzenia."
+    },
+    "token": {
+      "label": "Token",
+      "placeholder": "●●●●●●●●",
+      "required": "Wprowadź token urządzenia."
+    },
+    "list_devices": {
+      "no_config": "Brak konfiguracji brokera. Wróć i ukończ krok brokera.",
+      "no_credentials": "Brak tokenu urządzenia. Wróć i ukończ krok danych logowania.",
+      "connection_failed": "Połączenie z brokerem nie powiodło się:",
+      "no_devices": "Nie znaleziono urządzeń Jackery. Sprawdź brokera, token i numer seryjny."
+    }
+  },
+  "repair": {
+    "done": "Zapisz i napraw",
+    "subtitle": "Zaktualizuj połączenie z brokerem i token urządzenia",
+    "device_not_found": "Nie znaleziono tego urządzenia na brokerze. Sprawdź ustawienia brokera i czy bateria jest online."
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "id": "meter_power.grid_imported_changed",
+  "title": {
+    "en": "Grid import to battery changed",
+    "nl": "Netimport naar batterij veranderd",
+    "de": "Netzimport in Batterie geändert",
+    "fr": "Import réseau vers batterie changé",
+    "it": "Import rete in batteria cambiato",
+    "sv": "Nätimport till batteri ändrad",
+    "no": "Nettimport til batteri endret",
+    "es": "Importación de red a batería cambiada",
+    "da": "Netimport til batteri ændret",
+    "ru": "Изменился импорт сети в батарею",
+    "pl": "Import sieci do baterii zmieniony",
+    "ko": "배터리 전력망 유입 변경",
+    "ar": "تغيّر استيراد الشبكة إلى البطارية"
+  },
+  "titleFormatted": {
+    "en": "The grid import to battery has changed",
+    "nl": "De netimport naar de batterij is veranderd",
+    "de": "Der Netzimport in die Batterie hat sich geändert",
+    "fr": "L'import réseau vers la batterie a changé",
+    "it": "L'importazione di rete in batteria è cambiata",
+    "sv": "Nätimporten till batteriet har ändrats",
+    "no": "Nettimporten til batteriet har endret seg",
+    "es": "La importación de red a la batería ha cambiado",
+    "da": "Netimporten til batteriet er ændret",
+    "ru": "Импорт сети в батарею изменился",
+    "pl": "Import sieci do baterii się zmienił",
+    "ko": "배터리로 유입된 전력망이 변경됨",
+    "ar": "تغيّر استيراد الشبكة إلى البطارية"
+  },
+  "hint": {
+    "en": "When the grid import to battery on the SolarVault 3 changes",
+    "nl": "Wanneer de netimport naar de batterij op de SolarVault 3 verandert",
+    "de": "Wenn sich der Netzimport in die Batterie an der SolarVault 3 ändert",
+    "fr": "Lorsque l'import réseau vers la batterie change sur la SolarVault 3",
+    "it": "Quando l'importazione di rete in batteria cambia sulla SolarVault 3",
+    "sv": "När nätimporten till batteriet ändras på SolarVault 3",
+    "no": "Når nettimporten til batteriet endres på SolarVault 3",
+    "es": "Cuando la importación de red a la batería cambia en la SolarVault 3",
+    "da": "Når netimporten til batteriet ændres på SolarVault 3",
+    "ru": "Когда импорт сети в батарею на SolarVault 3 меняется",
+    "pl": "Gdy import sieci do baterii zmienia się w SolarVault 3",
+    "ko": "SolarVault 3에서 배터리로 유입된 전력망이 변경될 때",
+    "ar": "عند تغيّر استيراد الشبكة إلى البطارية على SolarVault 3"
+  },
+  "tokens": [
+    {
+      "name": "meter_power.grid_imported",
+      "type": "number",
+      "title": {
+        "en": "Grid imported to battery",
+        "nl": "Net Geïmporteerd naar Batterij",
+        "de": "Netz Importiert in Batterie",
+        "fr": "Réseau Importé vers la Batterie",
+        "it": "Rete Importata in Batteria",
+        "sv": "Nät Importerat till Batteri",
+        "no": "Nett Importert til Batteri",
+        "es": "Red Importada a la Batería",
+        "da": "Net Importeret til Batteri",
+        "ru": "Сеть Импортирована в Аккумулятор",
+        "pl": "Sieć Zaimportowana do Baterii",
+        "ko": "배터리로 유입된 전력망",
+        "ar": "شبكة مستوردة إلى البطارية"
+      }
+    }
+  ],
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=solarvault&class=battery&capabilities=meter_power.grid_imported"
+    }
+  ]
+}

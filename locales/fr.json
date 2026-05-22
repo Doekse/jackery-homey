@@ -1,0 +1,49 @@
+{
+  "errors": {
+    "offline": "Cet appareil est actuellement hors ligne",
+    "broker_unreachable": "Courtier MQTT inaccessible. Réparez l'appareil pour mettre à jour les paramètres du courtier.",
+    "settings_apply_failed": "Impossible d'appliquer les paramètres à la batterie. Vérifiez que l'appareil est en ligne.",
+    "auto_standby_not_allowed": "Activez « Veille automatique autorisée » avant de définir le mode veille."
+  },
+  "pair": {
+    "intro": {
+      "title": "MQTT",
+      "subtitle": "Connexion locale via MQTT",
+      "body": "Cet appareil se connecte via MQTT.\n\nConfigurez d'abord un courtier MQTT, puis connectez votre Jackery SolarVault 3 dans l'application mobile Jackery.\n\nUne fois terminé, continuez ici.",
+      "learn_more": "En savoir plus"
+    },
+    "connection": {
+      "title": "Détails du courtier",
+      "subtitle": "Veuillez indiquer les détails du courtier MQTT auquel votre Jackery SolarVault 3 est connecté.",
+      "host": "Hôte",
+      "port": "Port",
+      "username": "Nom d'utilisateur (facultatif)",
+      "password": "Mot de passe (facultatif)",
+      "useTls": "Utiliser le chiffrement (TLS)",
+      "host_required": "Veuillez saisir l'hôte du courtier."
+    },
+    "credentials": {
+      "title": "Identifiants",
+      "subtitle": "Votre appareil a besoin d'identifiants pour se connecter à Homey.",
+      "serial": "Numéro de série",
+      "serial_placeholder": "SN",
+      "serial_required": "Veuillez saisir le numéro de série de l'appareil."
+    },
+    "token": {
+      "label": "Jeton",
+      "placeholder": "●●●●●●●●",
+      "required": "Veuillez saisir le jeton de votre appareil."
+    },
+    "list_devices": {
+      "no_config": "Configuration du courtier manquante. Revenez en arrière et terminez l'étape du courtier.",
+      "no_credentials": "Jeton de l'appareil manquant. Revenez en arrière et terminez l'étape des identifiants.",
+      "connection_failed": "Échec de la connexion au courtier :",
+      "no_devices": "Aucun appareil Jackery trouvé. Vérifiez le courtier, le jeton et le numéro de série."
+    }
+  },
+  "repair": {
+    "done": "Enregistrer et réparer",
+    "subtitle": "Mettre à jour la connexion au courtier et le jeton de l'appareil",
+    "device_not_found": "Impossible de trouver cet appareil sur le courtier. Vérifiez les paramètres du courtier et que la batterie est en ligne."
+  }
+}

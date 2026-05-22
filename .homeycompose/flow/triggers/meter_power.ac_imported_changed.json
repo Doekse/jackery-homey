@@ -1,0 +1,76 @@
+{
+  "id": "meter_power.ac_imported_changed",
+  "title": {
+    "en": "AC import to battery changed",
+    "nl": "AC-import naar batterij veranderd",
+    "de": "AC-Import in Batterie geändert",
+    "fr": "Import AC vers batterie changé",
+    "it": "Import AC in batteria cambiato",
+    "sv": "AC-import till batteri ändrad",
+    "no": "AC-import til batteri endret",
+    "es": "Importación AC a batería cambiada",
+    "da": "AC-import til batteri ændret",
+    "ru": "Изменился AC-импорт в батарею",
+    "pl": "Import AC do baterii zmieniony",
+    "ko": "AC 배터리 유입 변경",
+    "ar": "تغيّر استيراد AC إلى البطارية"
+  },
+  "titleFormatted": {
+    "en": "The AC import to battery has changed",
+    "nl": "De AC-import naar de batterij is veranderd",
+    "de": "Der AC-Import in die Batterie hat sich geändert",
+    "fr": "L'import AC vers la batterie a changé",
+    "it": "L'importazione AC in batteria è cambiata",
+    "sv": "AC-importen till batteriet har ändrats",
+    "no": "AC-importen til batteriet har endret seg",
+    "es": "La importación AC a la batería ha cambiado",
+    "da": "AC-importen til batteriet er ændret",
+    "ru": "AC-импорт в батарею изменился",
+    "pl": "Import AC do baterii się zmienił",
+    "ko": "AC 배터리 유입이 변경됨",
+    "ar": "تغيّر استيراد AC إلى البطارية"
+  },
+  "hint": {
+    "en": "When the AC import to battery on the SolarVault 3 changes",
+    "nl": "Wanneer de AC-import naar de batterij op de SolarVault 3 verandert",
+    "de": "Wenn sich der AC-Import in die Batterie an der SolarVault 3 ändert",
+    "fr": "Lorsque l'import AC vers la batterie change sur la SolarVault 3",
+    "it": "Quando l'importazione AC in batteria cambia sulla SolarVault 3",
+    "sv": "När AC-importen till batteriet ändras på SolarVault 3",
+    "no": "Når AC-importen til batteriet endres på SolarVault 3",
+    "es": "Cuando la importación AC a la batería cambia en la SolarVault 3",
+    "da": "Når AC-importen til batteriet ændres på SolarVault 3",
+    "ru": "Когда AC-импорт в батарею на SolarVault 3 меняется",
+    "pl": "Gdy import AC do baterii zmienia się w SolarVault 3",
+    "ko": "SolarVault 3에서 AC 배터리 유입이 변경될 때",
+    "ar": "عند تغيّر استيراد AC إلى البطارية على SolarVault 3"
+  },
+  "tokens": [
+    {
+      "name": "meter_power.ac_imported",
+      "type": "number",
+      "title": {
+        "en": "AC imported to battery",
+        "nl": "AC Geïmporteerd naar Batterij",
+        "de": "AC Importiert in Batterie",
+        "fr": "AC Importé vers la Batterie",
+        "it": "AC Importata in Batteria",
+        "sv": "AC Importerat till Batteri",
+        "no": "AC Importert til Batteri",
+        "es": "AC Importado a la Batería",
+        "da": "AC Importeret til Batteri",
+        "ru": "AC Импортирован в Аккумулятор",
+        "pl": "AC Zaimportowany do Baterii",
+        "ko": "배터리로 유입된 AC",
+        "ar": "AC مستورد إلى البطارية"
+      }
+    }
+  ],
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=solarvault&class=battery&capabilities=meter_power.ac_imported"
+    }
+  ]
+}

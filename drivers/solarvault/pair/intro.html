@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MQTT</title>
+  <link rel="stylesheet" type="text/css" href="./pair.css" />
+</head>
+<body>
+  <div id="animation-container">
+    <div class="content-container" id="info-wrap">
+      <div>
+        <div id="info-message-description" data-i18n="pair.intro.body"></div>
+        <a id="learn-more-link" href="#">
+          <span data-i18n="pair.intro.learn_more"></span>
+          <span id="learn-more-chevron">></span>
+        </a>
+      </div>
+      <img src="./mesh-homey-pro.png" alt="Smart home mesh" width="100%" onerror="this.style.display='none'" />
+    </div>
+  </div>
+  <script type="application/javascript">
+    (function () {
+      Homey.setTitle(Homey.__('pair.intro.title'));
+
+      setTimeout(function () {
+        document.getElementById('animation-container').dataset.state = 'info';
+      }, 200);
+
+      document.getElementById('learn-more-link').addEventListener('click', function (e) {
+        e.preventDefault();
+        Homey.popup('https://www.jackery.com/pages/support');
+      });
+    })();
+  </script>
+</body>
+</html>

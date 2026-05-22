@@ -1,0 +1,55 @@
+{
+  "id": "alarm_eth_false",
+  "title": {
+    "en": "Ethernet became connected",
+    "nl": "Ethernet weer verbonden",
+    "de": "Ethernet wieder verbunden",
+    "fr": "Ethernet reconnecté",
+    "it": "Ethernet riconnesso",
+    "sv": "Ethernet åter ansluten",
+    "no": "Ethernet tilkoblet igjen",
+    "es": "Ethernet conectado",
+    "da": "Ethernet forbundet igen",
+    "ru": "Ethernet подключён",
+    "pl": "Ethernet podłączony ponownie",
+    "ko": "이더넷 연결됨",
+    "ar": "تم اتصال Ethernet"
+  },
+  "titleFormatted": {
+    "en": "Ethernet became connected",
+    "nl": "Ethernet weer verbonden is",
+    "de": "Ethernet ist wieder verbunden",
+    "fr": "Ethernet s'est reconnecté",
+    "it": "Ethernet si è riconnesso",
+    "sv": "Ethernet kopplades an",
+    "no": "Ethernet ble tilkoblet",
+    "es": "Ethernet se conectó",
+    "da": "Ethernet blev forbundet",
+    "ru": "Ethernet подключился",
+    "pl": "Ethernet został ponownie podłączony",
+    "ko": "이더넷 연결됨",
+    "ar": "اتصل Ethernet"
+  },
+  "hint": {
+    "en": "When the Ethernet connection on the SolarVault 3 is connected",
+    "nl": "Wanneer de Ethernet-verbinding op de SolarVault 3 tot stand komt",
+    "de": "Wenn die Ethernet-Verbindung an der SolarVault 3 hergestellt wird",
+    "fr": "Lorsque la connexion Ethernet de la SolarVault 3 est connectée",
+    "it": "Quando la connessione Ethernet della SolarVault 3 è connessa",
+    "sv": "När Ethernet-anslutningen på SolarVault 3 ansluts",
+    "no": "Når Ethernet-tilkoblingen på SolarVault 3 kobles til",
+    "es": "Cuando la conexión Ethernet de la SolarVault 3 está conectada",
+    "da": "Når Ethernet-forbindelsen på SolarVault 3 forbindes",
+    "ru": "Когда Ethernet-соединение SolarVault 3 устанавливается",
+    "pl": "Gdy połączenie Ethernet w SolarVault 3 zostaje nawiązane",
+    "ko": "SolarVault 3의 이더넷 연결이 연결될 때",
+    "ar": "عند اتصال Ethernet على SolarVault 3"
+  },
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=solarvault&class=battery"
+    }
+  ]
+}

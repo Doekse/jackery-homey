@@ -1,0 +1,3291 @@
+{
+  "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
+  "id": "com.jackery",
+  "version": "0.0.1",
+  "compatibility": ">=12.4.0",
+  "brandColor": "#FD5000",
+  "sdk": 3,
+  "runtime": "nodejs",
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "Jackery"
+  },
+  "description": {
+    "en": "Sustainable Power for Your Life"
+  },
+  "category": [
+    "energy"
+  ],
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "John Doe",
+    "email": "john.doe@example.com"
+  },
+  "flow": {
+    "triggers": [
+      {
+        "id": "ac_socket_turned_off",
+        "title": {
+          "en": "AC Socket turned off",
+          "nl": "AC-Stopcontact uitgeschakeld",
+          "de": "AC-Steckdose ausgeschaltet",
+          "fr": "Prise AC désactivée",
+          "it": "Presa AC spenta",
+          "sv": "AC-Uttag avstängt",
+          "no": "AC-Uttak slått av",
+          "es": "Enchufe AC apagado",
+          "da": "AC-Stik slukket",
+          "ru": "Розетка AC выключена",
+          "pl": "Gniazdo AC wyłączone",
+          "ko": "AC 콘센트 꺼짐",
+          "ar": "تم إيقاف مقبس AC"
+        },
+        "titleFormatted": {
+          "en": "AC Socket turned off",
+          "nl": "AC-Stopcontact is uitgeschakeld",
+          "de": "AC-Steckdose wurde ausgeschaltet",
+          "fr": "La prise AC est désactivée",
+          "it": "La presa AC è spenta",
+          "sv": "AC-Uttaget är avstängt",
+          "no": "AC-Uttaket er slått av",
+          "es": "El enchufe AC está apagado",
+          "da": "AC-Stikket er slukket",
+          "ru": "Розетка AC выключена",
+          "pl": "Gniazdo AC jest wyłączone",
+          "ko": "AC 콘센트가 꺼짐",
+          "ar": "مقبس AC متوقف"
+        },
+        "hint": {
+          "en": "When the AC Socket on the SolarVault 3 is turned off",
+          "nl": "Wanneer het AC-Stopcontact op de SolarVault 3 wordt uitgeschakeld",
+          "de": "Wenn die AC-Steckdose an der SolarVault 3 ausgeschaltet wird",
+          "fr": "Lorsque la prise AC de la SolarVault 3 est désactivée",
+          "it": "Quando la presa AC della SolarVault 3 viene spenta",
+          "sv": "När AC-uttaget på SolarVault 3 stängs av",
+          "no": "Når AC-uttaket på SolarVault 3 slås av",
+          "es": "Cuando el enchufe AC de la SolarVault 3 se apaga",
+          "da": "Når AC-stikket på SolarVault 3 slukkes",
+          "ru": "Когда розетка AC на SolarVault 3 выключается",
+          "pl": "Gdy gniazdo AC w SolarVault 3 zostaje wyłączone",
+          "ko": "SolarVault 3의 AC 콘센트가 꺼질 때",
+          "ar": "عند إيقاف مقبس AC على SolarVault 3"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=solarvault&class=battery&capabilities=onoff.eps"
+          }
+        ]
+      },
+      {
+        "id": "ac_socket_turned_on",
+        "title": {
+          "en": "AC Socket turned on",
+          "nl": "AC-Stopcontact ingeschakeld",
+          "de": "AC-Steckdose eingeschaltet",
+          "fr": "Prise AC activée",
+          "it": "Presa AC accesa",
+          "sv": "AC-Uttag påslaget",
+          "no": "AC-Uttak slått på",
+          "es": "Enchufe AC encendido",
+          "da": "AC-Stik tændt",
+          "ru": "Розетка AC включена",
+          "pl": "Gniazdo AC włączone",
+          "ko": "AC 콘센트 켜짐",
+          "ar": "تم تشغيل مقبس AC"
+        },
+        "titleFormatted": {
+          "en": "AC Socket turned on",
+          "nl": "AC-Stopcontact is ingeschakeld",
+          "de": "AC-Steckdose wurde eingeschaltet",
+          "fr": "La prise AC est activée",
+          "it": "La presa AC è accesa",
+          "sv": "AC-Uttaget är påslaget",
+          "no": "AC-Uttaket er slått på",
+          "es": "El enchufe AC está encendido",
+          "da": "AC-Stikket er tændt",
+          "ru": "Розетка AC включена",
+          "pl": "Gniazdo AC jest włączone",
+          "ko": "AC 콘센트가 켜짐",
+          "ar": "مقبس AC قيد التشغيل"
+        },
+        "hint": {
+          "en": "When the AC Socket on the SolarVault 3 is turned on",
+          "nl": "Wanneer het AC-Stopcontact op de SolarVault 3 wordt ingeschakeld",
+          "de": "Wenn die AC-Steckdose an der SolarVault 3 eingeschaltet wird",
+          "fr": "Lorsque la prise AC de la SolarVault 3 est activée",
+          "it": "Quando la presa AC della SolarVault 3 viene accesa",
+          "sv": "När AC-uttaget på SolarVault 3 slås på",
+          "no": "Når AC-uttaket på SolarVault 3 slås på",
+          "es": "Cuando el enchufe AC de la SolarVault 3 se enciende",
+          "da": "Når AC-stikket på SolarVault 3 tændes",
+          "ru": "Когда розетка AC на SolarVault 3 включается",
+          "pl": "Gdy gniazdo AC w SolarVault 3 zostaje włączone",
+          "ko": "SolarVault 3의 AC 콘센트가 켜질 때",
+          "ar": "عند تشغيل مقبس AC على SolarVault 3"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=solarvault&class=battery&capabilities=onoff.eps"
+          }
+        ]
+      },
+      {
+        "id": "alarm_eth_false",
+        "title": {
+          "en": "Ethernet became connected",
+          "nl": "Ethernet weer verbonden",
+          "de": "Ethernet wieder verbunden",
+          "fr": "Ethernet reconnecté",
+          "it": "Ethernet riconnesso",
+          "sv": "Ethernet åter ansluten",
+          "no": "Ethernet tilkoblet igjen",
+          "es": "Ethernet conectado",
+          "da": "Ethernet forbundet igen",
+          "ru": "Ethernet подключён",
+          "pl": "Ethernet podłączony ponownie",
+          "ko": "이더넷 연결됨",
+          "ar": "تم اتصال Ethernet"
+        },
+        "titleFormatted": {
+          "en": "Ethernet became connected",
+          "nl": "Ethernet weer verbonden is",
+          "de": "Ethernet ist wieder verbunden",
+          "fr": "Ethernet s'est reconnecté",
+          "it": "Ethernet si è riconnesso",
+          "sv": "Ethernet kopplades an",
+          "no": "Ethernet ble tilkoblet",
+          "es": "Ethernet se conectó",
+          "da": "Ethernet blev forbundet",
+          "ru": "Ethernet подключился",
+          "pl": "Ethernet został ponownie podłączony",
+          "ko": "이더넷 연결됨",
+          "ar": "اتصل Ethernet"
+        },
+        "hint": {
+          "en": "When the Ethernet connection on the SolarVault 3 is connected",
+          "nl": "Wanneer de Ethernet-verbinding op de SolarVault 3 tot stand komt",
+          "de": "Wenn die Ethernet-Verbindung an der SolarVault 3 hergestellt wird",
+          "fr": "Lorsque la connexion Ethernet de la SolarVault 3 est connectée",
+          "it": "Quando la connessione Ethernet della SolarVault 3 è connessa",
+          "sv": "När Ethernet-anslutningen på SolarVault 3 ansluts",
+          "no": "Når Ethernet-tilkoblingen på SolarVault 3 kobles til",
+          "es": "Cuando la conexión Ethernet de la SolarVault 3 está conectada",
+          "da": "Når Ethernet-forbindelsen på SolarVault 3 forbindes",
+          "ru": "Когда Ethernet-соединение SolarVault 3 устанавливается",
+          "pl": "Gdy połączenie Ethernet w SolarVault 3 zostaje nawiązane",
+          "ko": "SolarVault 3의 이더넷 연결이 연결될 때",
+          "ar": "عند اتصال Ethernet على SolarVault 3"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=solarvault&class=battery"
+          }
+        ]
+      },
+      {
+        "id": "alarm_eth_true",
+        "title": {
+          "en": "Ethernet became disconnected",
+          "nl": "Ethernet niet meer verbonden",
+          "de": "Ethernet-Verbindung getrennt",
+          "fr": "Ethernet déconnecté",
+          "it": "Ethernet disconnesso",
+          "sv": "Ethernet frånkopplad",
+          "no": "Ethernet frakoblet",
+          "es": "Ethernet desconectado",
+          "da": "Ethernet afbrudt",
+          "ru": "Ethernet отключён",
+          "pl": "Ethernet rozłączony",
+          "ko": "이더넷 연결 끊김",
+          "ar": "انقطع اتصال Ethernet"
+        },
+        "titleFormatted": {
+          "en": "Ethernet became disconnected",
+          "nl": "Ethernet niet meer verbonden is",
+          "de": "Ethernet wurde getrennt",
+          "fr": "Ethernet s'est déconnecté",
+          "it": "Ethernet si è disconnesso",
+          "sv": "Ethernet kopplades från",
+          "no": "Ethernet ble frakoblet",
+          "es": "Ethernet se desconectó",
+          "da": "Ethernet blev afbrudt",
+          "ru": "Ethernet отключился",
+          "pl": "Ethernet został rozłączony",
+          "ko": "이더넷 연결이 끊어짐",
+          "ar": "انقطع اتصال Ethernet"
+        },
+        "hint": {
+          "en": "When the Ethernet connection on the SolarVault 3 is disconnected",
+          "nl": "Wanneer de Ethernet-verbinding op de SolarVault 3 wordt verbroken",
+          "de": "Wenn die Ethernet-Verbindung an der SolarVault 3 getrennt wird",
+          "fr": "Lorsque la connexion Ethernet de la SolarVault 3 est déconnectée",
+          "it": "Quando la connessione Ethernet della SolarVault 3 è disconnessa",
+          "sv": "När Ethernet-anslutningen på SolarVault 3 kopplas från",
+          "no": "Når Ethernet-tilkoblingen på SolarVault 3 frakobles",
+          "es": "Cuando la conexión Ethernet de la SolarVault 3 se desconecta",
+          "da": "Når Ethernet-forbindelsen på SolarVault 3 afbrydes",
+          "ru": "Когда Ethernet-соединение SolarVault 3 разрывается",
+          "pl": "Gdy połączenie Ethernet w SolarVault 3 zostaje rozłączone",
+          "ko": "SolarVault 3의 이더넷 연결이 끊어질 때",
+          "ar": "عند انقطاع اتصال Ethernet على SolarVault 3"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=solarvault&class=battery"
+          }
+        ]
+      },
+      {
+        "id": "auto_standby_allowed_turned_off",
+        "title": {
+          "en": "Auto standby allowed turned off"
+        },
+        "titleFormatted": {
+          "en": "Auto standby allowed turned off"
+        },
+        "hint": {
+          "en": "When automatic standby is disabled on the SolarVault 3 battery"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=solarvault&class=battery"
+          }
+        ]
+      },
+      {
+        "id": "auto_standby_allowed_turned_on",
+        "title": {
+          "en": "Auto standby allowed turned on"
+        },
+        "titleFormatted": {
+          "en": "Auto standby allowed turned on"
+        },
+        "hint": {
+          "en": "When automatic standby is enabled on the SolarVault 3 battery"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=solarvault&class=battery"
+          }
+        ]
+      },
+      {
+        "id": "auto_standby_changed",
+        "title": {
+          "en": "Auto standby mode changed"
+        },
+        "titleFormatted": {
+          "en": "The auto standby mode has changed"
+        },
+        "hint": {
+          "en": "When the auto standby mode on the SolarVault 3 changes"
+        },
+        "tokens": [
+          {
+            "name": "autoStandby",
+            "type": "number",
+            "title": {
+              "en": "Auto standby mode"
+            }
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=solarvault&class=battery"
+          }
+        ]
+      },
+      {
+        "id": "charge_limit_changed",
+        "title": {
+          "en": "Charge limit changed"
+        },
+        "titleFormatted": {
+          "en": "The charge limit has changed"
+        },
+        "hint": {
+          "en": "When the charge limit on the SolarVault 3 changes"
+        },
+        "tokens": [
+          {
+            "name": "socChgLimit",
+            "type": "number",
+            "title": {
+              "en": "Charge limit"
+            }
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=solarvault&class=battery"
+          }
+        ]
+      },
+      {
+        "id": "discharge_limit_changed",
+        "title": {
+          "en": "Discharge limit changed"
+        },
+        "titleFormatted": {
+          "en": "The discharge limit has changed"
+        },
+        "hint": {
+          "en": "When the discharge limit on the SolarVault 3 changes"
+        },
+        "tokens": [
+          {
+            "name": "socDischgLimit",
+            "type": "number",
+            "title": {
+              "en": "Discharge limit"
+            }
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=solarvault&class=battery"
+          }
+        ]
+      },
+      {
+        "id": "max_ongrid_output_changed",
+        "title": {
+          "en": "Max on-grid output changed"
+        },
+        "titleFormatted": {
+          "en": "The max on-grid output has changed"
+        },
+        "hint": {
+          "en": "When the max on-grid output on the SolarVault 3 changes"
+        },
+        "tokens": [
+          {
+            "name": "maxOutPw",
+            "type": "number",
+            "title": {
+              "en": "Max on-grid output"
+            }
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=solarvault&class=battery"
+          }
+        ]
+      },
+      {
+        "id": "measure_power.eps_changed",
+        "title": {
+          "en": "Power (AC socket) changed",
+          "nl": "Vermogen (AC-stopcontact) veranderd",
+          "de": "Leistung (AC-Steckdose) geändert",
+          "fr": "Puissance (prise AC) changée",
+          "it": "Potenza (presa AC) cambiata",
+          "sv": "Effekt (AC-uttag) ändrad",
+          "no": "Effekt (AC-uttak) endret",
+          "es": "Potencia (enchufe AC) cambiada",
+          "da": "Effekt (AC-stik) ændret",
+          "ru": "Изменилась мощность (розетка AC)",
+          "pl": "Moc (gniazdo AC) zmieniona",
+          "ko": "전력 (AC 콘센트) 변경",
+          "ar": "تغيّرت القدرة (مقبس AC)"
+        },
+        "titleFormatted": {
+          "en": "The power (AC socket) has changed",
+          "nl": "Het vermogen (AC-stopcontact) is veranderd",
+          "de": "Die Leistung (AC-Steckdose) hat sich geändert",
+          "fr": "La puissance (prise AC) a changé",
+          "it": "La potenza (presa AC) è cambiata",
+          "sv": "Effekten (AC-uttag) har ändrats",
+          "no": "Effekten (AC-uttak) har endret seg",
+          "es": "La potencia (enchufe AC) ha cambiado",
+          "da": "Effekten (AC-stik) er ændret",
+          "ru": "Мощность (розетка AC) изменилась",
+          "pl": "Moc (gniazdo AC) się zmieniła",
+          "ko": "전력 (AC 콘센트)이 변경됨",
+          "ar": "تغيّرت القدرة (مقبس AC)"
+        },
+        "hint": {
+          "en": "When the power (AC socket) on the SolarVault 3 changes",
+          "nl": "Wanneer het vermogen (AC-stopcontact) op de SolarVault 3 verandert",
+          "de": "Wenn sich die Leistung (AC-Steckdose) an der SolarVault 3 ändert",
+          "fr": "Lorsque la puissance (prise AC) change sur la SolarVault 3",
+          "it": "Quando la potenza (presa AC) cambia sulla SolarVault 3",
+          "sv": "När effekten (AC-uttag) ändras på SolarVault 3",
+          "no": "Når effekten (AC-uttak) endres på SolarVault 3",
+          "es": "Cuando la potencia (enchufe AC) cambia en la SolarVault 3",
+          "da": "Når effekten (AC-stik) ændres på SolarVault 3",
+          "ru": "Когда мощность (розетка AC) на SolarVault 3 меняется",
+          "pl": "Gdy moc (gniazdo AC) zmienia się w SolarVault 3",
+          "ko": "SolarVault 3에서 전력 (AC 콘센트)이 변경될 때",
+          "ar": "عند تغيّر القدرة (مقبس AC) على SolarVault 3"
+        },
+        "tokens": [
+          {
+            "name": "measure_power.eps",
+            "type": "number",
+            "title": {
+              "en": "Power (AC socket)",
+              "nl": "Vermogen (AC-Stopcontact)",
+              "de": "Leistung (AC-Steckdose)",
+              "fr": "Puissance (Prise AC)",
+              "it": "Potenza (Presa AC)",
+              "sv": "Effekt (AC-Uttag)",
+              "no": "Effekt (AC-Uttak)",
+              "es": "Potencia (Enchufe AC)",
+              "da": "Effekt (AC-Stik)",
+              "ru": "Мощность (Розетка AC)",
+              "pl": "Moc (Gniazdo AC)",
+              "ko": "전력 (AC 콘센트)",
+              "ar": "الطاقة (مقبس AC)"
+            }
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=solarvault&class=battery&capabilities=measure_power.eps"
+          }
+        ]
+      },
+      {
+        "id": "measure_power.pv1_changed",
+        "title": {
+          "en": "Power (PV1) changed",
+          "nl": "Vermogen (PV1) veranderd",
+          "de": "Leistung (PV1) geändert",
+          "fr": "Puissance (PV1) changée",
+          "it": "Potenza (PV1) cambiata",
+          "sv": "Effekt (PV1) ändrad",
+          "no": "Effekt (PV1) endret",
+          "es": "Potencia (PV1) cambiada",
+          "da": "Effekt (PV1) ændret",
+          "ru": "Изменилась мощность (PV1)",
+          "pl": "Moc (PV1) zmieniona",
+          "ko": "전력 (PV1) 변경",
+          "ar": "تغيّرت القدرة (PV1)"
+        },
+        "titleFormatted": {
+          "en": "The power (PV1) has changed",
+          "nl": "Het vermogen (PV1) is veranderd",
+          "de": "Die Leistung (PV1) hat sich geändert",
+          "fr": "La puissance (PV1) a changé",
+          "it": "La potenza (PV1) è cambiata",
+          "sv": "Effekten (PV1) har ändrats",
+          "no": "Effekten (PV1) har endret seg",
+          "es": "La potencia (PV1) ha cambiado",
+          "da": "Effekten (PV1) er ændret",
+          "ru": "Мощность (PV1) изменилась",
+          "pl": "Moc (PV1) się zmieniła",
+          "ko": "전력 (PV1)이 변경됨",
+          "ar": "تغيّرت القدرة (PV1)"
+        },
+        "hint": {
+          "en": "When the power (PV1) on the SolarVault 3 changes",
+          "nl": "Wanneer het vermogen (PV1) op de SolarVault 3 verandert",
+          "de": "Wenn sich die Leistung (PV1) an der SolarVault 3 ändert",
+          "fr": "Lorsque la puissance (PV1) change sur la SolarVault 3",
+          "it": "Quando la potenza (PV1) cambia sulla SolarVault 3",
+          "sv": "När effekten (PV1) ändras på SolarVault 3",
+          "no": "Når effekten (PV1) endres på SolarVault 3",
+          "es": "Cuando la potencia (PV1) cambia en la SolarVault 3",
+          "da": "Når effekten (PV1) ændres på SolarVault 3",
+          "ru": "Когда мощность (PV1) на SolarVault 3 меняется",
+          "pl": "Gdy moc (PV1) zmienia się w SolarVault 3",
+          "ko": "SolarVault 3에서 전력 (PV1)이 변경될 때",
+          "ar": "عند تغيّر القدرة (PV1) على SolarVault 3"
+        },
+        "tokens": [
+          {
+            "name": "measure_power.pv1",
+            "type": "number",
+            "title": {
+              "en": "Power (PV1)",
+              "nl": "Vermogen (PV1)",
+              "de": "Leistung (PV1)",
+              "fr": "Puissance (PV1)",
+              "it": "Potenza (PV1)",
+              "sv": "Effekt (PV1)",
+              "no": "Effekt (PV1)",
+              "es": "Potencia (PV1)",
+              "da": "Effekt (PV1)",
+              "ru": "Мощность (PV1)",
+              "pl": "Moc (PV1)",
+              "ko": "전력 (PV1)",
+              "ar": "الطاقة (PV1)"
+            }
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=solarvault&class=solarpanel&capabilities=measure_power.pv1"
+          }
+        ]
+      },
+      {
+        "id": "measure_power.pv2_changed",
+        "title": {
+          "en": "Power (PV2) changed",
+          "nl": "Vermogen (PV2) veranderd",
+          "de": "Leistung (PV2) geändert",
+          "fr": "Puissance (PV2) changée",
+          "it": "Potenza (PV2) cambiata",
+          "sv": "Effekt (PV2) ändrad",
+          "no": "Effekt (PV2) endret",
+          "es": "Potencia (PV2) cambiada",
+          "da": "Effekt (PV2) ændret",
+          "ru": "Изменилась мощность (PV2)",
+          "pl": "Moc (PV2) zmieniona",
+          "ko": "전력 (PV2) 변경",
+          "ar": "تغيّرت القدرة (PV2)"
+        },
+        "titleFormatted": {
+          "en": "The power (PV2) has changed",
+          "nl": "Het vermogen (PV2) is veranderd",
+          "de": "Die Leistung (PV2) hat sich geändert",
+          "fr": "La puissance (PV2) a changé",
+          "it": "La potenza (PV2) è cambiata",
+          "sv": "Effekten (PV2) har ändrats",
+          "no": "Effekten (PV2) har endret seg",
+          "es": "La potencia (PV2) ha cambiado",
+          "da": "Effekten (PV2) er ændret",
+          "ru": "Мощность (PV2) изменилась",
+          "pl": "Moc (PV2) się zmieniła",
+          "ko": "전력 (PV2)이 변경됨",
+          "ar": "تغيّرت القدرة (PV2)"
+        },
+        "hint": {
+          "en": "When the power (PV2) on the SolarVault 3 changes",
+          "nl": "Wanneer het vermogen (PV2) op de SolarVault 3 verandert",
+          "de": "Wenn sich die Leistung (PV2) an der SolarVault 3 ändert",
+          "fr": "Lorsque la puissance (PV2) change sur la SolarVault 3",
+          "it": "Quando la potenza (PV2) cambia sulla SolarVault 3",
+          "sv": "När effekten (PV2) ändras på SolarVault 3",
+          "no": "Når effekten (PV2) endres på SolarVault 3",
+          "es": "Cuando la potencia (PV2) cambia en la SolarVault 3",
+          "da": "Når effekten (PV2) ændres på SolarVault 3",
+          "ru": "Когда мощность (PV2) на SolarVault 3 меняется",
+          "pl": "Gdy moc (PV2) zmienia się w SolarVault 3",
+          "ko": "SolarVault 3에서 전력 (PV2)이 변경될 때",
+          "ar": "عند تغيّر القدرة (PV2) على SolarVault 3"
+        },
+        "tokens": [
+          {
+            "name": "measure_power.pv2",
+            "type": "number",
+            "title": {
+              "en": "Power (PV2)",
+              "nl": "Vermogen (PV2)",
+              "de": "Leistung (PV2)",
+              "fr": "Puissance (PV2)",
+              "it": "Potenza (PV2)",
+              "sv": "Effekt (PV2)",
+              "no": "Effekt (PV2)",
+              "es": "Potencia (PV2)",
+              "da": "Effekt (PV2)",
+              "ru": "Мощность (PV2)",
+              "pl": "Moc (PV2)",
+              "ko": "전력 (PV2)",
+              "ar": "الطاقة (PV2)"
+            }
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=solarvault&class=solarpanel&capabilities=measure_power.pv2"
+          }
+        ]
+      },
+      {
+        "id": "measure_power.pv3_changed",
+        "title": {
+          "en": "Power (PV3) changed",
+          "nl": "Vermogen (PV3) veranderd",
+          "de": "Leistung (PV3) geändert",
+          "fr": "Puissance (PV3) changée",
+          "it": "Potenza (PV3) cambiata",
+          "sv": "Effekt (PV3) ändrad",
+          "no": "Effekt (PV3) endret",
+          "es": "Potencia (PV3) cambiada",
+          "da": "Effekt (PV3) ændret",
+          "ru": "Изменилась мощность (PV3)",
+          "pl": "Moc (PV3) zmieniona",
+          "ko": "전력 (PV3) 변경",
+          "ar": "تغيّرت القدرة (PV3)"
+        },
+        "titleFormatted": {
+          "en": "The power (PV3) has changed",
+          "nl": "Het vermogen (PV3) is veranderd",
+          "de": "Die Leistung (PV3) hat sich geändert",
+          "fr": "La puissance (PV3) a changé",
+          "it": "La potenza (PV3) è cambiata",
+          "sv": "Effekten (PV3) har ändrats",
+          "no": "Effekten (PV3) har endret seg",
+          "es": "La potencia (PV3) ha cambiado",
+          "da": "Effekten (PV3) er ændret",
+          "ru": "Мощность (PV3) изменилась",
+          "pl": "Moc (PV3) się zmieniła",
+          "ko": "전력 (PV3)이 변경됨",
+          "ar": "تغيّرت القدرة (PV3)"
+        },
+        "hint": {
+          "en": "When the power (PV3) on the SolarVault 3 changes",
+          "nl": "Wanneer het vermogen (PV3) op de SolarVault 3 verandert",
+          "de": "Wenn sich die Leistung (PV3) an der SolarVault 3 ändert",
+          "fr": "Lorsque la puissance (PV3) change sur la SolarVault 3",
+          "it": "Quando la potenza (PV3) cambia sulla SolarVault 3",
+          "sv": "När effekten (PV3) ändras på SolarVault 3",
+          "no": "Når effekten (PV3) endres på SolarVault 3",
+          "es": "Cuando la potencia (PV3) cambia en la SolarVault 3",
+          "da": "Når effekten (PV3) ændres på SolarVault 3",
+          "ru": "Когда мощность (PV3) на SolarVault 3 меняется",
+          "pl": "Gdy moc (PV3) zmienia się w SolarVault 3",
+          "ko": "SolarVault 3에서 전력 (PV3)이 변경될 때",
+          "ar": "عند تغيّر القدرة (PV3) على SolarVault 3"
+        },
+        "tokens": [
+          {
+            "name": "measure_power.pv3",
+            "type": "number",
+            "title": {
+              "en": "Power (PV3)",
+              "nl": "Vermogen (PV3)",
+              "de": "Leistung (PV3)",
+              "fr": "Puissance (PV3)",
+              "it": "Potenza (PV3)",
+              "sv": "Effekt (PV3)",
+              "no": "Effekt (PV3)",
+              "es": "Potencia (PV3)",
+              "da": "Effekt (PV3)",
+              "ru": "Мощность (PV3)",
+              "pl": "Moc (PV3)",
+              "ko": "전력 (PV3)",
+              "ar": "الطاقة (PV3)"
+            }
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=solarvault&class=solarpanel&capabilities=measure_power.pv3"
+          }
+        ]
+      },
+      {
+        "id": "measure_power.pv4_changed",
+        "title": {
+          "en": "Power (PV4) changed",
+          "nl": "Vermogen (PV4) veranderd",
+          "de": "Leistung (PV4) geändert",
+          "fr": "Puissance (PV4) changée",
+          "it": "Potenza (PV4) cambiata",
+          "sv": "Effekt (PV4) ändrad",
+          "no": "Effekt (PV4) endret",
+          "es": "Potencia (PV4) cambiada",
+          "da": "Effekt (PV4) ændret",
+          "ru": "Изменилась мощность (PV4)",
+          "pl": "Moc (PV4) zmieniona",
+          "ko": "전력 (PV4) 변경",
+          "ar": "تغيّرت القدرة (PV4)"
+        },
+        "titleFormatted": {
+          "en": "The power (PV4) has changed",
+          "nl": "Het vermogen (PV4) is veranderd",
+          "de": "Die Leistung (PV4) hat sich geändert",
+          "fr": "La puissance (PV4) a changé",
+          "it": "La potenza (PV4) è cambiata",
+          "sv": "Effekten (PV4) har ändrats",
+          "no": "Effekten (PV4) har endret seg",
+          "es": "La potencia (PV4) ha cambiado",
+          "da": "Effekten (PV4) er ændret",
+          "ru": "Мощность (PV4) изменилась",
+          "pl": "Moc (PV4) się zmieniła",
+          "ko": "전력 (PV4)이 변경됨",
+          "ar": "تغيّرت القدرة (PV4)"
+        },
+        "hint": {
+          "en": "When the power (PV4) on the SolarVault 3 changes",
+          "nl": "Wanneer het vermogen (PV4) op de SolarVault 3 verandert",
+          "de": "Wenn sich die Leistung (PV4) an der SolarVault 3 ändert",
+          "fr": "Lorsque la puissance (PV4) change sur la SolarVault 3",
+          "it": "Quando la potenza (PV4) cambia sulla SolarVault 3",
+          "sv": "När effekten (PV4) ändras på SolarVault 3",
+          "no": "Når effekten (PV4) endres på SolarVault 3",
+          "es": "Cuando la potencia (PV4) cambia en la SolarVault 3",
+          "da": "Når effekten (PV4) ændres på SolarVault 3",
+          "ru": "Когда мощность (PV4) на SolarVault 3 меняется",
+          "pl": "Gdy moc (PV4) zmienia się w SolarVault 3",
+          "ko": "SolarVault 3에서 전력 (PV4)이 변경될 때",
+          "ar": "عند تغيّر القدرة (PV4) على SolarVault 3"
+        },
+        "tokens": [
+          {
+            "name": "measure_power.pv4",
+            "type": "number",
+            "title": {
+              "en": "Power (PV4)",
+              "nl": "Vermogen (PV4)",
+              "de": "Leistung (PV4)",
+              "fr": "Puissance (PV4)",
+              "it": "Potenza (PV4)",
+              "sv": "Effekt (PV4)",
+              "no": "Effekt (PV4)",
+              "es": "Potencia (PV4)",
+              "da": "Effekt (PV4)",
+              "ru": "Мощность (PV4)",
+              "pl": "Moc (PV4)",
+              "ko": "전력 (PV4)",
+              "ar": "الطاقة (PV4)"
+            }
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=solarvault&class=solarpanel&capabilities=measure_power.pv4"
+          }
+        ]
+      },
+      {
+        "id": "meter_power.ac_exported_changed",
+        "title": {
+          "en": "AC export from battery changed",
+          "nl": "AC-export van batterij veranderd",
+          "de": "AC-Export aus Batterie geändert",
+          "fr": "Export AC depuis batterie changé",
+          "it": "Export AC da batteria cambiato",
+          "sv": "AC-export från batteri ändrad",
+          "no": "AC-eksport fra batteri endret",
+          "es": "Exportación AC desde batería cambiada",
+          "da": "AC-eksport fra batteri ændret",
+          "ru": "Изменился AC-экспорт из батареи",
+          "pl": "Eksport AC z baterii zmieniony",
+          "ko": "AC 배터리 유출 변경",
+          "ar": "تغيّر تصدير AC من البطارية"
+        },
+        "titleFormatted": {
+          "en": "The AC export from battery has changed",
+          "nl": "De AC-export van de batterij is veranderd",
+          "de": "Der AC-Export aus der Batterie hat sich geändert",
+          "fr": "L'export AC depuis la batterie a changé",
+          "it": "L'esportazione AC dalla batteria è cambiata",
+          "sv": "AC-exporten från batteriet har ändrats",
+          "no": "AC-eksporten fra batteriet har endret seg",
+          "es": "La exportación AC desde la batería ha cambiado",
+          "da": "AC-eksporten fra batteriet er ændret",
+          "ru": "AC-экспорт из батареи изменился",
+          "pl": "Eksport AC z baterii się zmienił",
+          "ko": "AC 배터리 유출이 변경됨",
+          "ar": "تغيّر تصدير AC من البطارية"
+        },
+        "hint": {
+          "en": "When the AC export from battery on the SolarVault 3 changes",
+          "nl": "Wanneer de AC-export van de batterij op de SolarVault 3 verandert",
+          "de": "Wenn sich der AC-Export aus der Batterie an der SolarVault 3 ändert",
+          "fr": "Lorsque l'export AC depuis la batterie change sur la SolarVault 3",
+          "it": "Quando l'esportazione AC dalla batteria cambia sulla SolarVault 3",
+          "sv": "När AC-exporten från batteriet ändras på SolarVault 3",
+          "no": "Når AC-eksporten fra batteriet endres på SolarVault 3",
+          "es": "Cuando la exportación AC desde la batería cambia en la SolarVault 3",
+          "da": "Når AC-eksporten fra batteriet ændres på SolarVault 3",
+          "ru": "Когда AC-экспорт из батареи на SolarVault 3 меняется",
+          "pl": "Gdy eksport AC z baterii zmienia się w SolarVault 3",
+          "ko": "SolarVault 3에서 AC 배터리 유출이 변경될 때",
+          "ar": "عند تغيّر تصدير AC من البطارية على SolarVault 3"
+        },
+        "tokens": [
+          {
+            "name": "meter_power.ac_exported",
+            "type": "number",
+            "title": {
+              "en": "AC exported from battery",
+              "nl": "AC Geëxporteerd van Batterij",
+              "de": "AC Exportiert aus Batterie",
+              "fr": "AC Exporté depuis la Batterie",
+              "it": "AC Esportata dalla Batteria",
+              "sv": "AC Exporterat från Batteri",
+              "no": "AC Eksportert fra Batteri",
+              "es": "AC Exportado desde la Batería",
+              "da": "AC Eksporteret fra Batteri",
+              "ru": "AC Экспортирован из Аккумулятора",
+              "pl": "AC Wyeksportowany z Baterii",
+              "ko": "배터리에서 유출된 AC",
+              "ar": "AC مُصدَّر من البطارية"
+            }
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=solarvault&class=battery&capabilities=meter_power.ac_exported"
+          }
+        ]
+      },
+      {
+        "id": "meter_power.ac_imported_changed",
+        "title": {
+          "en": "AC import to battery changed",
+          "nl": "AC-import naar batterij veranderd",
+          "de": "AC-Import in Batterie geändert",
+          "fr": "Import AC vers batterie changé",
+          "it": "Import AC in batteria cambiato",
+          "sv": "AC-import till batteri ändrad",
+          "no": "AC-import til batteri endret",
+          "es": "Importación AC a batería cambiada",
+          "da": "AC-import til batteri ændret",
+          "ru": "Изменился AC-импорт в батарею",
+          "pl": "Import AC do baterii zmieniony",
+          "ko": "AC 배터리 유입 변경",
+          "ar": "تغيّر استيراد AC إلى البطارية"
+        },
+        "titleFormatted": {
+          "en": "The AC import to battery has changed",
+          "nl": "De AC-import naar de batterij is veranderd",
+          "de": "Der AC-Import in die Batterie hat sich geändert",
+          "fr": "L'import AC vers la batterie a changé",
+          "it": "L'importazione AC in batteria è cambiata",
+          "sv": "AC-importen till batteriet har ändrats",
+          "no": "AC-importen til batteriet har endret seg",
+          "es": "La importación AC a la batería ha cambiado",
+          "da": "AC-importen til batteriet er ændret",
+          "ru": "AC-импорт в батарею изменился",
+          "pl": "Import AC do baterii się zmienił",
+          "ko": "AC 배터리 유입이 변경됨",
+          "ar": "تغيّر استيراد AC إلى البطارية"
+        },
+        "hint": {
+          "en": "When the AC import to battery on the SolarVault 3 changes",
+          "nl": "Wanneer de AC-import naar de batterij op de SolarVault 3 verandert",
+          "de": "Wenn sich der AC-Import in die Batterie an der SolarVault 3 ändert",
+          "fr": "Lorsque l'import AC vers la batterie change sur la SolarVault 3",
+          "it": "Quando l'importazione AC in batteria cambia sulla SolarVault 3",
+          "sv": "När AC-importen till batteriet ändras på SolarVault 3",
+          "no": "Når AC-importen til batteriet endres på SolarVault 3",
+          "es": "Cuando la importación AC a la batería cambia en la SolarVault 3",
+          "da": "Når AC-importen til batteriet ændres på SolarVault 3",
+          "ru": "Когда AC-импорт в батарею на SolarVault 3 меняется",
+          "pl": "Gdy import AC do baterii zmienia się w SolarVault 3",
+          "ko": "SolarVault 3에서 AC 배터리 유입이 변경될 때",
+          "ar": "عند تغيّر استيراد AC إلى البطارية على SolarVault 3"
+        },
+        "tokens": [
+          {
+            "name": "meter_power.ac_imported",
+            "type": "number",
+            "title": {
+              "en": "AC imported to battery",
+              "nl": "AC Geïmporteerd naar Batterij",
+              "de": "AC Importiert in Batterie",
+              "fr": "AC Importé vers la Batterie",
+              "it": "AC Importata in Batteria",
+              "sv": "AC Importerat till Batteri",
+              "no": "AC Importert til Batteri",
+              "es": "AC Importado a la Batería",
+              "da": "AC Importeret til Batteri",
+              "ru": "AC Импортирован в Аккумулятор",
+              "pl": "AC Zaimportowany do Baterii",
+              "ko": "배터리로 유입된 AC",
+              "ar": "AC مستورد إلى البطارية"
+            }
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=solarvault&class=battery&capabilities=meter_power.ac_imported"
+          }
+        ]
+      },
+      {
+        "id": "meter_power.charged_changed",
+        "title": {
+          "en": "Total energy charged changed",
+          "nl": "Totaal opgeladen energie veranderd",
+          "de": "Gesamt geladene Energie geändert",
+          "fr": "Énergie totale chargée changée",
+          "it": "Energia totale caricata cambiata",
+          "sv": "Total laddad energi ändrad",
+          "no": "Total ladet energi endret",
+          "es": "Energía total cargada cambiada",
+          "da": "Samlet opladet energi ændret",
+          "ru": "Изменилась общая заряженная энергия",
+          "pl": "Łączna naładowana energia zmieniona",
+          "ko": "총 충전 에너지 변경",
+          "ar": "تغيّرت إجمالي الطاقة المشحونة"
+        },
+        "titleFormatted": {
+          "en": "The total energy charged has changed",
+          "nl": "De totaal opgeladen energie is veranderd",
+          "de": "Die gesamt geladene Energie hat sich geändert",
+          "fr": "L'énergie totale chargée a changé",
+          "it": "L'energia totale caricata è cambiata",
+          "sv": "Den totala laddade energin har ändrats",
+          "no": "Den totale ladde energien har endret seg",
+          "es": "La energía total cargada ha cambiado",
+          "da": "Den samlede opladede energi er ændret",
+          "ru": "Общая заряженная энергия изменилась",
+          "pl": "Łączna naładowana energia się zmieniła",
+          "ko": "총 충전 에너지가 변경됨",
+          "ar": "تغيّرت إجمالي الطاقة المشحونة"
+        },
+        "hint": {
+          "en": "When the total energy charged on the SolarVault 3 changes",
+          "nl": "Wanneer de totaal opgeladen energie op de SolarVault 3 verandert",
+          "de": "Wenn sich die gesamt geladene Energie an der SolarVault 3 ändert",
+          "fr": "Lorsque l'énergie totale chargée change sur la SolarVault 3",
+          "it": "Quando l'energia totale caricata cambia sulla SolarVault 3",
+          "sv": "När den totala laddade energin ändras på SolarVault 3",
+          "no": "Når den totale ladde energien endres på SolarVault 3",
+          "es": "Cuando la energía total cargada cambia en la SolarVault 3",
+          "da": "Når den samlede opladede energi ændres på SolarVault 3",
+          "ru": "Когда общая заряженная энергия на SolarVault 3 меняется",
+          "pl": "Gdy łączna naładowana energia zmienia się w SolarVault 3",
+          "ko": "SolarVault 3에서 총 충전 에너지가 변경될 때",
+          "ar": "عند تغيّر إجمالي الطاقة المشحونة على SolarVault 3"
+        },
+        "tokens": [
+          {
+            "name": "meter_power.charged",
+            "type": "number",
+            "title": {
+              "en": "Total energy charged",
+              "nl": "Totaal Opgeladen Energie",
+              "de": "Gesamt Geladene Energie",
+              "fr": "Énergie Totale Chargée",
+              "it": "Energia Totale Caricata",
+              "sv": "Total Laddad Energi",
+              "no": "Total Ladet Energi",
+              "es": "Energía Total Cargada",
+              "da": "Samlet Opladet Energi",
+              "ru": "Общая Заряженная Энергия",
+              "pl": "Łączna Naładowana Energia",
+              "ko": "총 충전 에너지",
+              "ar": "إجمالي الطاقة المشحونة"
+            }
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=solarvault&class=battery&capabilities=meter_power.charged"
+          }
+        ]
+      },
+      {
+        "id": "meter_power.discharged_changed",
+        "title": {
+          "en": "Total energy discharged changed",
+          "nl": "Totaal ontladen energie veranderd",
+          "de": "Gesamt entladene Energie geändert",
+          "fr": "Énergie totale déchargée changée",
+          "it": "Energia totale scaricata cambiata",
+          "sv": "Total urladdad energi ändrad",
+          "no": "Total utladet energi endret",
+          "es": "Energía total descargada cambiada",
+          "da": "Samlet afladet energi ændret",
+          "ru": "Изменилась общая разряженная энергия",
+          "pl": "Łączna rozładowana energia zmieniona",
+          "ko": "총 방전 에너지 변경",
+          "ar": "تغيّرت إجمالي الطاقة المفرغة"
+        },
+        "titleFormatted": {
+          "en": "The total energy discharged has changed",
+          "nl": "De totaal ontladen energie is veranderd",
+          "de": "Die gesamt entladene Energie hat sich geändert",
+          "fr": "L'énergie totale déchargée a changé",
+          "it": "L'energia totale scaricata è cambiata",
+          "sv": "Den totala urladdade energin har ändrats",
+          "no": "Den totale utladde energien har endret seg",
+          "es": "La energía total descargada ha cambiado",
+          "da": "Den samlede afladede energi er ændret",
+          "ru": "Общая разряженная энергия изменилась",
+          "pl": "Łączna rozładowana energia się zmieniła",
+          "ko": "총 방전 에너지가 변경됨",
+          "ar": "تغيّرت إجمالي الطاقة المفرغة"
+        },
+        "hint": {
+          "en": "When the total energy discharged on the SolarVault 3 changes",
+          "nl": "Wanneer de totaal ontladen energie op de SolarVault 3 verandert",
+          "de": "Wenn sich die gesamt entladene Energie an der SolarVault 3 ändert",
+          "fr": "Lorsque l'énergie totale déchargée change sur la SolarVault 3",
+          "it": "Quando l'energia totale scaricata cambia sulla SolarVault 3",
+          "sv": "När den totala urladdade energin ändras på SolarVault 3",
+          "no": "Når den totale utladde energien endres på SolarVault 3",
+          "es": "Cuando la energía total descargada cambia en la SolarVault 3",
+          "da": "Når den samlede afladede energi ændres på SolarVault 3",
+          "ru": "Когда общая разряженная энергия на SolarVault 3 меняется",
+          "pl": "Gdy łączna rozładowana energia zmienia się w SolarVault 3",
+          "ko": "SolarVault 3에서 총 방전 에너지가 변경될 때",
+          "ar": "عند تغيّر إجمالي الطاقة المفرغة على SolarVault 3"
+        },
+        "tokens": [
+          {
+            "name": "meter_power.discharged",
+            "type": "number",
+            "title": {
+              "en": "Total energy discharged",
+              "nl": "Totaal Ontladen Energie",
+              "de": "Gesamt Entladene Energie",
+              "fr": "Énergie Totale Déchargée",
+              "it": "Energia Totale Scaricata",
+              "sv": "Total Urladdad Energi",
+              "no": "Total Utladet Energi",
+              "es": "Energía Total Descargada",
+              "da": "Samlet Afladet Energi",
+              "ru": "Общая Разряженная Энергия",
+              "pl": "Łączna Rozładowana Energia",
+              "ko": "총 방전 에너지",
+              "ar": "إجمالي الطاقة المفرغة"
+            }
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=solarvault&class=battery&capabilities=meter_power.discharged"
+          }
+        ]
+      },
+      {
+        "id": "meter_power.grid_exported_changed",
+        "title": {
+          "en": "Grid export from battery changed",
+          "nl": "Netexport van batterij veranderd",
+          "de": "Netzexport aus Batterie geändert",
+          "fr": "Export réseau depuis batterie changé",
+          "it": "Export rete da batteria cambiato",
+          "sv": "Nätexport från batteri ändrad",
+          "no": "Netteksport fra batteri endret",
+          "es": "Exportación de red desde batería cambiada",
+          "da": "Neteksport fra batteri ændret",
+          "ru": "Изменился экспорт сети из батареи",
+          "pl": "Eksport sieci z baterii zmieniony",
+          "ko": "배터리 전력망 유출 변경",
+          "ar": "تغيّر تصدير الشبكة من البطارية"
+        },
+        "titleFormatted": {
+          "en": "The grid export from battery has changed",
+          "nl": "De netexport van de batterij is veranderd",
+          "de": "Der Netzexport aus der Batterie hat sich geändert",
+          "fr": "L'export réseau depuis la batterie a changé",
+          "it": "L'esportazione di rete dalla batteria è cambiata",
+          "sv": "Nätexporten från batteriet har ändrats",
+          "no": "Netteksporten fra batteriet har endret seg",
+          "es": "La exportación de red desde la batería ha cambiado",
+          "da": "Neteksporten fra batteriet er ændret",
+          "ru": "Экспорт сети из батареи изменился",
+          "pl": "Eksport sieci z baterii się zmienił",
+          "ko": "배터리에서 유출된 전력망이 변경됨",
+          "ar": "تغيّر تصدير الشبكة من البطارية"
+        },
+        "hint": {
+          "en": "When the grid export from battery on the SolarVault 3 changes",
+          "nl": "Wanneer de netexport van de batterij op de SolarVault 3 verandert",
+          "de": "Wenn sich der Netzexport aus der Batterie an der SolarVault 3 ändert",
+          "fr": "Lorsque l'export réseau depuis la batterie change sur la SolarVault 3",
+          "it": "Quando l'esportazione di rete dalla batteria cambia sulla SolarVault 3",
+          "sv": "När nätexporten från batteriet ändras på SolarVault 3",
+          "no": "Når netteksporten fra batteriet endres på SolarVault 3",
+          "es": "Cuando la exportación de red desde la batería cambia en la SolarVault 3",
+          "da": "Når neteksporten fra batteriet ændres på SolarVault 3",
+          "ru": "Когда экспорт сети из батареи на SolarVault 3 меняется",
+          "pl": "Gdy eksport sieci z baterii zmienia się w SolarVault 3",
+          "ko": "SolarVault 3에서 배터리에서 유출된 전력망이 변경될 때",
+          "ar": "عند تغيّر تصدير الشبكة من البطارية على SolarVault 3"
+        },
+        "tokens": [
+          {
+            "name": "meter_power.grid_exported",
+            "type": "number",
+            "title": {
+              "en": "Grid exported from battery",
+              "nl": "Net Geëxporteerd van Batterij",
+              "de": "Netz Exportiert aus Batterie",
+              "fr": "Réseau Exporté depuis la Batterie",
+              "it": "Rete Esportata dalla Batteria",
+              "sv": "Nät Exporterat från Batteri",
+              "no": "Nett Eksportert fra Batteri",
+              "es": "Red Exportada desde la Batería",
+              "da": "Net Eksporteret fra Batteri",
+              "ru": "Сеть Экспортирована из Аккумулятора",
+              "pl": "Sieć Wyeksportowana z Baterii",
+              "ko": "배터리에서 유출된 전력망",
+              "ar": "شبكة مُصدَّرة من البطارية"
+            }
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=solarvault&class=battery&capabilities=meter_power.grid_exported"
+          }
+        ]
+      },
+      {
+        "id": "meter_power.grid_imported_changed",
+        "title": {
+          "en": "Grid import to battery changed",
+          "nl": "Netimport naar batterij veranderd",
+          "de": "Netzimport in Batterie geändert",
+          "fr": "Import réseau vers batterie changé",
+          "it": "Import rete in batteria cambiato",
+          "sv": "Nätimport till batteri ändrad",
+          "no": "Nettimport til batteri endret",
+          "es": "Importación de red a batería cambiada",
+          "da": "Netimport til batteri ændret",
+          "ru": "Изменился импорт сети в батарею",
+          "pl": "Import sieci do baterii zmieniony",
+          "ko": "배터리 전력망 유입 변경",
+          "ar": "تغيّر استيراد الشبكة إلى البطارية"
+        },
+        "titleFormatted": {
+          "en": "The grid import to battery has changed",
+          "nl": "De netimport naar de batterij is veranderd",
+          "de": "Der Netzimport in die Batterie hat sich geändert",
+          "fr": "L'import réseau vers la batterie a changé",
+          "it": "L'importazione di rete in batteria è cambiata",
+          "sv": "Nätimporten till batteriet har ändrats",
+          "no": "Nettimporten til batteriet har endret seg",
+          "es": "La importación de red a la batería ha cambiado",
+          "da": "Netimporten til batteriet er ændret",
+          "ru": "Импорт сети в батарею изменился",
+          "pl": "Import sieci do baterii się zmienił",
+          "ko": "배터리로 유입된 전력망이 변경됨",
+          "ar": "تغيّر استيراد الشبكة إلى البطارية"
+        },
+        "hint": {
+          "en": "When the grid import to battery on the SolarVault 3 changes",
+          "nl": "Wanneer de netimport naar de batterij op de SolarVault 3 verandert",
+          "de": "Wenn sich der Netzimport in die Batterie an der SolarVault 3 ändert",
+          "fr": "Lorsque l'import réseau vers la batterie change sur la SolarVault 3",
+          "it": "Quando l'importazione di rete in batteria cambia sulla SolarVault 3",
+          "sv": "När nätimporten till batteriet ändras på SolarVault 3",
+          "no": "Når nettimporten til batteriet endres på SolarVault 3",
+          "es": "Cuando la importación de red a la batería cambia en la SolarVault 3",
+          "da": "Når netimporten til batteriet ændres på SolarVault 3",
+          "ru": "Когда импорт сети в батарею на SolarVault 3 меняется",
+          "pl": "Gdy import sieci do baterii zmienia się w SolarVault 3",
+          "ko": "SolarVault 3에서 배터리로 유입된 전력망이 변경될 때",
+          "ar": "عند تغيّر استيراد الشبكة إلى البطارية على SolarVault 3"
+        },
+        "tokens": [
+          {
+            "name": "meter_power.grid_imported",
+            "type": "number",
+            "title": {
+              "en": "Grid imported to battery",
+              "nl": "Net Geïmporteerd naar Batterij",
+              "de": "Netz Importiert in Batterie",
+              "fr": "Réseau Importé vers la Batterie",
+              "it": "Rete Importata in Batteria",
+              "sv": "Nät Importerat till Batteri",
+              "no": "Nett Importert til Batteri",
+              "es": "Red Importada a la Batería",
+              "da": "Net Importeret til Batteri",
+              "ru": "Сеть Импортирована в Аккумулятор",
+              "pl": "Sieć Zaimportowana do Baterii",
+              "ko": "배터리로 유입된 전력망",
+              "ar": "شبكة مستوردة إلى البطارية"
+            }
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=solarvault&class=battery&capabilities=meter_power.grid_imported"
+          }
+        ]
+      },
+      {
+        "id": "meter_power.pv_exported_changed",
+        "title": {
+          "en": "PV export to grid changed",
+          "nl": "PV-export naar net veranderd",
+          "de": "PV-Export ins Netz geändert",
+          "fr": "Export PV vers réseau changé",
+          "it": "Export PV in rete cambiato",
+          "sv": "PV-export till nät ändrad",
+          "no": "PV-eksport til nett endret",
+          "es": "Exportación PV a red cambiada",
+          "da": "PV-eksport til net ændret",
+          "ru": "Изменился PV-экспорт в сеть",
+          "pl": "Eksport PV do sieci zmieniony",
+          "ko": "PV 전력망 유출 변경",
+          "ar": "تغيّر تصدير PV إلى الشبكة"
+        },
+        "titleFormatted": {
+          "en": "The PV export to grid has changed",
+          "nl": "De PV-export naar het net is veranderd",
+          "de": "Der PV-Export ins Netz hat sich geändert",
+          "fr": "L'export PV vers le réseau a changé",
+          "it": "L'esportazione PV in rete è cambiata",
+          "sv": "PV-exporten till nätet har ändrats",
+          "no": "PV-eksporten til nettet har endret seg",
+          "es": "La exportación PV a la red ha cambiado",
+          "da": "PV-eksporten til nettet er ændret",
+          "ru": "PV-экспорт в сеть изменился",
+          "pl": "Eksport PV do sieci się zmienił",
+          "ko": "PV 전력망 유출이 변경됨",
+          "ar": "تغيّر تصدير PV إلى الشبكة"
+        },
+        "hint": {
+          "en": "When the PV export to grid on the SolarVault 3 changes",
+          "nl": "Wanneer de PV-export naar het net op de SolarVault 3 verandert",
+          "de": "Wenn sich der PV-Export ins Netz an der SolarVault 3 ändert",
+          "fr": "Lorsque l'export PV vers le réseau change sur la SolarVault 3",
+          "it": "Quando l'esportazione PV in rete cambia sulla SolarVault 3",
+          "sv": "När PV-exporten till nätet ändras på SolarVault 3",
+          "no": "Når PV-eksporten til nettet endres på SolarVault 3",
+          "es": "Cuando la exportación PV a la red cambia en la SolarVault 3",
+          "da": "Når PV-eksporten til nettet ændres på SolarVault 3",
+          "ru": "Когда PV-экспорт в сеть на SolarVault 3 меняется",
+          "pl": "Gdy eksport PV do sieci zmienia się w SolarVault 3",
+          "ko": "SolarVault 3에서 PV 전력망 유출이 변경될 때",
+          "ar": "عند تغيّر تصدير PV إلى الشبكة على SolarVault 3"
+        },
+        "tokens": [
+          {
+            "name": "meter_power.pv_exported",
+            "type": "number",
+            "title": {
+              "en": "PV exported to grid",
+              "nl": "PV Geëxporteerd naar Net",
+              "de": "PV Exportiert ins Netz",
+              "fr": "PV Exporté vers le Réseau",
+              "it": "PV Esportato in Rete",
+              "sv": "PV Exporterat till Nät",
+              "no": "PV Eksportert til Nett",
+              "es": "PV Exportado a la Red",
+              "da": "PV Eksporteret til Net",
+              "ru": "PV Экспорт в Сеть",
+              "pl": "PV Export do Sieci",
+              "ko": "PV 전력망 유출",
+              "ar": "PV تصدير الشبكة"
+            }
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=solarvault&class=battery&capabilities=meter_power.pv_exported"
+          }
+        ]
+      },
+      {
+        "id": "meter_power.pv_imported_changed",
+        "title": {
+          "en": "PV import to battery changed",
+          "nl": "PV-import naar batterij veranderd",
+          "de": "PV-Import in Batterie geändert",
+          "fr": "Import PV vers batterie changé",
+          "it": "Import PV in batteria cambiato",
+          "sv": "PV-import till batteri ändrad",
+          "no": "PV-import til batteri endret",
+          "es": "Importación PV a batería cambiada",
+          "da": "PV-import til batteri ændret",
+          "ru": "Изменился PV-импорт в батарею",
+          "pl": "Import PV do baterii zmieniony",
+          "ko": "PV 배터리 유입 변경",
+          "ar": "تغيّر استيراد PV إلى البطارية"
+        },
+        "titleFormatted": {
+          "en": "The PV import to battery has changed",
+          "nl": "De PV-import naar de batterij is veranderd",
+          "de": "Der PV-Import in die Batterie hat sich geändert",
+          "fr": "L'import PV vers la batterie a changé",
+          "it": "L'importazione PV in batteria è cambiata",
+          "sv": "PV-importen till batteriet har ändrats",
+          "no": "PV-importen til batteriet har endret seg",
+          "es": "La importación PV a la batería ha cambiado",
+          "da": "PV-importen til batteriet er ændret",
+          "ru": "PV-импорт в батарею изменился",
+          "pl": "Import PV do baterii się zmienił",
+          "ko": "PV 배터리 유입이 변경됨",
+          "ar": "تغيّر استيراد PV إلى البطارية"
+        },
+        "hint": {
+          "en": "When the PV import to battery on the SolarVault 3 changes",
+          "nl": "Wanneer de PV-import naar de batterij op de SolarVault 3 verandert",
+          "de": "Wenn sich der PV-Import in die Batterie an der SolarVault 3 ändert",
+          "fr": "Lorsque l'import PV vers la batterie change sur la SolarVault 3",
+          "it": "Quando l'importazione PV in batteria cambia sulla SolarVault 3",
+          "sv": "När PV-importen till batteriet ändras på SolarVault 3",
+          "no": "Når PV-importen til batteriet endres på SolarVault 3",
+          "es": "Cuando la importación PV a la batería cambia en la SolarVault 3",
+          "da": "Når PV-importen til batteriet ændres på SolarVault 3",
+          "ru": "Когда PV-импорт в батарею на SolarVault 3 меняется",
+          "pl": "Gdy import PV do baterii zmienia się w SolarVault 3",
+          "ko": "SolarVault 3에서 PV 배터리 유입이 변경될 때",
+          "ar": "عند تغيّر استيراد PV إلى البطارية على SolarVault 3"
+        },
+        "tokens": [
+          {
+            "name": "meter_power.pv_imported",
+            "type": "number",
+            "title": {
+              "en": "PV imported to battery",
+              "nl": "PV Geïmporteerd naar Batterij",
+              "de": "PV Importiert in Batterie",
+              "fr": "PV Importé vers la Batterie",
+              "it": "PV Importato in Batteria",
+              "sv": "PV Importerat till Batteri",
+              "no": "PV Importert til Batteri",
+              "es": "PV Importado a la Batería",
+              "da": "PV Importeret til Batteri",
+              "ru": "PV Импорт в Батарею",
+              "pl": "PV Import do Baterii",
+              "ko": "PV 배터리 유입",
+              "ar": "PV استيراد البطارية"
+            }
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=solarvault&class=battery&capabilities=meter_power.pv_imported"
+          }
+        ]
+      },
+      {
+        "id": "meter_power.pv1_changed",
+        "title": {
+          "en": "Energy generated (PV1) changed",
+          "nl": "Opgewekte energie (PV1) veranderd",
+          "de": "Erzeugte Energie (PV1) geändert",
+          "fr": "Énergie générée (PV1) changée",
+          "it": "Energia generata (PV1) cambiata",
+          "sv": "Genererad energi (PV1) ändrad",
+          "no": "Generert energi (PV1) endret",
+          "es": "Energía generada (PV1) cambiada",
+          "da": "Genereret energi (PV1) ændret",
+          "ru": "Изменилась сгенерированная энергия (PV1)",
+          "pl": "Wygenerowana energia (PV1) zmieniona",
+          "ko": "발전 에너지 (PV1) 변경",
+          "ar": "تغيّرت الطاقة المُولَّدة (PV1)"
+        },
+        "titleFormatted": {
+          "en": "The energy generated (PV1) has changed",
+          "nl": "De opgewekte energie (PV1) is veranderd",
+          "de": "Die erzeugte Energie (PV1) hat sich geändert",
+          "fr": "L'énergie générée (PV1) a changé",
+          "it": "L'energia generata (PV1) è cambiata",
+          "sv": "Den genererade energin (PV1) har ändrats",
+          "no": "Den genererte energien (PV1) har endret seg",
+          "es": "La energía generada (PV1) ha cambiado",
+          "da": "Den genererede energi (PV1) er ændret",
+          "ru": "Сгенерированная энергия (PV1) изменилась",
+          "pl": "Wygenerowana energia (PV1) się zmieniła",
+          "ko": "발전 에너지 (PV1)가 변경됨",
+          "ar": "تغيّرت الطاقة المُولَّدة (PV1)"
+        },
+        "hint": {
+          "en": "When the energy generated (PV1) on the SolarVault 3 changes",
+          "nl": "Wanneer de opgewekte energie (PV1) op de SolarVault 3 verandert",
+          "de": "Wenn sich die erzeugte Energie (PV1) an der SolarVault 3 ändert",
+          "fr": "Lorsque l'énergie générée (PV1) change sur la SolarVault 3",
+          "it": "Quando l'energia generata (PV1) cambia sulla SolarVault 3",
+          "sv": "När den genererade energin (PV1) ändras på SolarVault 3",
+          "no": "Når den genererte energien (PV1) endres på SolarVault 3",
+          "es": "Cuando la energía generada (PV1) cambia en la SolarVault 3",
+          "da": "Når den genererede energi (PV1) ændres på SolarVault 3",
+          "ru": "Когда сгенерированная энергия (PV1) на SolarVault 3 меняется",
+          "pl": "Gdy wygenerowana energia (PV1) zmienia się w SolarVault 3",
+          "ko": "SolarVault 3에서 발전 에너지 (PV1)가 변경될 때",
+          "ar": "عند تغيّر الطاقة المُولَّدة (PV1) على SolarVault 3"
+        },
+        "tokens": [
+          {
+            "name": "meter_power.pv1",
+            "type": "number",
+            "title": {
+              "en": "Energy generated (PV1)",
+              "nl": "Opgewekte Energie (PV1)",
+              "de": "Erzeugte Energie (PV1)",
+              "fr": "Énergie Générée (PV1)",
+              "it": "Energia Generata (PV1)",
+              "sv": "Genererad Energi (PV1)",
+              "no": "Generert Energi (PV1)",
+              "es": "Energía Generada (PV1)",
+              "da": "Genereret Energi (PV1)",
+              "ru": "Сгенерированная Энергия (PV1)",
+              "pl": "Wygenerowana Energia (PV1)",
+              "ko": "발전 에너지 (PV1)",
+              "ar": "الطاقة المُولَّدة (PV1)"
+            }
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=solarvault&class=solarpanel&capabilities=meter_power.pv1"
+          }
+        ]
+      },
+      {
+        "id": "meter_power.pv2_changed",
+        "title": {
+          "en": "Energy generated (PV2) changed",
+          "nl": "Opgewekte energie (PV2) veranderd",
+          "de": "Erzeugte Energie (PV2) geändert",
+          "fr": "Énergie générée (PV2) changée",
+          "it": "Energia generata (PV2) cambiata",
+          "sv": "Genererad energi (PV2) ändrad",
+          "no": "Generert energi (PV2) endret",
+          "es": "Energía generada (PV2) cambiada",
+          "da": "Genereret energi (PV2) ændret",
+          "ru": "Изменилась сгенерированная энергия (PV2)",
+          "pl": "Wygenerowana energia (PV2) zmieniona",
+          "ko": "발전 에너지 (PV2) 변경",
+          "ar": "تغيّرت الطاقة المُولَّدة (PV2)"
+        },
+        "titleFormatted": {
+          "en": "The energy generated (PV2) has changed",
+          "nl": "De opgewekte energie (PV2) is veranderd",
+          "de": "Die erzeugte Energie (PV2) hat sich geändert",
+          "fr": "L'énergie générée (PV2) a changé",
+          "it": "L'energia generata (PV2) è cambiata",
+          "sv": "Den genererade energin (PV2) har ändrats",
+          "no": "Den genererte energien (PV2) har endret seg",
+          "es": "La energía generada (PV2) ha cambiado",
+          "da": "Den genererede energi (PV2) er ændret",
+          "ru": "Сгенерированная энергия (PV2) изменилась",
+          "pl": "Wygenerowana energia (PV2) się zmieniła",
+          "ko": "발전 에너지 (PV2)가 변경됨",
+          "ar": "تغيّرت الطاقة المُولَّدة (PV2)"
+        },
+        "hint": {
+          "en": "When the energy generated (PV2) on the SolarVault 3 changes",
+          "nl": "Wanneer de opgewekte energie (PV2) op de SolarVault 3 verandert",
+          "de": "Wenn sich die erzeugte Energie (PV2) an der SolarVault 3 ändert",
+          "fr": "Lorsque l'énergie générée (PV2) change sur la SolarVault 3",
+          "it": "Quando l'energia generata (PV2) cambia sulla SolarVault 3",
+          "sv": "När den genererade energin (PV2) ändras på SolarVault 3",
+          "no": "Når den genererte energien (PV2) endres på SolarVault 3",
+          "es": "Cuando la energía generada (PV2) cambia en la SolarVault 3",
+          "da": "Når den genererede energi (PV2) ændres på SolarVault 3",
+          "ru": "Когда сгенерированная энергия (PV2) на SolarVault 3 меняется",
+          "pl": "Gdy wygenerowana energia (PV2) zmienia się w SolarVault 3",
+          "ko": "SolarVault 3에서 발전 에너지 (PV2)가 변경될 때",
+          "ar": "عند تغيّر الطاقة المُولَّدة (PV2) على SolarVault 3"
+        },
+        "tokens": [
+          {
+            "name": "meter_power.pv2",
+            "type": "number",
+            "title": {
+              "en": "Energy generated (PV2)",
+              "nl": "Opgewekte Energie (PV2)",
+              "de": "Erzeugte Energie (PV2)",
+              "fr": "Énergie Générée (PV2)",
+              "it": "Energia Generata (PV2)",
+              "sv": "Genererad Energi (PV2)",
+              "no": "Generert Energi (PV2)",
+              "es": "Energía Generada (PV2)",
+              "da": "Genereret Energi (PV2)",
+              "ru": "Сгенерированная Энергия (PV2)",
+              "pl": "Wygenerowana Energia (PV2)",
+              "ko": "발전 에너지 (PV2)",
+              "ar": "الطاقة المُولَّدة (PV2)"
+            }
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=solarvault&class=solarpanel&capabilities=meter_power.pv2"
+          }
+        ]
+      },
+      {
+        "id": "meter_power.pv3_changed",
+        "title": {
+          "en": "Energy generated (PV3) changed",
+          "nl": "Opgewekte energie (PV3) veranderd",
+          "de": "Erzeugte Energie (PV3) geändert",
+          "fr": "Énergie générée (PV3) changée",
+          "it": "Energia generata (PV3) cambiata",
+          "sv": "Genererad energi (PV3) ändrad",
+          "no": "Generert energi (PV3) endret",
+          "es": "Energía generada (PV3) cambiada",
+          "da": "Genereret energi (PV3) ændret",
+          "ru": "Изменилась сгенерированная энергия (PV3)",
+          "pl": "Wygenerowana energia (PV3) zmieniona",
+          "ko": "발전 에너지 (PV3) 변경",
+          "ar": "تغيّرت الطاقة المُولَّدة (PV3)"
+        },
+        "titleFormatted": {
+          "en": "The energy generated (PV3) has changed",
+          "nl": "De opgewekte energie (PV3) is veranderd",
+          "de": "Die erzeugte Energie (PV3) hat sich geändert",
+          "fr": "L'énergie générée (PV3) a changé",
+          "it": "L'energia generata (PV3) è cambiata",
+          "sv": "Den genererade energin (PV3) har ändrats",
+          "no": "Den genererte energien (PV3) har endret seg",
+          "es": "La energía generada (PV3) ha cambiado",
+          "da": "Den genererede energi (PV3) er ændret",
+          "ru": "Сгенерированная энергия (PV3) изменилась",
+          "pl": "Wygenerowana energia (PV3) się zmieniła",
+          "ko": "발전 에너지 (PV3)가 변경됨",
+          "ar": "تغيّرت الطاقة المُولَّدة (PV3)"
+        },
+        "hint": {
+          "en": "When the energy generated (PV3) on the SolarVault 3 changes",
+          "nl": "Wanneer de opgewekte energie (PV3) op de SolarVault 3 verandert",
+          "de": "Wenn sich die erzeugte Energie (PV3) an der SolarVault 3 ändert",
+          "fr": "Lorsque l'énergie générée (PV3) change sur la SolarVault 3",
+          "it": "Quando l'energia generata (PV3) cambia sulla SolarVault 3",
+          "sv": "När den genererade energin (PV3) ändras på SolarVault 3",
+          "no": "Når den genererte energien (PV3) endres på SolarVault 3",
+          "es": "Cuando la energía generada (PV3) cambia en la SolarVault 3",
+          "da": "Når den genererede energi (PV3) ændres på SolarVault 3",
+          "ru": "Когда сгенерированная энергия (PV3) на SolarVault 3 меняется",
+          "pl": "Gdy wygenerowana energia (PV3) zmienia się w SolarVault 3",
+          "ko": "SolarVault 3에서 발전 에너지 (PV3)가 변경될 때",
+          "ar": "عند تغيّر الطاقة المُولَّدة (PV3) على SolarVault 3"
+        },
+        "tokens": [
+          {
+            "name": "meter_power.pv3",
+            "type": "number",
+            "title": {
+              "en": "Energy generated (PV3)",
+              "nl": "Opgewekte Energie (PV3)",
+              "de": "Erzeugte Energie (PV3)",
+              "fr": "Énergie Générée (PV3)",
+              "it": "Energia Generata (PV3)",
+              "sv": "Genererad Energi (PV3)",
+              "no": "Generert Energi (PV3)",
+              "es": "Energía Generada (PV3)",
+              "da": "Genereret Energi (PV3)",
+              "ru": "Сгенерированная Энергия (PV3)",
+              "pl": "Wygenerowana Energia (PV3)",
+              "ko": "발전 에너지 (PV3)",
+              "ar": "الطاقة المُولَّدة (PV3)"
+            }
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=solarvault&class=solarpanel&capabilities=meter_power.pv3"
+          }
+        ]
+      },
+      {
+        "id": "meter_power.pv4_changed",
+        "title": {
+          "en": "Energy generated (PV4) changed",
+          "nl": "Opgewekte energie (PV4) veranderd",
+          "de": "Erzeugte Energie (PV4) geändert",
+          "fr": "Énergie générée (PV4) changée",
+          "it": "Energia generata (PV4) cambiata",
+          "sv": "Genererad energi (PV4) ändrad",
+          "no": "Generert energi (PV4) endret",
+          "es": "Energía generada (PV4) cambiada",
+          "da": "Genereret energi (PV4) ændret",
+          "ru": "Изменилась сгенерированная энергия (PV4)",
+          "pl": "Wygenerowana energia (PV4) zmieniona",
+          "ko": "발전 에너지 (PV4) 변경",
+          "ar": "تغيّرت الطاقة المُولَّدة (PV4)"
+        },
+        "titleFormatted": {
+          "en": "The energy generated (PV4) has changed",
+          "nl": "De opgewekte energie (PV4) is veranderd",
+          "de": "Die erzeugte Energie (PV4) hat sich geändert",
+          "fr": "L'énergie générée (PV4) a changé",
+          "it": "L'energia generata (PV4) è cambiata",
+          "sv": "Den genererade energin (PV4) har ändrats",
+          "no": "Den genererte energien (PV4) har endret seg",
+          "es": "La energía generada (PV4) ha cambiado",
+          "da": "Den genererede energi (PV4) er ændret",
+          "ru": "Сгенерированная энергия (PV4) изменилась",
+          "pl": "Wygenerowana energia (PV4) się zmieniła",
+          "ko": "발전 에너지 (PV4)가 변경됨",
+          "ar": "تغيّرت الطاقة المُولَّدة (PV4)"
+        },
+        "hint": {
+          "en": "When the energy generated (PV4) on the SolarVault 3 changes",
+          "nl": "Wanneer de opgewekte energie (PV4) op de SolarVault 3 verandert",
+          "de": "Wenn sich die erzeugte Energie (PV4) an der SolarVault 3 ändert",
+          "fr": "Lorsque l'énergie générée (PV4) change sur la SolarVault 3",
+          "it": "Quando l'energia generata (PV4) cambia sulla SolarVault 3",
+          "sv": "När den genererade energin (PV4) ändras på SolarVault 3",
+          "no": "Når den genererte energien (PV4) endres på SolarVault 3",
+          "es": "Cuando la energía generada (PV4) cambia en la SolarVault 3",
+          "da": "Når den genererede energi (PV4) ændres på SolarVault 3",
+          "ru": "Когда сгенерированная энергия (PV4) на SolarVault 3 меняется",
+          "pl": "Gdy wygenerowana energia (PV4) zmienia się w SolarVault 3",
+          "ko": "SolarVault 3에서 발전 에너지 (PV4)가 변경될 때",
+          "ar": "عند تغيّر الطاقة المُولَّدة (PV4) على SolarVault 3"
+        },
+        "tokens": [
+          {
+            "name": "meter_power.pv4",
+            "type": "number",
+            "title": {
+              "en": "Energy generated (PV4)",
+              "nl": "Opgewekte Energie (PV4)",
+              "de": "Erzeugte Energie (PV4)",
+              "fr": "Énergie Générée (PV4)",
+              "it": "Energia Generata (PV4)",
+              "sv": "Genererad Energi (PV4)",
+              "no": "Generert Energi (PV4)",
+              "es": "Energía Generada (PV4)",
+              "da": "Genereret Energi (PV4)",
+              "ru": "Сгенерированная Энергия (PV4)",
+              "pl": "Wygenerowana Energia (PV4)",
+              "ko": "발전 에너지 (PV4)",
+              "ar": "الطاقة المُولَّدة (PV4)"
+            }
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=solarvault&class=solarpanel&capabilities=meter_power.pv4"
+          }
+        ]
+      }
+    ],
+    "conditions": [
+      {
+        "id": "ac_socket_is_on",
+        "title": {
+          "en": "AC Socket !{{is turned on|is turned off}}",
+          "nl": "AC-Stopcontact !{{is ingeschakeld|is uitgeschakeld}}",
+          "de": "AC-Steckdose !{{ist eingeschaltet|ist ausgeschaltet}}",
+          "fr": "Prise AC !{{est activée|est désactivée}}",
+          "it": "Presa AC !{{è accesa|è spenta}}",
+          "sv": "AC-Uttag !{{är påslaget|är avstängt}}",
+          "no": "AC-Uttak !{{er på|er av}}",
+          "es": "Enchufe AC !{{está encendido|está apagado}}",
+          "da": "AC-Stik !{{er tændt|er slukket}}",
+          "ru": "Розетка AC !{{включена|выключена}}",
+          "pl": "Gniazdo AC !{{jest włączone|jest wyłączone}}",
+          "ko": "AC 콘센트 !{{켜짐|꺼짐}}",
+          "ar": "مقبس AC !{{يعمل|متوقف}}"
+        },
+        "titleFormatted": {
+          "en": "AC Socket !{{is turned on|is turned off}}",
+          "nl": "AC-Stopcontact !{{is ingeschakeld|is uitgeschakeld}}",
+          "de": "AC-Steckdose !{{ist eingeschaltet|ist ausgeschaltet}}",
+          "fr": "Prise AC !{{est activée|est désactivée}}",
+          "it": "Presa AC !{{è accesa|è spenta}}",
+          "sv": "AC-Uttag !{{är påslaget|är avstängt}}",
+          "no": "AC-Uttak !{{er på|er av}}",
+          "es": "Enchufe AC !{{está encendido|está apagado}}",
+          "da": "AC-Stik !{{er tændt|er slukket}}",
+          "ru": "Розетка AC !{{включена|выключена}}",
+          "pl": "Gniazdo AC !{{jest włączone|jest wyłączone}}",
+          "ko": "AC 콘센트 !{{켜짐|꺼짐}}",
+          "ar": "مقبس AC !{{يعمل|متوقف}}"
+        },
+        "hint": {
+          "en": "Checks whether the AC Socket on the SolarVault 3 is turned on or off",
+          "nl": "Controleert of het AC-Stopcontact op de SolarVault 3 aan of uit staat",
+          "de": "Prüft, ob die AC-Steckdose an der SolarVault 3 ein- oder ausgeschaltet ist",
+          "fr": "Vérifie si la prise AC de la SolarVault 3 est activée ou désactivée",
+          "it": "Controlla se la presa AC della SolarVault 3 è accesa o spenta",
+          "sv": "Kontrollerar om AC-uttaget på SolarVault 3 är på eller av",
+          "no": "Sjekker om AC-uttaket på SolarVault 3 er på eller av",
+          "es": "Comprueba si el enchufe AC de la SolarVault 3 está encendido o apagado",
+          "da": "Tjekker om AC-stikket på SolarVault 3 er tændt eller slukket",
+          "ru": "Проверяет, включена или выключена розетка AC на SolarVault 3",
+          "pl": "Sprawdza, czy gniazdo AC w SolarVault 3 jest włączone lub wyłączone",
+          "ko": "SolarVault 3의 AC 콘센트가 켜져 있는지 또는 꺼져 있는지 확인합니다",
+          "ar": "يتحقق مما إذا كان مقبس AC على SolarVault 3 قيد التشغيل أو متوقفًا"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=solarvault&class=battery&capabilities=onoff.eps"
+          }
+        ]
+      },
+      {
+        "id": "alarm_eth_status",
+        "title": {
+          "en": "Ethernet !{{is disconnected|is connected}}",
+          "nl": "Ethernet !{{niet verbonden is|verbonden is}}",
+          "de": "Ethernet !{{ist getrennt|ist verbunden}}",
+          "fr": "Ethernet !{{est déconnecté|est connecté}}",
+          "it": "Ethernet !{{è disconnesso|è connesso}}",
+          "sv": "Ethernet !{{är frånkopplad|är ansluten}}",
+          "no": "Ethernet !{{er frakoblet|er tilkoblet}}",
+          "es": "Ethernet !{{está desconectado|está conectado}}",
+          "da": "Ethernet !{{er afbrudt|er forbundet}}",
+          "ru": "Ethernet !{{отключён|подключён}}",
+          "pl": "Ethernet !{{jest rozłączony|jest podłączony}}",
+          "ko": "이더넷 !{{연결 끊김|연결됨}}",
+          "ar": "Ethernet !{{غير متصل|متصل}}"
+        },
+        "titleFormatted": {
+          "en": "Ethernet !{{is disconnected|is connected}}",
+          "nl": "Ethernet !{{niet verbonden is|verbonden is}}",
+          "de": "Ethernet !{{ist getrennt|ist verbunden}}",
+          "fr": "Ethernet !{{est déconnecté|est connecté}}",
+          "it": "Ethernet !{{è disconnesso|è connesso}}",
+          "sv": "Ethernet !{{är frånkopplad|är ansluten}}",
+          "no": "Ethernet !{{er frakoblet|er tilkoblet}}",
+          "es": "Ethernet !{{está desconectado|está conectado}}",
+          "da": "Ethernet !{{er afbrudt|er forbundet}}",
+          "ru": "Ethernet !{{отключён|подключён}}",
+          "pl": "Ethernet !{{jest rozłączony|jest podłączony}}",
+          "ko": "이더넷 !{{연결 끊김|연결됨}}",
+          "ar": "Ethernet !{{غير متصل|متصل}}"
+        },
+        "hint": {
+          "en": "Checks whether the Ethernet connection on the SolarVault 3 is disconnected or connected",
+          "nl": "Controleert of de Ethernet-verbinding op de SolarVault 3 verbroken of verbonden is",
+          "de": "Prüft, ob die Ethernet-Verbindung an der SolarVault 3 getrennt oder verbunden ist",
+          "fr": "Vérifie si la connexion Ethernet de la SolarVault 3 est déconnectée ou connectée",
+          "it": "Controlla se la connessione Ethernet della SolarVault 3 è disconnessa o connessa",
+          "sv": "Kontrollerar om Ethernet-anslutningen på SolarVault 3 är frånkopplad eller ansluten",
+          "no": "Sjekker om Ethernet-tilkoblingen på SolarVault 3 er frakoblet eller tilkoblet",
+          "es": "Comprueba si la conexión Ethernet de la SolarVault 3 está desconectada o conectada",
+          "da": "Tjekker om Ethernet-forbindelsen på SolarVault 3 er afbrudt eller forbundet",
+          "ru": "Проверяет, отключено или подключено Ethernet-соединение SolarVault 3",
+          "pl": "Sprawdza, czy połączenie Ethernet w SolarVault 3 jest rozłączone lub podłączone",
+          "ko": "SolarVault 3의 이더넷 연결이 끊어져 있는지 또는 연결되어 있는지 확인합니다",
+          "ar": "يتحقق مما إذا كان اتصال Ethernet على SolarVault 3 منقطعًا أو متصلاً"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=solarvault&class=battery"
+          }
+        ]
+      },
+      {
+        "id": "auto_standby_allowed_is",
+        "title": {
+          "en": "Auto standby !{{is|is not}} allowed"
+        },
+        "titleFormatted": {
+          "en": "Auto standby !{{is|is not}} allowed"
+        },
+        "hint": {
+          "en": "Checks whether automatic standby is permitted on the SolarVault 3 battery"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=solarvault&class=battery"
+          }
+        ]
+      },
+      {
+        "id": "auto_standby_is",
+        "title": {
+          "en": "Auto standby mode !{{is|is not}} [[mode]]"
+        },
+        "titleFormatted": {
+          "en": "Auto standby mode !{{is|is not}} [[mode]]"
+        },
+        "hint": {
+          "en": "Checks the auto standby mode on the SolarVault 3 battery"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=solarvault&class=battery"
+          },
+          {
+            "type": "dropdown",
+            "name": "mode",
+            "values": [
+              {
+                "id": "1",
+                "label": {
+                  "en": "Sleep"
+                }
+              },
+              {
+                "id": "2",
+                "label": {
+                  "en": "Awake"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "charge_limit_is",
+        "title": {
+          "en": "Charge limit !{{is|is not}} [[value]]%"
+        },
+        "titleFormatted": {
+          "en": "Charge limit !{{is|is not}} [[value]]%"
+        },
+        "hint": {
+          "en": "Checks the charge limit on the SolarVault 3 battery"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=solarvault&class=battery"
+          },
+          {
+            "type": "number",
+            "name": "value",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "units": {
+              "en": "%"
+            }
+          }
+        ]
+      },
+      {
+        "id": "discharge_limit_is",
+        "title": {
+          "en": "Discharge limit !{{is|is not}} [[value]]%"
+        },
+        "titleFormatted": {
+          "en": "Discharge limit !{{is|is not}} [[value]]%"
+        },
+        "hint": {
+          "en": "Checks the discharge limit on the SolarVault 3 battery"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=solarvault&class=battery"
+          },
+          {
+            "type": "number",
+            "name": "value",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "units": {
+              "en": "%"
+            }
+          }
+        ]
+      },
+      {
+        "id": "max_ongrid_output_is",
+        "title": {
+          "en": "Max on-grid output !{{is|is not}} [[value]] W"
+        },
+        "titleFormatted": {
+          "en": "Max on-grid output !{{is|is not}} [[value]] W"
+        },
+        "hint": {
+          "en": "Checks the max on-grid output on the SolarVault 3 battery"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=solarvault&class=battery"
+          },
+          {
+            "type": "number",
+            "name": "value",
+            "min": 0,
+            "max": 10000,
+            "step": 10,
+            "units": {
+              "en": "W"
+            }
+          }
+        ]
+      }
+    ],
+    "actions": [
+      {
+        "id": "ac_socket_toggle",
+        "title": {
+          "en": "Toggle AC Socket",
+          "nl": "AC-Stopcontact schakelen",
+          "de": "AC-Steckdose umschalten",
+          "fr": "Basculer la prise AC",
+          "it": "Inverti presa AC",
+          "sv": "Växla AC-uttag",
+          "no": "Veksle AC-uttak",
+          "es": "Alternar enchufe AC",
+          "da": "Skift AC-stik",
+          "ru": "Переключить розетку AC",
+          "pl": "Przełącz gniazdo AC",
+          "ko": "AC 콘센트 토글",
+          "ar": "تبديل مقبس AC"
+        },
+        "titleFormatted": {
+          "en": "Toggle AC Socket",
+          "nl": "Schakel AC-Stopcontact om",
+          "de": "AC-Steckdose umschalten",
+          "fr": "Basculer la prise AC",
+          "it": "Inverti la presa AC",
+          "sv": "Växla AC-uttaget",
+          "no": "Veksle AC-uttaket",
+          "es": "Alternar el enchufe AC",
+          "da": "Skift AC-stikket",
+          "ru": "переключить розетку AC",
+          "pl": "Przełącz gniazdo AC",
+          "ko": "AC 콘센트 토글",
+          "ar": "تبديل مقبس AC"
+        },
+        "hint": {
+          "en": "Toggles the AC Socket on the SolarVault 3 on or off",
+          "nl": "Schakelt het AC-Stopcontact op de SolarVault 3 om",
+          "de": "Schaltet die AC-Steckdose an der SolarVault 3 um",
+          "fr": "Active ou désactive la prise AC de la SolarVault 3",
+          "it": "Accende o spegne la presa AC della SolarVault 3",
+          "sv": "Växlar AC-uttaget på SolarVault 3 mellan på och av",
+          "no": "Veksler AC-uttaket på SolarVault 3 mellom på og av",
+          "es": "Enciende o apaga el enchufe AC de la SolarVault 3",
+          "da": "Skifter AC-stikket på SolarVault 3 mellem tændt og slukket",
+          "ru": "Переключает розетку AC на SolarVault 3",
+          "pl": "Przełącza gniazdo AC w SolarVault 3 między włączone a wyłączone",
+          "ko": "SolarVault 3의 AC 콘센트를 켜거나 끕니다",
+          "ar": "يبدّل مقبس AC على SolarVault 3 بين التشغيل والإيقاف"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=solarvault&class=battery&capabilities=onoff.eps"
+          }
+        ]
+      },
+      {
+        "id": "ac_socket_turn_off",
+        "title": {
+          "en": "Turn AC Socket off",
+          "nl": "AC-Stopcontact uitschakelen",
+          "de": "AC-Steckdose ausschalten",
+          "fr": "Désactiver la prise AC",
+          "it": "Spegni presa AC",
+          "sv": "Stäng av AC-uttag",
+          "no": "Slå av AC-uttak",
+          "es": "Apagar enchufe AC",
+          "da": "Sluk AC-stik",
+          "ru": "Выключить розетку AC",
+          "pl": "Wyłącz gniazdo AC",
+          "ko": "AC 콘센트 끄기",
+          "ar": "إيقاف مقبس AC"
+        },
+        "titleFormatted": {
+          "en": "Turn AC Socket off",
+          "nl": "Schakel AC-Stopcontact uit",
+          "de": "AC-Steckdose ausschalten",
+          "fr": "Désactiver la prise AC",
+          "it": "Spegni la presa AC",
+          "sv": "Stäng av AC-uttaget",
+          "no": "Slå av AC-uttaket",
+          "es": "Apagar el enchufe AC",
+          "da": "Sluk AC-stikket",
+          "ru": "выключить розетку AC",
+          "pl": "Wyłącz gniazdo AC",
+          "ko": "AC 콘센트 끄기",
+          "ar": "إيقاف مقبس AC"
+        },
+        "hint": {
+          "en": "Turns the AC Socket on the SolarVault 3 off",
+          "nl": "Schakelt het AC-Stopcontact op de SolarVault 3 uit",
+          "de": "Schaltet die AC-Steckdose an der SolarVault 3 aus",
+          "fr": "Désactive la prise AC de la SolarVault 3",
+          "it": "Spegne la presa AC della SolarVault 3",
+          "sv": "Stänger av AC-uttaget på SolarVault 3",
+          "no": "Slår av AC-uttaket på SolarVault 3",
+          "es": "Apaga el enchufe AC de la SolarVault 3",
+          "da": "Slukker AC-stikket på SolarVault 3",
+          "ru": "Выключает розетку AC на SolarVault 3",
+          "pl": "Wyłącza gniazdo AC w SolarVault 3",
+          "ko": "SolarVault 3의 AC 콘센트를 끕니다",
+          "ar": "يوقف مقبس AC على SolarVault 3"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=solarvault&class=battery&capabilities=onoff.eps"
+          }
+        ]
+      },
+      {
+        "id": "ac_socket_turn_on",
+        "title": {
+          "en": "Turn AC Socket on",
+          "nl": "AC-Stopcontact inschakelen",
+          "de": "AC-Steckdose einschalten",
+          "fr": "Activer la prise AC",
+          "it": "Accendi presa AC",
+          "sv": "Slå på AC-uttag",
+          "no": "Slå på AC-uttak",
+          "es": "Encender enchufe AC",
+          "da": "Tænd AC-stik",
+          "ru": "Включить розетку AC",
+          "pl": "Włącz gniazdo AC",
+          "ko": "AC 콘센트 켜기",
+          "ar": "تشغيل مقبس AC"
+        },
+        "titleFormatted": {
+          "en": "Turn AC Socket on",
+          "nl": "Schakel AC-Stopcontact in",
+          "de": "AC-Steckdose einschalten",
+          "fr": "Activer la prise AC",
+          "it": "Accendi la presa AC",
+          "sv": "Slå på AC-uttaget",
+          "no": "Slå på AC-uttaket",
+          "es": "Encender el enchufe AC",
+          "da": "Tænd AC-stikket",
+          "ru": "включить розетку AC",
+          "pl": "Włącz gniazdo AC",
+          "ko": "AC 콘센트 켜기",
+          "ar": "تشغيل مقبس AC"
+        },
+        "hint": {
+          "en": "Turns the AC Socket on the SolarVault 3 on",
+          "nl": "Schakelt het AC-Stopcontact op de SolarVault 3 in",
+          "de": "Schaltet die AC-Steckdose an der SolarVault 3 ein",
+          "fr": "Active la prise AC de la SolarVault 3",
+          "it": "Accende la presa AC della SolarVault 3",
+          "sv": "Slår på AC-uttaget på SolarVault 3",
+          "no": "Slår på AC-uttaket på SolarVault 3",
+          "es": "Enciende el enchufe AC de la SolarVault 3",
+          "da": "Tænder AC-stikket på SolarVault 3",
+          "ru": "Включает розетку AC на SolarVault 3",
+          "pl": "Włącza gniazdo AC w SolarVault 3",
+          "ko": "SolarVault 3의 AC 콘센트를 켭니다",
+          "ar": "يشغّل مقبس AC على SolarVault 3"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=solarvault&class=battery&capabilities=onoff.eps"
+          }
+        ]
+      },
+      {
+        "id": "disable_auto_standby_allowed",
+        "title": {
+          "en": "Disallow auto standby"
+        },
+        "titleFormatted": {
+          "en": "Disallow auto standby"
+        },
+        "hint": {
+          "en": "Prevents the SolarVault 3 from using automatic standby when idle"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=solarvault&class=battery"
+          }
+        ]
+      },
+      {
+        "id": "enable_auto_standby_allowed",
+        "title": {
+          "en": "Allow auto standby"
+        },
+        "titleFormatted": {
+          "en": "Allow auto standby"
+        },
+        "hint": {
+          "en": "Permits the SolarVault 3 to use automatic standby when idle"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=solarvault&class=battery"
+          }
+        ]
+      },
+      {
+        "id": "set_auto_standby_mode",
+        "title": {
+          "en": "Set auto standby mode"
+        },
+        "titleFormatted": {
+          "en": "Set auto standby mode to [[mode]]"
+        },
+        "hint": {
+          "en": "Sets whether the SolarVault 3 uses sleep standby when idle"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=solarvault&class=battery"
+          },
+          {
+            "type": "dropdown",
+            "name": "mode",
+            "values": [
+              {
+                "id": "1",
+                "label": {
+                  "en": "Sleep"
+                }
+              },
+              {
+                "id": "2",
+                "label": {
+                  "en": "Awake"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "set_charge_limit",
+        "title": {
+          "en": "Set charge limit"
+        },
+        "titleFormatted": {
+          "en": "Set charge limit to [[value]]%"
+        },
+        "hint": {
+          "en": "Sets how full the SolarVault 3 battery may charge"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=solarvault&class=battery"
+          },
+          {
+            "type": "number",
+            "name": "value",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "units": {
+              "en": "%"
+            }
+          }
+        ]
+      },
+      {
+        "id": "set_discharge_limit",
+        "title": {
+          "en": "Set discharge limit"
+        },
+        "titleFormatted": {
+          "en": "Set discharge limit to [[value]]%"
+        },
+        "hint": {
+          "en": "Sets the lowest charge level the SolarVault 3 battery may discharge to"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=solarvault&class=battery"
+          },
+          {
+            "type": "number",
+            "name": "value",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "units": {
+              "en": "%"
+            }
+          }
+        ]
+      },
+      {
+        "id": "set_max_ongrid_output",
+        "title": {
+          "en": "Set max on-grid output"
+        },
+        "titleFormatted": {
+          "en": "Set max on-grid output to [[value]] W"
+        },
+        "hint": {
+          "en": "Sets the upper limit for power the SolarVault 3 may feed into the grid"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=solarvault&class=battery"
+          },
+          {
+            "type": "number",
+            "name": "value",
+            "min": 0,
+            "max": 10000,
+            "step": 10,
+            "units": {
+              "en": "W"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "drivers": [
+    {
+      "name": {
+        "en": "SolarVault 3",
+        "nl": "SolarVault 3",
+        "de": "SolarVault 3",
+        "fr": "SolarVault 3",
+        "it": "SolarVault 3",
+        "sv": "SolarVault 3",
+        "no": "SolarVault 3",
+        "es": "SolarVault 3",
+        "da": "SolarVault 3",
+        "ru": "SolarVault 3",
+        "pl": "SolarVault 3",
+        "ko": "SolarVault 3",
+        "ar": "SolarVault 3"
+      },
+      "class": "battery",
+      "images": {
+        "small": "/drivers/solarvault/assets/images/small.png",
+        "large": "/drivers/solarvault/assets/images/large.png",
+        "xlarge": "/drivers/solarvault/assets/images/xlarge.png"
+      },
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "lan"
+      ],
+      "capabilities": [
+        "measure_battery",
+        "measure_power",
+        "measure_power.eps",
+        "measure_power.pv1",
+        "measure_power.pv2",
+        "measure_power.pv3",
+        "measure_power.pv4",
+        "measure_temperature",
+        "meter_power",
+        "meter_power.charged",
+        "meter_power.discharged",
+        "meter_power.ac_imported",
+        "meter_power.ac_exported",
+        "meter_power.grid_imported",
+        "meter_power.grid_exported",
+        "meter_power.pv_imported",
+        "meter_power.pv1",
+        "meter_power.pv2",
+        "meter_power.pv3",
+        "meter_power.pv4",
+        "meter_power.pv_exported",
+        "onoff.eps",
+        "alarm_eth"
+      ],
+      "energy": {
+        "homeBattery": true,
+        "batteries": [
+          "OTHER"
+        ],
+        "meterPowerImportedCapability": "meter_power.charged",
+        "meterPowerExportedCapability": "meter_power.discharged"
+      },
+      "capabilitiesOptions": {
+        "alarm_eth": {
+          "title": {
+            "en": "Ethernet",
+            "nl": "Ethernet",
+            "de": "Ethernet",
+            "fr": "Ethernet",
+            "it": "Ethernet",
+            "sv": "Ethernet",
+            "no": "Ethernet",
+            "es": "Ethernet",
+            "da": "Ethernet",
+            "ru": "Ethernet",
+            "pl": "Ethernet",
+            "ko": "이더넷",
+            "ar": "إيثرنت"
+          },
+          "titleTrue": {
+            "en": "Disconnected",
+            "nl": "Niet Verbonden",
+            "de": "Getrennt",
+            "fr": "Déconnecté",
+            "it": "Disconnesso",
+            "sv": "Frånkopplad",
+            "no": "Frakoblet",
+            "es": "Desconectado",
+            "da": "Afbrudt",
+            "ru": "Отключено",
+            "pl": "Rozłączono",
+            "ko": "연결 끊김",
+            "ar": "غير متصل"
+          },
+          "titleFalse": {
+            "en": "Connected",
+            "nl": "Verbonden",
+            "de": "Verbunden",
+            "fr": "Connecté",
+            "it": "Connesso",
+            "sv": "Ansluten",
+            "no": "Tilkoblet",
+            "es": "Conectado",
+            "da": "Forbundet",
+            "ru": "Подключено",
+            "pl": "Połączono",
+            "ko": "연결됨",
+            "ar": "متصل"
+          }
+        },
+        "onoff.eps": {
+          "title": {
+            "en": "AC Socket",
+            "nl": "AC-Stopcontact",
+            "de": "AC-Steckdose",
+            "fr": "Prise AC",
+            "it": "Presa AC",
+            "sv": "AC-Uttag",
+            "no": "AC-Uttak",
+            "es": "Enchufe AC",
+            "da": "AC-Stik",
+            "ru": "Розетка AC",
+            "pl": "Gniazdo AC",
+            "ko": "AC 콘센트",
+            "ar": "مقبس AC"
+          },
+          "uiQuickAction": false
+        },
+        "measure_power.eps": {
+          "title": {
+            "en": "Power (AC Socket)",
+            "nl": "Vermogen (AC-Stopcontact)",
+            "de": "Leistung (AC-Steckdose)",
+            "fr": "Puissance (Prise AC)",
+            "it": "Potenza (Presa AC)",
+            "sv": "Effekt (AC-Uttag)",
+            "no": "Effekt (AC-Uttak)",
+            "es": "Potencia (Enchufe AC)",
+            "da": "Effekt (AC-Stik)",
+            "ru": "Мощность (Розетка AC)",
+            "pl": "Moc (Gniazdo AC)",
+            "ko": "전력 (AC 콘센트)",
+            "ar": "الطاقة (مقبس AC)"
+          }
+        },
+        "measure_power.pv1": {
+          "title": {
+            "en": "Power (PV1)",
+            "nl": "Vermogen (PV1)",
+            "de": "Leistung (PV1)",
+            "fr": "Puissance (PV1)",
+            "it": "Potenza (PV1)",
+            "sv": "Effekt (PV1)",
+            "no": "Effekt (PV1)",
+            "es": "Potencia (PV1)",
+            "da": "Effekt (PV1)",
+            "ru": "Мощность (PV1)",
+            "pl": "Moc (PV1)",
+            "ko": "전력 (PV1)",
+            "ar": "الطاقة (PV1)"
+          }
+        },
+        "measure_power.pv2": {
+          "title": {
+            "en": "Power (PV2)",
+            "nl": "Vermogen (PV2)",
+            "de": "Leistung (PV2)",
+            "fr": "Puissance (PV2)",
+            "it": "Potenza (PV2)",
+            "sv": "Effekt (PV2)",
+            "no": "Effekt (PV2)",
+            "es": "Potencia (PV2)",
+            "da": "Effekt (PV2)",
+            "ru": "Мощность (PV2)",
+            "pl": "Moc (PV2)",
+            "ko": "전력 (PV2)",
+            "ar": "الطاقة (PV2)"
+          }
+        },
+        "measure_power.pv3": {
+          "title": {
+            "en": "Power (PV3)",
+            "nl": "Vermogen (PV3)",
+            "de": "Leistung (PV3)",
+            "fr": "Puissance (PV3)",
+            "it": "Potenza (PV3)",
+            "sv": "Effekt (PV3)",
+            "no": "Effekt (PV3)",
+            "es": "Potencia (PV3)",
+            "da": "Effekt (PV3)",
+            "ru": "Мощность (PV3)",
+            "pl": "Moc (PV3)",
+            "ko": "전력 (PV3)",
+            "ar": "الطاقة (PV3)"
+          }
+        },
+        "measure_power.pv4": {
+          "title": {
+            "en": "Power (PV4)",
+            "nl": "Vermogen (PV4)",
+            "de": "Leistung (PV4)",
+            "fr": "Puissance (PV4)",
+            "it": "Potenza (PV4)",
+            "sv": "Effekt (PV4)",
+            "no": "Effekt (PV4)",
+            "es": "Potencia (PV4)",
+            "da": "Effekt (PV4)",
+            "ru": "Мощность (PV4)",
+            "pl": "Moc (PV4)",
+            "ko": "전력 (PV4)",
+            "ar": "الطاقة (PV4)"
+          }
+        },
+        "measure_temperature": {
+          "title": {
+            "en": "Temperature (Battery)",
+            "nl": "Temperatuur (Batterij)",
+            "de": "Temperatur (Batterie)",
+            "fr": "Température (Batterie)",
+            "it": "Temperatura (Batteria)",
+            "sv": "Temperatur (Batteri)",
+            "no": "Temperatur (Batteri)",
+            "es": "Temperatura (Batería)",
+            "da": "Temperatur (Batteri)",
+            "ru": "Температура (Аккумулятор)",
+            "pl": "Temperatura (Baterii)",
+            "ko": "온도 (배터리)",
+            "ar": "درجة الحرارة (البطارية)"
+          }
+        },
+        "meter_power": {
+          "decimals": 3,
+          "title": {
+            "en": "Total Energy Generated",
+            "nl": "Totaal Opgewekte Energie",
+            "de": "Gesamt Erzeugte Energie",
+            "fr": "Énergie Totale Générée",
+            "it": "Energia Totale Generata",
+            "sv": "Total Genererad Energi",
+            "no": "Total Generert Energi",
+            "es": "Energía Total Generada",
+            "da": "Samlet Genereret Energi",
+            "ru": "Общая Сгенерированная Энергия",
+            "pl": "Łączna Wygenerowana Energia",
+            "ko": "총 발전 에너지",
+            "ar": "إجمالي الطاقة المُولَّدة"
+          }
+        },
+        "meter_power.charged": {
+          "decimals": 3,
+          "title": {
+            "en": "Total Energy Charged",
+            "nl": "Totaal Opgeladen Energie",
+            "de": "Gesamt Geladene Energie",
+            "fr": "Énergie Totale Chargée",
+            "it": "Energia Totale Caricata",
+            "sv": "Total Laddad Energi",
+            "no": "Total Ladet Energi",
+            "es": "Energía Total Cargada",
+            "da": "Samlet Opladet Energi",
+            "ru": "Общая Заряженная Энергия",
+            "pl": "Łączna Naładowana Energia",
+            "ko": "총 충전 에너지",
+            "ar": "إجمالي الطاقة المشحونة"
+          }
+        },
+        "meter_power.discharged": {
+          "decimals": 3,
+          "title": {
+            "en": "Total Energy Discharged",
+            "nl": "Totaal Ontladen Energie",
+            "de": "Gesamt Entladene Energie",
+            "fr": "Énergie Totale Déchargée",
+            "it": "Energia Totale Scaricata",
+            "sv": "Total Urladdad Energi",
+            "no": "Total Utladet Energi",
+            "es": "Energía Total Descargada",
+            "da": "Samlet Afladet Energi",
+            "ru": "Общая Разряженная Энергия",
+            "pl": "Łączna Rozładowana Energia",
+            "ko": "총 방전 에너지",
+            "ar": "إجمالي الطاقة المفرغة"
+          }
+        },
+        "meter_power.ac_imported": {
+          "decimals": 3,
+          "title": {
+            "en": "AC Imported to Battery",
+            "nl": "AC Geïmporteerd naar Batterij",
+            "de": "AC Importiert in Batterie",
+            "fr": "AC Importé vers la Batterie",
+            "it": "AC Importata in Batteria",
+            "sv": "AC Importerat till Batteri",
+            "no": "AC Importert til Batteri",
+            "es": "AC Importado a la Batería",
+            "da": "AC Importeret til Batteri",
+            "ru": "AC Импортирован в Аккумулятор",
+            "pl": "AC Zaimportowany do Baterii",
+            "ko": "배터리로 유입된 AC",
+            "ar": "AC مستورد إلى البطارية"
+          }
+        },
+        "meter_power.ac_exported": {
+          "decimals": 3,
+          "title": {
+            "en": "AC Exported from Battery",
+            "nl": "AC Geëxporteerd van Batterij",
+            "de": "AC Exportiert aus Batterie",
+            "fr": "AC Exporté depuis la Batterie",
+            "it": "AC Esportata dalla Batteria",
+            "sv": "AC Exporterat från Batteri",
+            "no": "AC Eksportert fra Batteri",
+            "es": "AC Exportado desde la Batería",
+            "da": "AC Eksporteret fra Batteri",
+            "ru": "AC Экспортирован из Аккумулятора",
+            "pl": "AC Wyeksportowany z Baterii",
+            "ko": "배터리에서 유출된 AC",
+            "ar": "AC مُصدَّر من البطارية"
+          }
+        },
+        "meter_power.grid_imported": {
+          "decimals": 3,
+          "title": {
+            "en": "Grid Imported to Battery",
+            "nl": "Net Geïmporteerd naar Batterij",
+            "de": "Netz Importiert in Batterie",
+            "fr": "Réseau Importé vers la Batterie",
+            "it": "Rete Importata in Batteria",
+            "sv": "Nät Importerat till Batteri",
+            "no": "Nett Importert til Batteri",
+            "es": "Red Importada a la Batería",
+            "da": "Net Importeret til Batteri",
+            "ru": "Сеть Импортирована в Аккумулятор",
+            "pl": "Sieć Zaimportowana do Baterii",
+            "ko": "배터리로 유입된 전력망",
+            "ar": "شبكة مستوردة إلى البطارية"
+          }
+        },
+        "meter_power.grid_exported": {
+          "decimals": 3,
+          "title": {
+            "en": "Grid Exported from Battery",
+            "nl": "Net Geëxporteerd van Batterij",
+            "de": "Netz Exportiert aus Batterie",
+            "fr": "Réseau Exporté depuis la Batterie",
+            "it": "Rete Esportata dalla Batteria",
+            "sv": "Nät Exporterat från Batteri",
+            "no": "Nett Eksportert fra Batteri",
+            "es": "Red Exportada desde la Batería",
+            "da": "Net Eksporteret fra Batteri",
+            "ru": "Сеть Экспортирована из Аккумулятора",
+            "pl": "Sieć Wyeksportowana z Baterii",
+            "ko": "배터리에서 유출된 전력망",
+            "ar": "شبكة مُصدَّرة من البطارية"
+          }
+        },
+        "meter_power.pv_imported": {
+          "decimals": 3,
+          "title": {
+            "en": "PV Imported to Battery",
+            "nl": "PV Geïmporteerd naar Batterij",
+            "de": "PV Importiert in Batterie",
+            "fr": "PV Importé vers la Batterie",
+            "it": "PV Importato in Batteria",
+            "sv": "PV Importerat till Batteri",
+            "no": "PV Importert til Batteri",
+            "es": "PV Importado a la Batería",
+            "da": "PV Importeret til Batteri",
+            "ru": "PV Импорт в Батарею",
+            "pl": "PV Import do Baterii",
+            "ko": "PV 배터리 유입",
+            "ar": "PV استيراد البطارية"
+          }
+        },
+        "meter_power.pv1": {
+          "decimals": 3,
+          "title": {
+            "en": "Energy Generated (PV1)",
+            "nl": "Opgewekte Energie (PV1)",
+            "de": "Erzeugte Energie (PV1)",
+            "fr": "Énergie Générée (PV1)",
+            "it": "Energia Generata (PV1)",
+            "sv": "Genererad Energi (PV1)",
+            "no": "Generert Energi (PV1)",
+            "es": "Energía Generada (PV1)",
+            "da": "Genereret Energi (PV1)",
+            "ru": "Сгенерированная Энергия (PV1)",
+            "pl": "Wygenerowana Energia (PV1)",
+            "ko": "발전 에너지 (PV1)",
+            "ar": "الطاقة المُولَّدة (PV1)"
+          }
+        },
+        "meter_power.pv2": {
+          "decimals": 3,
+          "title": {
+            "en": "Energy Generated (PV2)",
+            "nl": "Opgewekte Energie (PV2)",
+            "de": "Erzeugte Energie (PV2)",
+            "fr": "Énergie Générée (PV2)",
+            "it": "Energia Generata (PV2)",
+            "sv": "Genererad Energi (PV2)",
+            "no": "Generert Energi (PV2)",
+            "es": "Energía Generada (PV2)",
+            "da": "Genereret Energi (PV2)",
+            "ru": "Сгенерированная Энергия (PV2)",
+            "pl": "Wygenerowana Energia (PV2)",
+            "ko": "발전 에너지 (PV2)",
+            "ar": "الطاقة المُولَّدة (PV2)"
+          }
+        },
+        "meter_power.pv3": {
+          "decimals": 3,
+          "title": {
+            "en": "Energy Generated (PV3)",
+            "nl": "Opgewekte Energie (PV3)",
+            "de": "Erzeugte Energie (PV3)",
+            "fr": "Énergie Générée (PV3)",
+            "it": "Energia Generata (PV3)",
+            "sv": "Genererad Energi (PV3)",
+            "no": "Generert Energi (PV3)",
+            "es": "Energía Generada (PV3)",
+            "da": "Genereret Energi (PV3)",
+            "ru": "Сгенерированная Энергия (PV3)",
+            "pl": "Wygenerowana Energia (PV3)",
+            "ko": "발전 에너지 (PV3)",
+            "ar": "الطاقة المُولَّدة (PV3)"
+          }
+        },
+        "meter_power.pv4": {
+          "decimals": 3,
+          "title": {
+            "en": "Energy Generated (PV4)",
+            "nl": "Opgewekte Energie (PV4)",
+            "de": "Erzeugte Energie (PV4)",
+            "fr": "Énergie Générée (PV4)",
+            "it": "Energia Generata (PV4)",
+            "sv": "Genererad Energi (PV4)",
+            "no": "Generert Energi (PV4)",
+            "es": "Energía Generada (PV4)",
+            "da": "Genereret Energi (PV4)",
+            "ru": "Сгенерированная Энергия (PV4)",
+            "pl": "Wygenerowana Energia (PV4)",
+            "ko": "발전 에너지 (PV4)",
+            "ar": "الطاقة المُولَّدة (PV4)"
+          }
+        },
+        "meter_power.pv_exported": {
+          "decimals": 3,
+          "title": {
+            "en": "PV Exported to Grid",
+            "nl": "PV Geëxporteerd naar Net",
+            "de": "PV Exportiert ins Netz",
+            "fr": "PV Exporté vers le Réseau",
+            "it": "PV Esportato in Rete",
+            "sv": "PV Exporterat till Nät",
+            "no": "PV Eksportert til Nett",
+            "es": "PV Exportado a la Red",
+            "da": "PV Eksporteret til Net",
+            "ru": "PV Экспорт в Сеть",
+            "pl": "PV Export do Sieci",
+            "ko": "PV 전력망 유출",
+            "ar": "PV تصدير الشبكة"
+          }
+        }
+      },
+      "pair": [
+        {
+          "id": "intro",
+          "navigation": {
+            "next": "loading"
+          }
+        },
+        {
+          "id": "loading",
+          "template": "loading"
+        },
+        {
+          "id": "connection",
+          "navigation": {
+            "next": "credentials"
+          }
+        },
+        {
+          "id": "credentials",
+          "navigation": {
+            "next": "list_devices"
+          }
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "repair": [
+        {
+          "id": "connection",
+          "navigation": {
+            "next": "credentials"
+          }
+        },
+        {
+          "id": "credentials"
+        }
+      ],
+      "id": "solarvault",
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "Battery limits",
+            "nl": "Batterijlimieten",
+            "da": "Batterigrænser",
+            "de": "Batteriegrenzen",
+            "es": "Límites de batería",
+            "fr": "Limites de batterie",
+            "it": "Limiti batteria",
+            "no": "Batterigrenser",
+            "sv": "Batterigränser",
+            "pl": "Limity baterii",
+            "ru": "Ограничения аккумулятора",
+            "ko": "배터리 한도",
+            "ar": "حدود البطارية"
+          },
+          "hint": {
+            "en": "These settings control the SolarVault unit and are shown on both the battery and PV devices.",
+            "nl": "Deze instellingen regelen de SolarVault-eenheid en worden getoond op zowel de batterij- als PV-tegels.",
+            "da": "Disse indstillinger styrer SolarVault-enheden og vises på både batteri- og PV-fliserne.",
+            "de": "Diese Einstellungen steuern die SolarVault-Einheit und werden auf den Batterie- und PV-Kacheln angezeigt.",
+            "es": "Estos ajustes controlan la unidad SolarVault y se muestran en los mosaicos de batería y FV.",
+            "fr": "Ces paramètres contrôlent l'unité SolarVault et s'affichent sur les tuiles batterie et PV.",
+            "it": "Queste impostazioni controllano l'unità SolarVault e sono mostrate sulle tessere batteria e FV.",
+            "no": "Disse innstillingene styrer SolarVault-enheten og vises på både batteri- og PV-flisene.",
+            "sv": "Dessa inställningar styr SolarVault-enheten och visas på både batteri- och PV-rutorna.",
+            "pl": "Te ustawienia sterują jednostką SolarVault i są widoczne na kafelkach baterii i PV.",
+            "ru": "Эти настройки управляют блоком SolarVault и отображаются на плитках аккумулятора и PV.",
+            "ko": "이 설정은 SolarVault 장치를 제어하며 배터리 및 PV 타일 모두에 표시됩니다.",
+            "ar": "تتحكم هذه الإعدادات في وحدة SolarVault وتظهر على بلاط البطارية والطاقة الشمسية."
+          },
+          "children": [
+            {
+              "id": "socChgLimit",
+              "type": "number",
+              "label": {
+                "en": "Charge limit",
+                "nl": "Laadlimiet",
+                "da": "Opladningsgrænse",
+                "de": "Ladegrenze",
+                "es": "Límite de carga",
+                "fr": "Limite de charge",
+                "it": "Limite di carica",
+                "no": "Ladegrense",
+                "sv": "Laddningsgräns",
+                "pl": "Limit ładowania",
+                "ru": "Лимит зарядки",
+                "ko": "충전 한도",
+                "ar": "حد الشحن"
+              },
+              "hint": {
+                "en": "How full the battery is allowed to charge. Lower values can help long-term battery life.",
+                "nl": "Hoe vol de batterij mag opladen. Lagere waarden kunnen de levensduur van de batterij op de lange termijn verbeteren.",
+                "da": "Hvor fuldt batteriet må oplades. Lavere værdier kan hjælpe batteriets levetid på lang sigt.",
+                "de": "Wie voll die Batterie laden darf. Niedrigere Werte können die Batterielebensdauer verlängern.",
+                "es": "Hasta qué nivel puede cargarse la batería. Valores más bajos pueden mejorar la vida útil de la batería a largo plazo.",
+                "fr": "Niveau de charge maximal autorisé. Des valeurs plus basses peuvent améliorer la durée de vie de la batterie à long terme.",
+                "it": "Quanto può caricarsi la batteria. Valori più bassi possono favorire la durata della batteria nel lungo periodo.",
+                "no": "Hvor fullt batteriet kan lades. Lavere verdier kan bidra til batteriets levetid på lang sikt.",
+                "sv": "Hur fullt batteriet får laddas. Lägre värden kan bidra till batteriets livslängd på längre sikt.",
+                "pl": "Jak bardzo bateria może się naładować. Niższe wartości mogą poprawić długoterminową żywotność baterii.",
+                "ru": "До какого уровня разрешена зарядка. Более низкие значения способствуют долговечности аккумулятора.",
+                "ko": "배터리가 충전될 수 있는 최대 수준입니다. 낮은 값은 장기적인 배터리 수명에 도움이 될 수 있습니다.",
+                "ar": "مستوى الشحن المسموح به للبطارية. القيم الأقل قد تساعد في عمر البطارية على المدى الطويل."
+              },
+              "value": 100,
+              "min": 0,
+              "max": 100,
+              "step": 1,
+              "units": {
+                "en": "%",
+                "nl": "%",
+                "da": "%",
+                "de": "%",
+                "es": "%",
+                "fr": "%",
+                "it": "%",
+                "no": "%",
+                "sv": "%",
+                "pl": "%",
+                "ru": "%",
+                "ko": "%",
+                "ar": "%"
+              }
+            },
+            {
+              "id": "socDischgLimit",
+              "type": "number",
+              "label": {
+                "en": "Discharge limit",
+                "nl": "Ontlaadlimiet",
+                "da": "Afladningsgrænse",
+                "de": "Entladegrenze",
+                "es": "Límite de descarga",
+                "fr": "Limite de décharge",
+                "it": "Limite di scarica",
+                "no": "Utladningsgrense",
+                "sv": "Urladdningsgräns",
+                "pl": "Limit rozładowania",
+                "ru": "Лимит разрядки",
+                "ko": "방전 한도",
+                "ar": "حد التفريغ"
+              },
+              "hint": {
+                "en": "The lowest charge level the battery may discharge to. Helps protect the battery from deep discharge.",
+                "nl": "Het laagste laadniveau waarnaar de batterij mag ontladen. Beschermt de batterij tegen diepteontlading.",
+                "da": "Det laveste ladeniveau batteriet må aflades til. Beskytter batteriet mod dybafladning.",
+                "de": "Der niedrigste Ladestand, bis zu dem die Batterie entladen werden darf. Schützt vor Tiefentladung.",
+                "es": "El nivel de carga mínimo al que puede descargarse la batería. Protege contra descargas profundas.",
+                "fr": "Le niveau de charge minimal autorisé. Protège la batterie contre une décharge profonde.",
+                "it": "Il livello di carica minimo consentito. Protegge la batteria dalle scariche profonde.",
+                "no": "Det laveste ladenivået batteriet kan tømmes til. Beskytter mot dyp utladning.",
+                "sv": "Den lägsta laddningsnivå batteriet får urladdas till. Skyddar mot djup urladdning.",
+                "pl": "Najniższy poziom naładowania, do którego bateria może się rozładować. Chroni przed głębokim rozładowaniem.",
+                "ru": "Минимальный уровень заряда при разрядке. Защищает аккумулятор от глубокого разряда.",
+                "ko": "배터리가 방전될 수 있는 최저 충전 수준입니다. 심방전으로부터 배터리를 보호합니다.",
+                "ar": "أدنى مستوى شحن يمكن أن تتفريغ إليه البطارية. يحمي البطارية من التفريغ العميق."
+              },
+              "value": 0,
+              "min": 0,
+              "max": 100,
+              "step": 1,
+              "units": {
+                "en": "%",
+                "nl": "%",
+                "da": "%",
+                "de": "%",
+                "es": "%",
+                "fr": "%",
+                "it": "%",
+                "no": "%",
+                "sv": "%",
+                "pl": "%",
+                "ru": "%",
+                "ko": "%",
+                "ar": "%"
+              }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Power management",
+            "nl": "Vermogensbeheer",
+            "da": "Effektstyring",
+            "de": "Leistungsmanagement",
+            "es": "Gestión de energía",
+            "fr": "Gestion de l'énergie",
+            "it": "Gestione energia",
+            "no": "Effektstyring",
+            "sv": "Effekthantering",
+            "pl": "Zarządzanie mocą",
+            "ru": "Управление мощностью",
+            "ko": "전력 관리",
+            "ar": "إدارة الطاقة"
+          },
+          "children": [
+            {
+              "id": "maxOutPw",
+              "type": "number",
+              "label": {
+                "en": "Max on-grid output",
+                "nl": "Max. netexport",
+                "da": "Maks. neteffekt",
+                "de": "Max. Netzeinspeisung",
+                "es": "Salida máx. a red",
+                "fr": "Sortie max. vers le réseau",
+                "it": "Uscita max verso rete",
+                "no": "Maks netteffekt",
+                "sv": "Max nätutmatning",
+                "pl": "Maks. moc do sieci",
+                "ru": "Макс. отдача в сеть",
+                "ko": "최대 계통 출력",
+                "ar": "أقصى إخراج للشبكة"
+              },
+              "hint": {
+                "en": "Upper limit for how much power the battery may feed into the grid when grid-tied.",
+                "nl": "Bovengrens voor hoeveel vermogen de batterij naar het net mag terugleveren bij netaansluiting.",
+                "da": "Øvre grænse for, hvor meget effekt batteriet må levere til nettet ved nettilslutning.",
+                "de": "Obergrenze für die Leistung, die die Batterie bei Netzanschluss ins Netz einspeisen darf.",
+                "es": "Límite superior de potencia que la batería puede inyectar a la red cuando está conectada.",
+                "fr": "Limite supérieure de puissance que la batterie peut injecter au réseau lorsqu'elle y est connectée.",
+                "it": "Limite superiore di potenza che la batteria può immettere in rete quando collegata.",
+                "no": "Øvre grense for hvor mye effekt batteriet kan levere til nettet ved nettilkobling.",
+                "sv": "Övre gräns för hur mycket effekt batteriet får mata in i nätet vid nätanslutning.",
+                "pl": "Górny limit mocy, jaką bateria może oddać do sieci przy podłączeniu do sieci.",
+                "ru": "Верхний предел мощности, которую аккумулятор может отдавать в сеть при подключении к сети.",
+                "ko": "계통 연결 시 배터리가 계통에 공급할 수 있는 최대 전력 상한입니다.",
+                "ar": "الحد الأعلى للطاقة التي يمكن للبطارية تغذية الشبكة بها عند الاتصال بالشبكة."
+              },
+              "value": 0,
+              "min": 0,
+              "max": 10000,
+              "step": 10,
+              "units": {
+                "en": "W",
+                "nl": "W",
+                "da": "W",
+                "de": "W",
+                "es": "W",
+                "fr": "W",
+                "it": "W",
+                "no": "W",
+                "sv": "W",
+                "pl": "W",
+                "ru": "W",
+                "ko": "W",
+                "ar": "W"
+              }
+            },
+            {
+              "id": "isAutoStandby",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Auto standby allowed",
+                "nl": "Automatische standby toegestaan",
+                "da": "Tillad automatisk standby",
+                "de": "Automatischen Standby erlauben",
+                "es": "Permitir standby automático",
+                "fr": "Veille automatique autorisée",
+                "it": "Standby automatico consentito",
+                "no": "Tillat automatisk standby",
+                "sv": "Tillåt automatisk standby",
+                "pl": "Zezwól na automatyczny tryb czuwania",
+                "ru": "Разрешить автоматический режим ожидания",
+                "ko": "자동 대기 허용",
+                "ar": "السماح بالاستعداد التلقائي"
+              },
+              "hint": {
+                "en": "Whether the unit may automatically enter standby mode when idle. This setting must be enabled before the standby mode setting takes effect.\n\nWhen enabled and the battery is connected to the grid, the unit will automatically enter standby mode if there is no photovoltaic power generation and the output power remains below 25W for approximately 10 minutes. The unit will automatically resume normal operation once photovoltaic power generation starts again.",
+                "nl": "Of het apparaat automatisch in standbymodus mag gaan wanneer de batterij inactief is. Deze instelling moet zijn ingeschakeld voordat de standbymodus-instelling effect heeft.\n\nWanneer ingeschakeld en de batterij op het net is aangesloten, gaat het apparaat automatisch in standbymodus als er geen fotovoltaïsche opwekking is en het uitgangsvermogen ongeveer 10 minuten onder 25 W blijft. Het apparaat hervat automatisch normaal gebruik zodra fotovoltaïsche opwekking weer begint.",
+                "da": "Om enheden automatisk må gå i standby, når den er inaktiv. Denne indstilling skal aktiveres, før standby-tilstandsindstillingen træder i kraft.\n\nNår aktiveret og batteriet er tilsluttet nettet, går enheden automatisk i standby, hvis der ikke er fotovoltaisk produktion, og udgangseffekten forbliver under 25 W i cirka 10 minutter. Enheden genoptager automatisk normal drift, når fotovoltaisk produktion starter igen.",
+                "de": "Ob das Gerät bei Inaktivität automatisch in den Standby-Modus wechseln darf. Diese Einstellung muss aktiviert sein, bevor die Standby-Modus-Einstellung wirksam wird.\n\nWenn aktiviert und die Batterie am Netz angeschlossen ist, wechselt das Gerät automatisch in den Standby-Modus, wenn keine photovoltaische Erzeugung vorliegt und die Ausgangsleistung etwa 10 Minuten unter 25 W bleibt. Das Gerät setzt den normalen Betrieb automatisch fort, sobald die photovoltaische Erzeugung wieder beginnt.",
+                "es": "Si la unidad puede entrar automáticamente en modo standby cuando está inactiva. Esta opción debe activarse antes de que la configuración del modo standby surta efecto.\n\nCuando está activada y la batería está conectada a la red, la unidad entrará automáticamente en standby si no hay generación fotovoltaica y la potencia de salida permanece por debajo de 25 W durante unos 10 minutos. La unidad reanudará automáticamente el funcionamiento normal cuando vuelva la generación fotovoltaica.",
+                "fr": "Si l'unité peut passer automatiquement en veille lorsqu'elle est inactive. Ce paramètre doit être activé avant que le paramètre de mode veille ne prenne effet.\n\nLorsqu'il est activé et que la batterie est connectée au réseau, l'unité passera automatiquement en veille s'il n'y a pas de production photovoltaïque et que la puissance de sortie reste inférieure à 25 W pendant environ 10 minutes. L'unité reprendra automatiquement le fonctionnement normal dès que la production photovoltaïque reprend.",
+                "it": "Se l'unità può entrare automaticamente in standby quando è inattiva. Questa impostazione deve essere abilitata prima che l'impostazione della modalità standby abbia effetto.\n\nQuando abilitata e la batteria è collegata alla rete, l'unità entrerà automaticamente in standby se non c'è produzione fotovoltaica e la potenza in uscita resta sotto 25 W per circa 10 minuti. L'unità riprenderà automaticamente il funzionamento normale quando la produzione fotovoltaica ricomincia.",
+                "no": "Om enheten automatisk kan gå i standby når den er inaktiv. Denne innstillingen må aktiveres før standby-modusinnstillingen trer i kraft.\n\nNår aktivert og batteriet er koblet til nettet, går enheten automatisk i standby hvis det ikke er fotovoltaisk produksjon og utgangseffekten forblir under 25 W i omtrent 10 minutter. Enheten gjenopptar automatisk normal drift når fotovoltaisk produksjon starter igjen.",
+                "sv": "Om enheten automatiskt får gå i standby när den är inaktiv. Denna inställning måste aktiveras innan standbylägesinställningen träder i kraft.\n\nNär den är aktiverad och batteriet är anslutet till nätet går enheten automatiskt i standby om det inte finns någon fotovoltaisk produktion och uteffekten förblir under 25 W i cirka 10 minuter. Enheten återupptar automatiskt normal drift när fotovoltaisk produktion startar igen.",
+                "pl": "Czy jednostka może automatycznie przejść w tryb czuwania, gdy jest bezczynna. To ustawienie musi być włączone, zanim ustawienie trybu czuwania zacznie obowiązywać.\n\nPo włączeniu i podłączeniu baterii do sieci jednostka automatycznie przejdzie w tryb czuwania, jeśli nie ma produkcji fotowoltaicznej, a moc wyjściowa pozostaje poniżej 25 W przez około 10 minut. Jednostka automatycznie wznowi normalną pracę, gdy produkcja fotowoltaiczna znów się rozpocznie.",
+                "ru": "Может ли устройство автоматически переходить в режим ожидания при простое. Эту настройку нужно включить, прежде чем заработает настройка режима ожидания.\n\nПри включении и подключении аккумулятора к сети устройство автоматически перейдёт в режим ожидания, если нет выработки солнечной энергии и выходная мощность остаётся ниже 25 Вт примерно 10 минут. Устройство автоматически возобновит нормальную работу, когда выработка возобновится.",
+                "ko": "유휴 상태일 때 장치가 자동으로 대기 모드로 전환할 수 있는지 여부입니다. 대기 모드 설정이 적용되려면 먼저 이 설정을 켜야 합니다.\n\n활성화되고 배터리가 계통에 연결되면, 태양광 발전이 없고 출력 전력이 약 10분 동안 25W 미만으로 유지되면 장치가 자동으로 대기 모드로 전환됩니다. 태양광 발전이 다시 시작되면 장치는 자동으로 정상 작동을 재개합니다.",
+                "ar": "ما إذا كان الجهاز يمكنه الدخول تلقائيًا في وضع الاستعداد عند الخمول. يجب تفعيل هذا الإعداد قبل أن يصبح إعداد وضع الاستعداد ساريًا.\n\nعند التفعيل واتصال البطارية بالشبكة، يدخل الجهاز تلقائيًا في وضع الاستعداد إذا لم يكن هناك توليد كهروضوئي وبقيت قدرة الخرج أقل من 25 واط لمدة 10 دقائق تقريبًا. يستأنف الجهاز التشغيل العادي تلقائيًا عندما يبدأ التوليد الكهروضوئي مرة أخرى."
+              }
+            },
+            {
+              "id": "autoStandby",
+              "type": "dropdown",
+              "label": {
+                "en": "Auto standby mode",
+                "nl": "Automatische standbymodus",
+                "da": "Automatisk standby-tilstand",
+                "de": "Automatischer Standby-Modus",
+                "es": "Modo standby automático",
+                "fr": "Mode veille automatique",
+                "it": "Modalità standby automatico",
+                "no": "Automatisk standby-modus",
+                "sv": "Automatiskt standbyläge",
+                "pl": "Automatyczny tryb czuwania",
+                "ru": "Автоматический режим ожидания",
+                "ko": "자동 대기 모드",
+                "ar": "وضع الاستعداد التلقائي"
+              },
+              "hint": {
+                "en": "Standby behavior when auto standby is allowed: Sleep enters low-power standby when idle; Awake keeps the system ready for use.",
+                "nl": "Standby-gedrag wanneer automatische standby is toegestaan: Slaapmodus gaat naar energiezuinige standby bij inactiviteit; Wakker houdt het systeem gereed voor gebruik.",
+                "da": "Standby-adfærd når automatisk standby er tilladt: Søvn går i lavenergi-standby ved inaktivitet; Vågen holder systemet klar til brug.",
+                "de": "Standby-Verhalten, wenn automatischer Standby erlaubt ist: Schlaf wechselt bei Inaktivität in energiesparenden Standby; Wach hält das System einsatzbereit.",
+                "es": "Comportamiento en standby cuando está permitido: Sueño entra en standby de bajo consumo al estar inactivo; Despierto mantiene el sistema listo.",
+                "fr": "Comportement en veille lorsque la veille automatique est autorisée : Sommeil passe en veille basse consommation à l'arrêt ; Éveillé garde le système prêt.",
+                "it": "Comportamento in standby quando consentito: Sonno entra in standby a basso consumo quando inattivo; Sveglio mantiene il sistema pronto.",
+                "no": "Standby-oppførsel når automatisk standby er tillatt: Søvn går i lavenergi-standby ved inaktivitet; Våken holder systemet klart.",
+                "sv": "Standby-beteende när automatisk standby är tillåten: Sömn går i lågenergi-standby vid inaktivitet; Vaken håller systemet redo.",
+                "pl": "Zachowanie czuwania, gdy dozwolone: Sen przechodzi w oszczędny tryb czuwania przy bezczynności; Czuwanie utrzymuje system gotowy.",
+                "ru": "Поведение в режиме ожидания: Сон — переход в энергосберегающий режим при простое; Бодрствование — система готова к работе.",
+                "ko": "자동 대기가 허용될 때의 동작: 절전은 유휴 시 저전력 대기로 전환하고, 깨어 있음은 시스템을 사용 준비 상태로 유지합니다.",
+                "ar": "سلوك الاستعداد عند السماح: النوم يدخل في استعداد منخفض الطاقة عند الخمول؛ اليقظ يبقي النظام جاهزًا."
+              },
+              "value": "1",
+              "values": [
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "Sleep",
+                    "nl": "Slaapmodus",
+                    "da": "Søvn",
+                    "de": "Schlaf",
+                    "es": "Sueño",
+                    "fr": "Sommeil",
+                    "it": "Sonno",
+                    "no": "Søvn",
+                    "sv": "Sömn",
+                    "pl": "Sen",
+                    "ru": "Сон",
+                    "ko": "절전",
+                    "ar": "نوم"
+                  }
+                },
+                {
+                  "id": "2",
+                  "label": {
+                    "en": "Awake",
+                    "nl": "Wakker",
+                    "da": "Vågen",
+                    "de": "Wach",
+                    "es": "Despierto",
+                    "fr": "Éveillé",
+                    "it": "Sveglio",
+                    "no": "Våken",
+                    "sv": "Vaken",
+                    "pl": "Czuwanie",
+                    "ru": "Бодрствование",
+                    "ko": "깨어 있음",
+                    "ar": "يقظة"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Device Information",
+            "nl": "Apparaatinformatie",
+            "da": "Enhedsoplysninger",
+            "de": "Geräteinformationen",
+            "es": "Información del dispositivo",
+            "fr": "Informations sur l'appareil",
+            "it": "Informazioni dispositivo",
+            "no": "Enhetsinformasjon",
+            "sv": "Enhetsinformation",
+            "pl": "Informacje o urządzeniu",
+            "ru": "Информация об устройстве",
+            "ko": "기기 정보",
+            "ar": "معلومات الجهاز"
+          },
+          "children": [
+            {
+              "id": "deviceSerial",
+              "type": "label",
+              "label": {
+                "en": "Serial number",
+                "nl": "Serienummer",
+                "da": "Serienummer",
+                "de": "Seriennummer",
+                "es": "Número de serie",
+                "fr": "Numéro de série",
+                "it": "Numero di serie",
+                "no": "Serienummer",
+                "sv": "Serienummer",
+                "pl": "Numer seryjny",
+                "ru": "Серийный номер",
+                "ko": "일련번호",
+                "ar": "الرقم التسلسلي"
+              },
+              "value": "-",
+              "hint": {
+                "en": "Serial number of this SolarVault, as entered when the device was added to Homey.",
+                "nl": "Serienummer van deze SolarVault, zoals ingevoerd bij het toevoegen van het apparaat aan Homey.",
+                "da": "Serienummer på denne SolarVault, som angivet da enheden blev tilføjet til Homey.",
+                "de": "Seriennummer dieser SolarVault, wie beim Hinzufügen des Geräts zu Homey eingegeben.",
+                "es": "Número de serie de este SolarVault, introducido al añadir el dispositivo a Homey.",
+                "fr": "Numéro de série de ce SolarVault, saisi lors de l'ajout de l'appareil à Homey.",
+                "it": "Numero di serie di questo SolarVault, inserito quando il dispositivo è stato aggiunto a Homey.",
+                "no": "Serienummer for denne SolarVault, som angitt da enheten ble lagt til i Homey.",
+                "sv": "Serienummer för denna SolarVault, som angavs när enheten lades till i Homey.",
+                "pl": "Numer seryjny tego SolarVault, podany przy dodawaniu urządzenia do Homey.",
+                "ru": "Серийный номер этого SolarVault, указанный при добавлении устройства в Homey.",
+                "ko": "Homey에 기기를 추가할 때 입력한 이 SolarVault의 일련번호입니다.",
+                "ar": "الرقم التسلسلي لهذا SolarVault، كما أُدخل عند إضافة الجهاز إلى Homey."
+              }
+            },
+            {
+              "id": "deviceIp",
+              "type": "label",
+              "label": {
+                "en": "IP address",
+                "nl": "IP-adres",
+                "da": "IP-adresse",
+                "de": "IP-Adresse",
+                "es": "Dirección IP",
+                "fr": "Adresse IP",
+                "it": "Indirizzo IP",
+                "no": "IP-adresse",
+                "sv": "IP-adress",
+                "pl": "Adres IP",
+                "ru": "IP-адрес",
+                "ko": "IP 주소",
+                "ar": "عنوان IP"
+              },
+              "value": "-",
+              "hint": {
+                "en": "LAN IP address of the SolarVault on your local network, as reported by the device.",
+                "nl": "LAN IP-adres van de SolarVault in je lokale netwerk, zoals gerapporteerd door het apparaat.",
+                "da": "LAN IP-adresse for SolarVault på dit lokale netværk, som rapporteret af enheden.",
+                "de": "LAN-IP-Adresse der SolarVault in Ihrem lokalen Netzwerk, wie vom Gerät gemeldet.",
+                "es": "Dirección IP LAN del SolarVault en tu red local, según informa el dispositivo.",
+                "fr": "Adresse IP LAN du SolarVault sur votre réseau local, telle que signalée par l'appareil.",
+                "it": "Indirizzo IP LAN del SolarVault sulla rete locale, come riportato dal dispositivo.",
+                "no": "LAN IP-adresse for SolarVault på det lokale nettverket, som rapportert av enheten.",
+                "sv": "LAN IP-adress för SolarVault i ditt lokala nätverk, enligt enheten.",
+                "pl": "Adres IP LAN SolarVault w sieci lokalnej, zgłoszony przez urządzenie.",
+                "ru": "IP-адрес SolarVault в локальной сети, сообщаемый устройством.",
+                "ko": "기기가 보고한 로컬 네트워크의 SolarVault LAN IP 주소입니다.",
+                "ar": "عنوان IP للشبكة المحلية لـ SolarVault كما يبلّغه الجهاز."
+              }
+            },
+            {
+              "id": "deviceMac",
+              "type": "label",
+              "label": {
+                "en": "MAC address",
+                "nl": "MAC-adres",
+                "da": "MAC-adresse",
+                "de": "MAC-Adresse",
+                "es": "Dirección MAC",
+                "fr": "Adresse MAC",
+                "it": "Indirizzo MAC",
+                "no": "MAC-adresse",
+                "sv": "MAC-adress",
+                "pl": "Adres MAC",
+                "ru": "MAC-адрес",
+                "ko": "MAC 주소",
+                "ar": "عنوان MAC"
+              },
+              "value": "-",
+              "hint": {
+                "en": "Hardware address of the unit's network interface (e.g. Ethernet).",
+                "nl": "Hardwareadres van de netwerkinterface van het apparaat (bijv. Ethernet).",
+                "da": "Hardwareadresse for enhedens netværksgrænseflade (f.eks. Ethernet).",
+                "de": "Hardwareadresse der Netzwerkschnittstelle des Geräts (z. B. Ethernet).",
+                "es": "Dirección de hardware de la interfaz de red (p. ej. Ethernet).",
+                "fr": "Adresse matérielle de l'interface réseau de l'unité (p. ex. Ethernet).",
+                "it": "Indirizzo hardware dell'interfaccia di rete (es. Ethernet).",
+                "no": "Maskinvareadresse for enhetens nettverksgrensesnitt (f.eks. Ethernet).",
+                "sv": "Hårdvaruadress för enhetens nätverksgränssnitt (t.ex. Ethernet).",
+                "pl": "Adres sprzętowy interfejsu sieciowego jednostki (np. Ethernet).",
+                "ru": "Аппаратный адрес сетевого интерфейса устройства (например, Ethernet).",
+                "ko": "장치 네트워크 인터페이스의 하드웨어 주소(예: 이더넷)입니다.",
+                "ar": "عنوان العتادة لواجهة الشبكة (مثل Ethernet)."
+              }
+            },
+            {
+              "id": "deviceBatteryCount",
+              "type": "label",
+              "label": {
+                "en": "Connected batteries",
+                "nl": "Aangesloten batterijen",
+                "da": "Tilsluttede batterier",
+                "de": "Angeschlossene Batterien",
+                "es": "Baterías conectadas",
+                "fr": "Batteries connectées",
+                "it": "Batterie collegate",
+                "no": "Tilkoblede batterier",
+                "sv": "Anslutna batterier",
+                "pl": "Podłączone baterie",
+                "ru": "Подключённые аккумуляторы",
+                "ko": "연결된 배터리",
+                "ar": "البطاريات المتصلة"
+              },
+              "value": "-",
+              "hint": {
+                "en": "How many battery expansion modules are currently connected to this unit.",
+                "nl": "Hoeveel batterij-uitbreidingsmodules momenteel op deze eenheid zijn aangesloten.",
+                "da": "Hvor mange batteriudvidelsesmoduler der aktuelt er tilsluttet denne enhed.",
+                "de": "Wie viele Batterie-Erweiterungsmodule derzeit an dieser Einheit angeschlossen sind.",
+                "es": "Cuántos módulos de expansión de batería están conectados actualmente a esta unidad.",
+                "fr": "Nombre de modules d'extension batterie actuellement connectés à cette unité.",
+                "it": "Quanti moduli di espansione batteria sono attualmente collegati a questa unità.",
+                "no": "Hvor mange batteriutvidelsesmoduler som for øyeblikket er koblet til denne enheten.",
+                "sv": "Hur många batteriexpansionsmoduler som för närvarande är anslutna till denna enhet.",
+                "pl": "Ile modułów rozszerzenia baterii jest obecnie podłączonych do tej jednostki.",
+                "ru": "Сколько модулей расширения аккумулятора сейчас подключено к этому устройству.",
+                "ko": "현재 이 장치에 연결된 배터리 확장 모듈 수입니다.",
+                "ar": "عدد وحدات توسعة البطارية المتصلة حاليًا بهذه الوحدة."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "capabilities": {
+    "alarm_eth": {
+      "type": "boolean",
+      "title": {
+        "en": "Ethernet"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "icon": "/assets/capabilities/alarm_eth.svg"
+    }
+  }
+}

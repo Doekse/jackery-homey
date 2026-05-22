@@ -1,0 +1,37 @@
+{
+  "id": "auto_standby_is",
+  "title": {
+    "en": "Auto standby mode !{{is|is not}} [[mode]]"
+  },
+  "titleFormatted": {
+    "en": "Auto standby mode !{{is|is not}} [[mode]]"
+  },
+  "hint": {
+    "en": "Checks the auto standby mode on the SolarVault 3 battery"
+  },
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=solarvault&class=battery"
+    },
+    {
+      "type": "dropdown",
+      "name": "mode",
+      "values": [
+        {
+          "id": "1",
+          "label": {
+            "en": "Sleep"
+          }
+        },
+        {
+          "id": "2",
+          "label": {
+            "en": "Awake"
+          }
+        }
+      ]
+    }
+  ]
+}

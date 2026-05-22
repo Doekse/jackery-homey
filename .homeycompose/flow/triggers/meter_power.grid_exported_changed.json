@@ -1,0 +1,76 @@
+{
+  "id": "meter_power.grid_exported_changed",
+  "title": {
+    "en": "Grid export from battery changed",
+    "nl": "Netexport van batterij veranderd",
+    "de": "Netzexport aus Batterie geändert",
+    "fr": "Export réseau depuis batterie changé",
+    "it": "Export rete da batteria cambiato",
+    "sv": "Nätexport från batteri ändrad",
+    "no": "Netteksport fra batteri endret",
+    "es": "Exportación de red desde batería cambiada",
+    "da": "Neteksport fra batteri ændret",
+    "ru": "Изменился экспорт сети из батареи",
+    "pl": "Eksport sieci z baterii zmieniony",
+    "ko": "배터리 전력망 유출 변경",
+    "ar": "تغيّر تصدير الشبكة من البطارية"
+  },
+  "titleFormatted": {
+    "en": "The grid export from battery has changed",
+    "nl": "De netexport van de batterij is veranderd",
+    "de": "Der Netzexport aus der Batterie hat sich geändert",
+    "fr": "L'export réseau depuis la batterie a changé",
+    "it": "L'esportazione di rete dalla batteria è cambiata",
+    "sv": "Nätexporten från batteriet har ändrats",
+    "no": "Netteksporten fra batteriet har endret seg",
+    "es": "La exportación de red desde la batería ha cambiado",
+    "da": "Neteksporten fra batteriet er ændret",
+    "ru": "Экспорт сети из батареи изменился",
+    "pl": "Eksport sieci z baterii się zmienił",
+    "ko": "배터리에서 유출된 전력망이 변경됨",
+    "ar": "تغيّر تصدير الشبكة من البطارية"
+  },
+  "hint": {
+    "en": "When the grid export from battery on the SolarVault 3 changes",
+    "nl": "Wanneer de netexport van de batterij op de SolarVault 3 verandert",
+    "de": "Wenn sich der Netzexport aus der Batterie an der SolarVault 3 ändert",
+    "fr": "Lorsque l'export réseau depuis la batterie change sur la SolarVault 3",
+    "it": "Quando l'esportazione di rete dalla batteria cambia sulla SolarVault 3",
+    "sv": "När nätexporten från batteriet ändras på SolarVault 3",
+    "no": "Når netteksporten fra batteriet endres på SolarVault 3",
+    "es": "Cuando la exportación de red desde la batería cambia en la SolarVault 3",
+    "da": "Når neteksporten fra batteriet ændres på SolarVault 3",
+    "ru": "Когда экспорт сети из батареи на SolarVault 3 меняется",
+    "pl": "Gdy eksport sieci z baterii zmienia się w SolarVault 3",
+    "ko": "SolarVault 3에서 배터리에서 유출된 전력망이 변경될 때",
+    "ar": "عند تغيّر تصدير الشبكة من البطارية على SolarVault 3"
+  },
+  "tokens": [
+    {
+      "name": "meter_power.grid_exported",
+      "type": "number",
+      "title": {
+        "en": "Grid exported from battery",
+        "nl": "Net Geëxporteerd van Batterij",
+        "de": "Netz Exportiert aus Batterie",
+        "fr": "Réseau Exporté depuis la Batterie",
+        "it": "Rete Esportata dalla Batteria",
+        "sv": "Nät Exporterat från Batteri",
+        "no": "Nett Eksportert fra Batteri",
+        "es": "Red Exportada desde la Batería",
+        "da": "Net Eksporteret fra Batteri",
+        "ru": "Сеть Экспортирована из Аккумулятора",
+        "pl": "Sieć Wyeksportowana z Baterii",
+        "ko": "배터리에서 유출된 전력망",
+        "ar": "شبكة مُصدَّرة من البطارية"
+      }
+    }
+  ],
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=solarvault&class=battery&capabilities=meter_power.grid_exported"
+    }
+  ]
+}
